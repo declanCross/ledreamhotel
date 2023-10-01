@@ -22,6 +22,18 @@ li {
 	font-family: "Body", serif;
 }
 
+@media screen and (max-width: 500px) {
+	#desktop {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	#mobile {
+		display: none;
+	}
+}
+
 #mobile {
 	background-color: #fbfcfe;
 }
