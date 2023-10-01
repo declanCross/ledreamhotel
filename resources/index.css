@@ -146,6 +146,9 @@ li {
 #m-contact-section h2 {
 	text-align: center;
 }
+#m-contact-section .m-line-divider {
+	border-top: 2px solid #fbfcfe;
+}
 .m-contact-div {
 	display: flex;
 	align-items: center;
@@ -174,4 +177,33 @@ li {
 #m-contact-sendoff {
 	text-align: center;
 	font-size: 1.25em;
+}
+/* SOCIALS */
+#m-socials-section {
+	background-color: #0a1529;
+	color: #fbfcfe;
+}
+#m-socials-section .m-line-divider {
+	border-top: 2px solid #fbfcfe;
+}
+#m-socials-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#m-socials-header img {
+	height: 2em;
+	width: auto;
+	margin-left: 10px;
+}
+#m-socials-icons {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 25px;
+}
+#m-socials-icons img {
+	height: 3em;
+	width: auto;
+	margin-left: 30px;
+	margin-right: 30px;
 }
