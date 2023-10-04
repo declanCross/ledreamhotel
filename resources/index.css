@@ -134,7 +134,7 @@ li {
 	}
 	/* LOCATION */
 	.m-line-divider {
-		width: 70%;
+		width: 80vw;
 		border-top: 2px solid #b9cce4;
 		margin: 0 auto;
 	}
