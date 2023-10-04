@@ -106,14 +106,21 @@
 		text-align: center;
 		padding-top: 10px;
 	}
+	.table-div {
+		border-radius: 25px;
+		overflow: hidden;
+		width: 80vw;
+		margin: auto;
+	}
 	table {
 		margin: auto;
 		border-collapse: collapse;
-		width: 80vw;
+		/* border-collapse: separate; */
+		/* width: 80vw; */
 	}
 	th,
 	td {
-		border: 1px solid #b9cce4;
+		/* border: 1px solid #fbfcfe; */
 		padding: 10px;
 		color: #0a1529;
 		text-align: center;
@@ -121,6 +128,10 @@
 	th {
 		background-color: #0a1529;
 		color: #fbfcfe;
+		border: 1px solid #fbfcfe;
+	}
+	tr.blue {
+		background-color: #b9cce4;
 	}
 	#m-booking-admin-pricing-section ul {
 		padding-top: 10px;
