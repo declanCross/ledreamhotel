@@ -239,8 +239,7 @@
 		background-color: #0a1529;
 		border: 2px solid #4672b9;
 		border-radius: 25px;
-		/* padding-right: 20px; */
-		margin-left: 5vw;
+		margin-left: 3vw;
 	}
 	.d-amenities-header {
 		border-bottom: 2px solid #fbfcfe;
@@ -289,14 +288,18 @@
 	.d-pricing-info-container {
 		margin-top: -1vw;
 	}
-	table {
-		margin: auto;
-		border-collapse: collapse;
+	.table-div {
+		border: 2px solid #4672b9;
+		border-radius: 25px;
+		overflow: hidden;
 		margin-left: 2vw;
+	}
+	table {
+		border-collapse: collapse;
+		width: 40vw;
 	}
 	th,
 	td {
-		border: 1px solid #b9cce4;
 		padding: 10px;
 		color: #0a1529;
 		text-align: center;
@@ -304,6 +307,12 @@
 	th {
 		background-color: #0a1529;
 		color: #fbfcfe;
+	}
+	th.border-right {
+		border-right: 1px solid #fbfcfe;
+	}
+	tr.blue {
+		background-color: #b9cce4;
 	}
 	#d-payment-terms-container {
 		display: flex;
