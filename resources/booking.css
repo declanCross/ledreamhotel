@@ -61,7 +61,6 @@
 		background-color: #0a1529;
 		border: 2px solid #4672b9;
 		border-radius: 25px;
-		padding-right: 20px;
 	}
 	.m-amenities-header {
 		border-bottom: 2px solid #fbfcfe;
@@ -74,7 +73,7 @@
 	.m-amenities-content-container {
 		display: flex;
 		justify-content: space-evenly;
-		/* padding-right: 5vw; */
+		padding-right: 20px;
 	}
 	/* .m-amenities-content-container ul {
 		list-style-type: none;
