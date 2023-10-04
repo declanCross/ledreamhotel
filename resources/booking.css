@@ -107,20 +107,17 @@
 		padding-top: 10px;
 	}
 	.table-div {
+		border: 2px solid #4672b9;
 		border-radius: 25px;
 		overflow: hidden;
 		width: 80vw;
 		margin: auto;
 	}
 	table {
-		margin: auto;
 		border-collapse: collapse;
-		/* border-collapse: separate; */
-		/* width: 80vw; */
 	}
 	th,
 	td {
-		/* border: 1px solid #fbfcfe; */
 		padding: 10px;
 		color: #0a1529;
 		text-align: center;
@@ -128,7 +125,9 @@
 	th {
 		background-color: #0a1529;
 		color: #fbfcfe;
-		border: 1px solid #fbfcfe;
+	}
+	th.border-right {
+		border-right: 1px solid #fbfcfe;
 	}
 	tr.blue {
 		background-color: #b9cce4;
