@@ -175,6 +175,10 @@
 		color: #0a1529;
 		padding-bottom: 1vw;
 	}
+	.above-section-link {
+		position: relative;
+		top: -60px;
+	}
 	/* NAV-BAR */
 	/* LANDING */
 	/* BOOKING */
@@ -319,20 +323,20 @@
 		width: 30vw;
 	}
 	/* CONTACT */
-	#d-booking-contact-section {
+	#d-feature-contact-section {
 		background-color: #0a1529;
 		padding-top: 2vw;
 		padding-bottom: 3vw;
 	}
-	#d-booking-contact-section h2 {
+	#d-feature-contact-section h2 {
 		text-align: center;
 		color: #fbfcfe;
 	}
-	.d-booking-contact-container {
+	.d-feature-contact-container {
 		display: flex;
 		justify-content: center;
 	}
-	.d-booking-contact-sendoff {
+	.d-feature-contact-sendoff {
 		border-right: 2px solid #fbfcfe;
 		width: 30vw;
 		text-align: center;
@@ -340,11 +344,11 @@
 		margin-top: 1vw;
 		margin-bottom: 1vw;
 	}
-	.d-booking-contact-sendoff p {
+	.d-feature-contact-sendoff p {
 		color: #fbfcfe;
 		font-size: 1.5rem;
 	}
-	.d-booking-contact-info {
+	.d-feature-contact-info {
 		width: 30vw;
 	}
 
@@ -379,9 +383,5 @@
 		margin: 0 auto;
 	}
 	/* SOCIALS */
-	#d-socials-section {
-		border-top: 2px solid #fbfcfe;
-		border-bottom: 2px solid #fbfcfe;
-	}
 	/* FOOTER */
 }

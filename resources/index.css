@@ -294,6 +294,10 @@ li {
 	#m-footer p:last-child {
 		text-align: center;
 	}
+	#m-footer-links a {
+		color: #fbfcfe;
+		text-decoration: none;
+	}
 }
 
 @media screen and (min-width: 500px) {
@@ -354,8 +358,6 @@ li {
 		color: #0a1529;
 		margin-right: auto;
 	}
-	#d-nav-right-container a li {
-	}
 	#d-nav-right-container .d-nav-link:hover {
 		background-color: #b9cce4;
 	}
@@ -401,7 +403,7 @@ li {
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 100%;
+		height: 99%;
 		background-color: rgba(70, 114, 185, 0.5);
 	}
 	#d-landing-section .d-book-button {
@@ -568,6 +570,8 @@ li {
 		background-color: #0a1529;
 		color: #fbfcfe;
 		padding-top: 2vw;
+		border-top: 2px solid #fbfcfe;
+		border-bottom: 2px solid #fbfcfe;
 	}
 	#d-socials-section .d-line-divider {
 		border-top: 2px solid #fbfcfe;
@@ -616,6 +620,10 @@ li {
 	#d-footer-links ul li {
 		list-style-type: none;
 		padding: 10px;
+		font-size: 1rem;
+	}
+	#d-footer-links a {
+		text-decoration: none;
 		color: #fbfcfe;
 	}
 	#d-footer p:last-child {
