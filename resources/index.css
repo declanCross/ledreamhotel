@@ -121,6 +121,7 @@ li {
 		text-align: center;
 		padding-top: 7vh;
 		padding-bottom: 1.5vh;
+		color: #0a1529;
 	}
 	#m-welcome-features-container {
 		display: flex;
@@ -160,6 +161,7 @@ li {
 	}
 	#m-location-header h2 {
 		margin-right: 2vw;
+		color: #0a1529;
 	}
 	#m-location-header img {
 		height: auto;
