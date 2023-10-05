@@ -126,6 +126,12 @@
 		position: relative;
 		top: -60px;
 	}
+	#m-booking-admin-payment-section a[href^="tel"] {
+		color: #0a1529;
+	}
+	#m-booking-admin-payment-section a[href^="mailto"] {
+		color: #0a1529;
+	}
 	.m-booking-admin-type {
 		list-style-type: none;
 	}
@@ -312,6 +318,12 @@
 	}
 	#d-booking-admin-payment-section {
 		width: 30vw;
+	}
+	#d-booking-admin-payment-section a[href^="tel"] {
+		color: #0a1529;
+	}
+	#d-booking-admin-payment-section a[href^="mailto"] {
+		color: #0a1529;
 	}
 	.d-booking-admin-type {
 		list-style-type: none;
