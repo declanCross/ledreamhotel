@@ -1,4 +1,4 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 	#m-legal-section {
 		font-size: 1.1rem;
 	}
@@ -50,7 +50,7 @@
 	}
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
 	/* LEGAL */
 	#d-legal-section {
 		font-size: 1.25rem;
