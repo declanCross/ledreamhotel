@@ -202,6 +202,12 @@ li {
 	p {
 		color: #fbfcfe;
 	}
+	.m-contact-div h3 a[href^="tel"] {
+		color: #fbfcfe;
+	}
+	.m-contact-div h3 a[href^="mailto"] {
+		color: #fbfcfe;
+	}
 	#m-contact-section h2 {
 		text-align: center;
 	}
@@ -534,6 +540,12 @@ li {
 	.d-contact-div div {
 		display: flex;
 		flex-direction: column;
+	}
+	.d-contact-div h3 a[href^="tel"] {
+		color: #fbfcfe;
+	}
+	.d-contact-div h3 a[href^="mailto"] {
+		color: #fbfcfe;
 	}
 	.d-contact-div img {
 		width: 4vw;

@@ -374,6 +374,12 @@
 		margin-bottom: 10px;
 		color: #fbfcfe;
 	}
+	.d-contact-div h3 a[href^="tel"] {
+		color: #fbfcfe;
+	}
+	.d-contact-div h3 a[href^="mailto"] {
+		color: #fbfcfe;
+	}
 	.d-contact-card p {
 		color: #fbfcfe;
 	}
