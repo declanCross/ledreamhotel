@@ -17,21 +17,21 @@
 		font-size: 1.1rem;
 	}
 	#m-booking-section h2 {
-		color: #0a1529;
+		color: #0f203e;
 	}
 	#m-booking-section p {
-		color: #0a1529;
+		color: #0f203e;
 		width: 70vw;
 		margin-top: auto;
 		margin-bottom: auto;
 		padding-bottom: 1vh;
 	}
 	#m-booking-section a {
-		color: #0a1529;
+		color: #0f203e;
 		font-weight: bold;
 	}
 	#m-booking-section ul {
-		color: #0a1529;
+		color: #0f203e;
 		width: 70vw;
 		padding-left: 25vw;
 		text-align: left;
@@ -45,7 +45,7 @@
 	}
 	.m-amenities-container {
 		width: 80vw;
-		background-color: #0a1529;
+		background-color: #0f203e;
 		border: 2px solid #4672b9;
 		border-radius: 25px;
 	}
@@ -90,7 +90,7 @@
 		font-size: 1.1rem;
 	}
 	#m-booking-admin-section h3 {
-		color: #0a1529;
+		color: #0f203e;
 		text-align: center;
 		padding-top: 2.5vh;
 	}
@@ -107,11 +107,11 @@
 	th,
 	td {
 		padding: 10px;
-		color: #0a1529;
+		color: #0f203e;
 		text-align: center;
 	}
 	th {
-		background-color: #0a1529;
+		background-color: #0f203e;
 		color: #fbfcfe;
 	}
 	th.border-right {
@@ -128,10 +128,10 @@
 		top: -60px;
 	}
 	#m-booking-admin-payment-section a[href^="tel"] {
-		color: #0a1529;
+		color: #0f203e;
 	}
 	#m-booking-admin-payment-section a[href^="mailto"] {
-		color: #0a1529;
+		color: #0f203e;
 	}
 	.m-booking-admin-type {
 		list-style-type: none;
@@ -165,7 +165,7 @@
 		padding: 7px;
 		font-size: 20px;
 		color: #fbfcfe;
-		background-color: #0a1529;
+		background-color: #0f203e;
 		border: 2px solid #b9cce4;
 		border-radius: 10px;
 		text-decoration: none;
@@ -179,7 +179,7 @@
 		width: 100vw;
 	}
 	h1.d-feature-header {
-		color: #0a1529;
+		color: #0f203e;
 		padding-bottom: 1vw;
 	}
 	.above-section-link {
@@ -208,18 +208,18 @@
 		font-size: 1.25rem;
 	}
 	#d-booking-section p {
-		color: #0a1529;
+		color: #0f203e;
 		margin-top: auto;
 		margin-bottom: auto;
 		text-align: left;
 		padding-bottom: 10px;
 	}
 	#d-booking-section a {
-		color: #0a1529;
+		color: #0f203e;
 		font-weight: bold;
 	}
 	#d-booking-section ul {
-		color: #0a1529;
+		color: #0f203e;
 		text-align: left;
 	}
 	#d-booking-section ul li {
@@ -234,7 +234,7 @@
 	}
 	.d-amenities-container {
 		width: 40vw;
-		background-color: #0a1529;
+		background-color: #0f203e;
 		border: 2px solid #4672b9;
 		border-radius: 25px;
 		margin-left: 3vw;
@@ -299,11 +299,11 @@
 	th,
 	td {
 		padding: 10px;
-		color: #0a1529;
+		color: #0f203e;
 		text-align: center;
 	}
 	th {
-		background-color: #0a1529;
+		background-color: #0f203e;
 		color: #fbfcfe;
 	}
 	th.border-right {
@@ -321,10 +321,10 @@
 		width: 30vw;
 	}
 	#d-booking-admin-payment-section a[href^="tel"] {
-		color: #0a1529;
+		color: #0f203e;
 	}
 	#d-booking-admin-payment-section a[href^="mailto"] {
-		color: #0a1529;
+		color: #0f203e;
 	}
 	.d-booking-admin-type {
 		list-style-type: none;
@@ -337,7 +337,7 @@
 	}
 	/* CONTACT */
 	#d-feature-contact-section {
-		background-color: #0a1529;
+		background-color: #0f203e;
 		padding-top: 2vw;
 		padding-bottom: 3vw;
 	}
