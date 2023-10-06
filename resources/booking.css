@@ -61,7 +61,6 @@
 		display: flex;
 		justify-content: space-evenly;
 		padding-right: 3vw;
-		margin-left: -3vw;
 	}
 	.m-amenities-content-container ul li {
 		color: #fbfcfe;
@@ -73,6 +72,7 @@
 	}
 	.m-amenities-content-container ul {
 		list-style-type: none;
+		margin-left: -4vw;
 	}
 	li.m-amenities-item1 {
 		background: url(./images/icons/aircon_icon.png) no-repeat;
