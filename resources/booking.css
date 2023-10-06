@@ -64,17 +64,72 @@
 	}
 	.m-amenities-content-container ul li {
 		color: #fbfcfe;
-		padding-top: 0.75vh;
-		padding-bottom: 0.75vh;
+		background-size: 6vw 6vw;
+		background-position-y: center;
+		padding-top: 1vh;
+		padding-bottom: 1vh;
+		padding-left: 7vw;
 	}
-	/* .m-amenities-content-container ul {
+	.m-amenities-content-container ul {
 		list-style-type: none;
-	} */
-	/* li.m-ammenities-item1 {
-		background: url(./images/icons/heart_icon.png) no-repeat;
-		background-size: 20px 20px;
-		padding-left: 30px;
-	} */
+	}
+	li.m-amenities-item1 {
+		background: url(./images/icons/aircon_icon.png) no-repeat;
+	}
+	li.m-amenities-item2 {
+		background: url(./images/icons/tv_icon.png) no-repeat;
+	}
+	li.m-amenities-item3 {
+		background: url(./images/icons/wifi_icon.png) no-repeat;
+	}
+	li.m-amenities-item4 {
+		background: url(./images/icons/bottle_icon.png) no-repeat;
+	}
+	li.m-amenities-item5 {
+		background: url(./images/icons/parking_icon.png) no-repeat;
+	}
+	li.m-amenities-item6 {
+		background: url(./images/icons/airport_icon.png) no-repeat;
+	}
+	li.m-amenities-item7 {
+		background: url(./images/icons/car_icon.png) no-repeat;
+	}
+	li.m-amenities-item8 {
+		background: url(./images/icons/seaview_icon.png) no-repeat;
+	}
+	li.m-amenities-item9 {
+		background: url(./images/icons/tour_icon.png) no-repeat;
+	}
+	li.m-amenities-item10 {
+		background: url(./images/icons/nonsmoking_icon.png) no-repeat;
+	}
+	li.m-amenities-item11 {
+		background: url(./images/icons/shower_icon.png) no-repeat;
+	}
+	li.m-amenities-item12 {
+		background: url(./images/icons/bath_icon.png) no-repeat;
+	}
+	li.m-amenities-item13 {
+		background: url(./images/icons/coffee_icon.png) no-repeat;
+	}
+	li.m-amenities-item14 {
+		background: url(./images/icons/laks_icon.png) no-repeat;
+	}
+	li.m-amenities-item15 {
+		background: url(./images/icons/kalle_icon.png) no-repeat;
+	}
+	li.m-amenities-item16 {
+		background: url(./images/icons/iwash_icon.png) no-repeat;
+	}
+	li.m-amenities-item17 {
+		background: url(./images/icons/agency_icon.png) no-repeat;
+	}
+	li.m-amenities-item18 {
+		background: url(./images/icons/fridge_icon.png) no-repeat;
+	}
+	li.m-amenities-item19 {
+		background: url(./images/icons/safety_icon.png) no-repeat;
+	}
 	/* ADMIN */
 	#above-m-booking-admin-section {
 		position: relative;
@@ -252,19 +307,74 @@
 		justify-content: space-evenly;
 		padding-right: 20px;
 	}
-	/* .d-amenities-content-container ul {
-		list-style-type: none;
-	} */
 	.d-amenities-content-container ul li {
 		color: #fbfcfe;
-		padding-top: 5px;
-		padding-bottom: 5px;
+		padding-top: 2vh;
+		padding-bottom: 2vh;
+		padding-left: 4vw;
+		background-size: 3vw 3vw;
+		background-position-y: center;
 	}
-	/* li.d-ammenities-item1 {
-		background: url(./images/icons/heart_icon.png) no-repeat;
-		background-size: 20px 20px;
-		padding-left: 30px;
-	} */
+	.d-amenities-content-container ul {
+		list-style-type: none;
+	}
+	li.d-amenities-item1 {
+		background: url(./images/icons/aircon_icon.png) no-repeat;
+	}
+	li.d-amenities-item2 {
+		background: url(./images/icons/tv_icon.png) no-repeat;
+	}
+	li.d-amenities-item3 {
+		background: url(./images/icons/wifi_icon.png) no-repeat;
+	}
+	li.d-amenities-item4 {
+		background: url(./images/icons/bottle_icon.png) no-repeat;
+	}
+	li.d-amenities-item5 {
+		background: url(./images/icons/parking_icon.png) no-repeat;
+	}
+	li.d-amenities-item6 {
+		background: url(./images/icons/airport_icon.png) no-repeat;
+	}
+	li.d-amenities-item7 {
+		background: url(./images/icons/car_icon.png) no-repeat;
+	}
+	li.d-amenities-item8 {
+		background: url(./images/icons/seaview_icon.png) no-repeat;
+	}
+	li.d-amenities-item9 {
+		background: url(./images/icons/tour_icon.png) no-repeat;
+	}
+	li.d-amenities-item10 {
+		background: url(./images/icons/nonsmoking_icon.png) no-repeat;
+	}
+	li.d-amenities-item11 {
+		background: url(./images/icons/shower_icon.png) no-repeat;
+	}
+	li.d-amenities-item12 {
+		background: url(./images/icons/bath_icon.png) no-repeat;
+	}
+	li.d-amenities-item13 {
+		background: url(./images/icons/coffee_icon.png) no-repeat;
+	}
+	li.d-amenities-item14 {
+		background: url(./images/icons/laks_icon.png) no-repeat;
+	}
+	li.d-amenities-item15 {
+		background: url(./images/icons/kalle_icon.png) no-repeat;
+	}
+	li.d-amenities-item16 {
+		background: url(./images/icons/iwash_icon.png) no-repeat;
+	}
+	li.d-amenities-item17 {
+		background: url(./images/icons/agency_icon.png) no-repeat;
+	}
+	li.d-amenities-item18 {
+		background: url(./images/icons/fridge_icon.png) no-repeat;
+	}
+	li.d-amenities-item19 {
+		background: url(./images/icons/safety_icon.png) no-repeat;
+	}
 	.d-line-divider.d-before {
 		margin-top: 5vw;
 	}
