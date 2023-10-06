@@ -1,3 +1,4 @@
+/* MOBILE */
 @media screen and (max-width: 600px) {
 	#m-legal-section {
 		font-size: 1.1rem;
@@ -5,24 +6,24 @@
 	#m-legal-section h2 {
 		color: #0a1529;
 		margin-top: 60px;
-		padding-top: 7vw;
-		padding-bottom: 5vw;
+		padding-top: 5vh;
+		padding-bottom: 4vh;
 		text-align: center;
 	}
 	.m-legal-type-container {
-		padding-top: 5vw;
+		padding-top: 3vh;
 		text-align: center;
 		width: 75vw;
 		margin: auto;
-		padding-bottom: 5vw;
+		padding-bottom: 3vh;
 	}
 	.m-legal-type-container h3 {
 		color: #0a1529;
-		padding-bottom: 3vw;
+		padding-bottom: 2vh;
 	}
 	.m-legal-type-container h4 {
 		color: #0a1529;
-		padding-top: 2vw;
+		padding-top: 1vh;
 		margin-bottom: auto;
 	}
 	.m-legal-type-container h5 {
@@ -49,7 +50,7 @@
 		top: -60px;
 	}
 }
-
+/* DESKTOP */
 @media screen and (min-width: 600px) {
 	/* LEGAL */
 	#d-legal-section {
