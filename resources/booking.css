@@ -1,10 +1,5 @@
 /* MOBILE */
 @media screen and (max-width: 600px) {
-	#desktop {
-		display: none;
-	}
-	/* NAV-BAR */
-	/* LANDING */
 	/* BOOKING */
 	#m-booking-section {
 		margin-top: 60px;
@@ -210,29 +205,8 @@
 }
 /* DESKTOP */
 @media screen and (min-width: 600px) {
-	#mobile {
-		display: none;
-	}
 	#desktop {
 		font-size: 1.25rem;
-	}
-	.d-book-button {
-		display: inline-block;
-		padding: 7px;
-		font-size: 20px;
-		color: #fbfcfe;
-		background-color: #0f203e;
-		border: 2px solid #b9cce4;
-		border-radius: 10px;
-		text-decoration: none;
-	}
-	.d-line-divider {
-		width: 70%;
-		border-top: 2px solid #b9cce4;
-		margin: auto;
-	}
-	.d-line-divider.wide {
-		width: 100vw;
 	}
 	h1.d-feature-header {
 		color: #0f203e;
@@ -242,8 +216,6 @@
 		position: relative;
 		top: -60px;
 	}
-	/* NAV-BAR */
-	/* LANDING */
 	/* BOOKING */
 	#d-booking-section {
 		margin-top: 60px;
@@ -446,72 +418,4 @@
 	#d-booking-admin-terms-section {
 		width: 30vw;
 	}
-	/* CONTACT */
-	#d-feature-contact-section {
-		background-color: #0f203e;
-		padding-top: 2vw;
-		padding-bottom: 3vw;
-	}
-	#d-feature-contact-section h2 {
-		text-align: center;
-		color: #fbfcfe;
-	}
-	.d-feature-contact-container {
-		display: flex;
-		justify-content: center;
-	}
-	.d-feature-contact-sendoff {
-		border-right: 2px solid #fbfcfe;
-		width: 30vw;
-		text-align: center;
-		padding-top: 1.5vw;
-		margin-top: 1vw;
-		margin-bottom: 1vw;
-	}
-	.d-feature-contact-sendoff p {
-		color: #fbfcfe;
-		font-size: 1.5rem;
-	}
-	.d-feature-contact-info {
-		width: 30vw;
-	}
-
-	.d-contact-div {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding-top: 15px;
-		padding-bottom: 15px;
-		font-size: 1rem;
-	}
-	.d-contact-div div {
-		display: flex;
-		flex-direction: column;
-	}
-	.d-contact-div img {
-		width: 3vw;
-		height: auto;
-	}
-	.d-contact-div h3 {
-		margin-left: 20px;
-		margin-top: 10px;
-		margin-bottom: 10px;
-		color: #fbfcfe;
-	}
-	.d-contact-div h3 a[href^="tel"] {
-		color: #fbfcfe;
-	}
-	.d-contact-div h3 a[href^="mailto"] {
-		color: #fbfcfe;
-	}
-	.d-contact-card p {
-		color: #fbfcfe;
-	}
-	.d-line-divider-contact {
-		width: 50%;
-		border-top: 2px solid #fbfcfe;
-		margin: 0 auto;
-	}
-	/* SOCIALS */
-	/* FOOTER */
 }

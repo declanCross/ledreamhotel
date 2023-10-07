@@ -1,0 +1,58 @@
+@media screen and (max-width: 600px) {
+	/* LANDING */
+	#m-landing-section {
+		position: relative;
+		top: 60px;
+		width: 100%;
+	}
+	#m-landing-section img {
+		width: 100%;
+		object-fit: contain;
+		border-bottom: 2px solid #b9cce4;
+	}
+	#m-landing-section .image-filter::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 99%;
+		background-color: rgba(70, 114, 185, 0.5);
+	}
+	#m-landing-section .m-book-button {
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+/* DESKTOP */
+@media screen and (min-width: 600px) {
+	/* LANDING */
+	#d-landing-section {
+		position: relative;
+		top: 60px;
+		width: 100%;
+	}
+	#d-landing-section img {
+		width: 100%;
+		height: 70vh;
+		object-fit: cover;
+		border-bottom: 2px solid #b9cce4;
+	}
+	#d-landing-section .image-filter::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 99%;
+		background-color: rgba(70, 114, 185, 0.5);
+	}
+	#d-landing-section .d-book-button {
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
