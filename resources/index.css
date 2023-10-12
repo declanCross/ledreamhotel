@@ -3,18 +3,19 @@
 	/* WELCOME */
 	#m-welcome-section {
 		margin-top: 60px;
-		padding-bottom: 5vh;
+		padding-bottom: 3vh;
 	}
 	#m-welcome-section h1 {
 		text-align: center;
-		padding-top: 7vh;
-		padding-bottom: 1.5vh;
+		padding-top: 5vh;
+		padding-bottom: 2vh;
 		color: #0f203e;
 	}
 	#m-welcome-features-container {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
+		padding-top: 5vh;
 	}
 	.m-welcome-feature {
 		flex-basis: calc(50% - 10vw);
@@ -22,7 +23,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding-bottom: 1.5vh;
+		padding-bottom: 2vh;
 	}
 	.m-welcome-feature h3 {
 		color: #0f203e;
