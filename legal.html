@@ -31,14 +31,26 @@
 					/>
 				</a>
 				<a href="./booking.html" class="m-book-button">Book Now</a>
-				<!-- <a href=""
-					><div class="m-nav-more">
+				<a href=""
+					><div class="m-nav-more" id="m-nav-more">
 						<div></div>
 						<div></div>
 						<div></div>
 					</div>
-				</a> -->
+				</a>
 			</nav>
+			<!-- DROPDOWN-MENU -->
+			<div class="dropdown-content" id="dropdown-content">
+				<h1 id="dropdown-exit">x</h1>
+				<div class="dropdown-links">
+					<a href="./rooms.html"><strong>ROOMS</strong></a>
+					<a href="./resto-bar.html"><strong>RESTO + BAR</strong></a>
+					<a href="./amenities.html"><strong>AMENITIES</strong></a>
+					<!-- <a href="./vigan.html"><strong>VIGAN</strong></a> -->
+					<!-- <a href=""><strong>OUR STORY</strong></a> -->
+				</div>
+			</div>
+			<script src="./resources/scripts/mNav.js"></script>
 			<!-- LANDING -->
 			<section id="m-landing-section">
 				<div class="image-filter">
@@ -61,6 +73,11 @@
 					<p>
 						Reservations can be made by contacting our reservations team via
 						phone call or e-mail. All reservations are subject to availability.
+					</p>
+					<h5>CHILD POLICY</h5>
+					<p>
+						Child Policy: Up to 7 years old, free of charge (max. 2 children
+						allowed)
 					</p>
 					<h4>CHECK-IN AND CHECK-OUT</h4>
 					<p>
@@ -327,7 +344,7 @@
 					<h2>SHARE THE LOVE</h2>
 					<img src="./resources/images/icons/heart_icon.png" alt="heart icon" />
 				</header>
-				<div id="m-socials-icons">
+				<div class="m-socials-icons">
 					<a
 						href="https://www.instagram.com/le.dreamhotel/"
 						target="_blank"
@@ -376,17 +393,23 @@
 					</a>
 				</div>
 				<div id="d-nav-right-container">
-					<!-- <ul>
-						<a href="" class="d-nav-link"><li>ROOMS</li></a>
+					<div id="d-nav-links-container">
+						<a href="./rooms.html" class="d-nav-link"><h3>ROOMS</h3></a>
 						<div></div>
-						<a href="" class="d-nav-link"><li>RESTO & BAR</li></a>
+						<a href="./resto-bar.html" class="d-nav-link"
+							><h3>RESTO & BAR</h3></a
+						>
 						<div></div>
-						<a href="" class="d-nav-link"><li>SERVICES</li></a>
+						<a href="./amenities.html" class="d-nav-link"
+							><h3 class="d-nav-last-link">AMENITIES</h3></a
+						>
 						<div></div>
-						<a href="" class="d-nav-link"><li>VIGAN</li></a>
-						<div></div>
-						<a href="" class="d-nav-link"><li>OUR STORY</li></a>
-					</ul> -->
+						<!-- <a href="" class="d-nav-link"><h3>VIGAN</h3></a>
+						<div></div> -->
+						<!-- <a href="" class="d-nav-link"
+							><h3 class="d-nav-last-link">OUR STORY</h3></a
+						> -->
+					</div>
 					<a href="./booking.html" class="d-book-button">Book Now</a>
 				</div>
 			</nav>
@@ -417,6 +440,11 @@
 							Reservations can be made by contacting our reservations team via
 							phone call or e-mail. All reservations are subject to
 							availability.
+						</p>
+						<h5>CHILD POLICY</h5>
+						<p>
+							Child Policy: Up to 7 years old, free of charge (max. 2 children
+							allowed)
 						</p>
 					</div>
 					<div class="d-legal-sub-type-container">
@@ -756,7 +784,7 @@
 					<h2>SHARE THE LOVE</h2>
 					<img src="./resources/images/icons/heart_icon.png" alt="heart icon" />
 				</header>
-				<div id="d-socials-icons">
+				<div class="d-socials-icons">
 					<a
 						href="https://www.instagram.com/le.dreamhotel/"
 						target="_blank"

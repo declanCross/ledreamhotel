@@ -3,12 +3,13 @@
 	#m-landing-section {
 		position: relative;
 		top: 60px;
-		width: 100%;
+		width: 100vw;
 	}
 	#m-landing-section img {
-		width: 100%;
+		width: 100vw;
 		object-fit: contain;
 		border-bottom: 2px solid #b9cce4;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 	}
 	#m-landing-section .image-filter::after {
 		content: "";
@@ -16,7 +17,7 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 99%;
+		height: 98.5%;
 		background-color: rgba(70, 114, 185, 0.5);
 	}
 	#m-landing-section .m-book-button {
@@ -24,6 +25,10 @@
 		bottom: 20px;
 		left: 50%;
 		transform: translateX(-50%);
+		transition: all 0.05s ease-in-out;
+	}
+	#m-landing-section .m-book-button:active {
+		transform: scale(0.95) translateX(-50%);
 	}
 }
 /* DESKTOP */
@@ -33,12 +38,14 @@
 		position: relative;
 		top: 60px;
 		width: 100%;
+		height: 70vh;
+		border-bottom: 2px solid #b9cce4;
 	}
 	#d-landing-section img {
 		width: 100%;
 		height: 70vh;
 		object-fit: cover;
-		border-bottom: 2px solid #b9cce4;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 	}
 	#d-landing-section .image-filter::after {
 		content: "";
@@ -46,8 +53,12 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 99%;
+		height: 100%;
 		background-color: rgba(70, 114, 185, 0.5);
+		transition: all 0.75s ease-in-out;
+	}
+	#d-landing-section .image-filter:hover::after {
+		background-color: transparent;
 	}
 	#d-landing-section .d-book-button {
 		position: absolute;

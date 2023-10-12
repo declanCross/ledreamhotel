@@ -4,6 +4,7 @@
 		background-color: #0f203e;
 		padding-top: 1.5vh;
 		padding-bottom: 2vh;
+		box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
 	}
 	#m-contact-section h2,
 	h3,
@@ -56,7 +57,7 @@
 @media screen and (min-width: 600px) {
 	/* CONTACT */
 	.d-contact-card {
-		border: 1px solid #4672b9;
+		border: 2px solid #4672b9;
 		border-radius: 25px;
 		width: 30vw;
 		height: auto;
@@ -64,6 +65,7 @@
 		color: #fbfcfe;
 		padding-top: 10px;
 		padding-bottom: 20px;
+		box-shadow: 0 3px 15px 5px rgba(0, 0, 0, 0.5);
 	}
 	.d-contact-card h2 {
 		text-align: center;
@@ -118,14 +120,16 @@
 		height: auto;
 		object-fit: cover;
 		border-radius: 25px;
-		border: 1px solid #4672b9;
+		border: 2px solid #4672b9;
 		margin-left: 2vw;
+		box-shadow: 0 3px 15px 5px rgba(0, 0, 0, 0.5);
 	}
 	/* CONTACT-FEATURE */
 	#d-feature-contact-section {
 		background-color: #0f203e;
 		padding-top: 2vw;
 		padding-bottom: 3vw;
+		box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
 	}
 	#d-feature-contact-section h2 {
 		text-align: center;

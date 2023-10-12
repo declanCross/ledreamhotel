@@ -23,12 +23,12 @@
 		width: auto;
 		margin-left: 2.5vw;
 	}
-	#m-socials-icons {
+	.m-socials-icons {
 		display: flex;
 		justify-content: center;
 		padding-bottom: 3vh;
 	}
-	#m-socials-icons img {
+	.m-socials-icons img {
 		height: 3rem;
 		width: auto;
 		margin-left: 5vw;
@@ -42,6 +42,7 @@
 		background-color: #0f203e;
 		color: #fbfcfe;
 		padding-top: 2vw;
+		padding-bottom: 3vw;
 		border-top: 2px solid #fbfcfe;
 		border-bottom: 2px solid #fbfcfe;
 	}
@@ -63,12 +64,11 @@
 		width: auto;
 		margin-left: 10px;
 	}
-	#d-socials-icons {
+	.d-socials-icons {
 		display: flex;
 		justify-content: center;
-		padding-bottom: 3vw;
 	}
-	#d-socials-icons img {
+	.d-socials-icons img {
 		height: 4rem;
 		width: auto;
 		margin-left: 3vw;
