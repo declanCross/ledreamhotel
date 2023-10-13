@@ -106,7 +106,7 @@
 		justify-content: space-between;
 		position: relative;
 		width: 100%;
-		transform: translateY(-160px);
+		transform: translateY(-150px);
 	}
 	.arrows-container img {
 		display: block;
