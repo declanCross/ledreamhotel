@@ -88,46 +88,228 @@
 					</div>
 					<div class="m-welcome-feature">
 						<div class="m-welcome-feature-icon">
-							<img src="./resources/images/vigan1.jpeg" alt="vigan pic" />
-						</div>
-						<h3>VIGAN</h3>
-					</div>
-					<div class="m-welcome-feature">
-						<div class="m-welcome-feature-icon">
 							<a href="./amenities.html"
 								><img src="./resources/images/iwash1.jpg" alt="amenities pic"
 							/></a>
 						</div>
 						<h3>AMENITIES</h3>
 					</div>
+					<div class="m-welcome-feature">
+						<div class="m-welcome-feature-icon">
+							<img src="./resources/images/vigan1.jpeg" alt="vigan pic" />
+						</div>
+						<h3>VIGAN</h3>
+					</div>
 				</div>
 			</section>
-			<!-- <section id="m-features-section">
+			<div class="m-line-divider"></div>
+			<!-- FEATURE CARDS -->
+			<section id="m-features-cards-section">
 				<div class="m-features-card-container light">
 					<h2>ROOMS</h2>
-					<div class="m-features-card-slideshow"></div>
-					<p>This is info about rooms features</p>
-					<div class="m-learn-more-button">This is a learn more button</div>
+					<div class="m-features-card-slideshow">
+						<img
+							src="./resources/images/mobile_images/402executive.jpg"
+							alt=""
+							class="slides light roomsSlides show"
+						/>
+						<img
+							src="./resources/images/mobile_images/311deluxe.jpg"
+							alt=""
+							class="slides light roomsSlides"
+						/>
+						<img
+							src="./resources/images/mobile_images/209superior.jpg"
+							alt=""
+							class="slides light roomsSlides"
+						/>
+						<img
+							src="./resources/images/mobile_images/205standard.jpg"
+							alt=""
+							class="slides light roomsSlides"
+						/>
+						<img
+							src="./resources/images/mobile_images/202family.jpg"
+							alt=""
+							class="slides light roomsSlides"
+						/>
+						<div class="arrows-container">
+							<img
+								src="./resources/images/icons/arrow_left.png"
+								alt=""
+								class="left-arrow"
+								id="roomsLeftArrow"
+								onclick="changeRoomsSlide(returnValidRoomsSlide(currentRoomsSlide - 1))"
+							/>
+							<img
+								src="./resources/images/icons/arrow_right.png"
+								alt=""
+								class="right-arrow"
+								id="roomsRightArrow"
+								onclick="changeRoomsSlide(returnValidRoomsSlide(currentRoomsSlide + 1))"
+							/>
+						</div>
+						<div class="dots-container">
+							<span
+								class="dot roomsDots active"
+								onclick="changeRoomsSlide(1)"
+							></span>
+							<span class="dot roomsDots" onclick="changeRoomsSlide(2)"></span
+							><span class="dot roomsDots" onclick="changeRoomsSlide(3)"></span
+							><span class="dot roomsDots" onclick="changeRoomsSlide(4)"></span
+							><span class="dot roomsDots" onclick="changeRoomsSlide(5)"></span>
+						</div>
+					</div>
+					<p>
+						Experience the blend of luxury and homely comfort at LeDream. We
+						offer five distinct room types to cater to your unique needs. Each
+						room is equipped with a host of amenities designed for your comfort
+						and convenience.
+					</p>
+					<p class="m-features-card-details">
+						<a href="./rooms.html">More Details</a>
+					</p>
 				</div>
 				<div class="m-features-card-container dark">
-					<h2>RESTAURANT & BAR</h2>
-					<div class="m-features-card-slideshow"></div>
-					<p>This is info about resto & bar features</p>
-					<div class="m-learn-more-button">This is a learn more button</div>
+					<h2>RESTO + BAR</h2>
+					<div class="m-features-card-slideshow">
+						<img
+							src="./resources/images/mobile_images/laks1.jpg"
+							alt=""
+							class="slides dark restoSlides show"
+						/>
+						<img
+							src="./resources/images/mobile_images/Food-96.jpg"
+							alt=""
+							class="slides dark restoSlides"
+						/>
+						<img
+							src="./resources/images/mobile_images/Food-134.jpg"
+							alt=""
+							class="slides dark restoSlides"
+						/>
+						<img
+							src="./resources/images/mobile_images/Food-150.jpg"
+							alt=""
+							class="slides dark restoSlides"
+						/>
+						<img
+							src="./resources/images/mobile_images/Food-168.jpg"
+							alt=""
+							class="slides dark restoSlides"
+						/>
+						<div class="arrows-container">
+							<img
+								src="./resources/images/icons/arrow_left.png"
+								alt=""
+								class="left-arrow"
+								id="roomsLeftArrow"
+								onclick="changeRestoSlide(returnValidRestoSlide(currentRestoSlide - 1))"
+							/>
+							<img
+								src="./resources/images/icons/arrow_right.png"
+								alt=""
+								class="right-arrow"
+								id="roomsRightArrow"
+								onclick="changeRestoSlide(returnValidRestoSlide(currentRestoSlide + 1))"
+							/>
+						</div>
+						<div class="dots-container">
+							<span
+								class="dot restoDots active"
+								onclick="changeRestoSlide(1)"
+							></span>
+							<span class="dot restoDots" onclick="changeRestoSlide(2)"></span
+							><span class="dot restoDots" onclick="changeRestoSlide(3)"></span
+							><span class="dot restoDots" onclick="changeRestoSlide(4)"></span
+							><span class="dot restoDots" onclick="changeRestoSlide(5)"></span>
+						</div>
+					</div>
+					<p>
+						Indulge in a unique dining experience at our rooftop restaurant,
+						LAK's Bar + Resto. Dine in style, with a stunning view that
+						complements the exquisite flavors of our menu.
+					</p>
+					<p class="m-features-card-details">
+						<a href="./resto-bar.html">More Details</a>
+					</p>
 				</div>
 				<div class="m-features-card-container light">
-					<h2>EXPERIENCE VIGAN</h2>
-					<div class="m-features-card-slideshow"></div>
-					<p>This is info about vigan features</p>
-					<div class="m-learn-more-button">This is a learn more button</div>
+					<h2>AMENITIES</h2>
+					<div class="m-features-card-slideshow">
+						<img
+							src="./resources/images/mobile_images/iwash_logo.jpg"
+							alt=""
+							class="slides light amenitiesSlides show"
+						/>
+						<img
+							src="./resources/images/mobile_images/kalle_cafe_logo.jpg"
+							alt=""
+							class="slides light amenitiesSlides"
+						/>
+						<img
+							src="./resources/images/mobile_images/laks_bar_and_resto_logo.jpg"
+							alt=""
+							class="slides light amenitiesSlides"
+						/>
+						<div class="arrows-container">
+							<img
+								src="./resources/images/icons/arrow_left.png"
+								alt=""
+								class="left-arrow"
+								id="roomsLeftArrow"
+								onclick="changeAmenitiesSlide(returnValidAmenitiesSlide(currentAmenitiesSlide - 1))"
+							/>
+							<img
+								src="./resources/images/icons/arrow_right.png"
+								alt=""
+								class="right-arrow"
+								id="roomsRightArrow"
+								onclick="changeAmenitiesSlide(returnValidAmenitiesSlide(currentAmenitiesSlide + 1))"
+							/>
+						</div>
+						<div class="dots-container">
+							<span
+								class="dot amenitiesDots active"
+								onclick="changeAmenitiesSlide(1)"
+							></span>
+							<span
+								class="dot amenitiesDots"
+								onclick="changeAmenitiesSlide(2)"
+							></span
+							><span
+								class="dot amenitiesDots"
+								onclick="changeAmenitiesSlide(3)"
+							></span>
+						</div>
+					</div>
+					<p>
+						We're committed to providing you with top-notch services to enhance
+						your stay. Our amenities include iWash Laundry & Dry-Cleaning, Kalle
+						Cafe', Airport Pick-up & Drop-off, and our Service Van, to name a
+						few.
+					</p>
+					<p class="m-features-card-details">
+						<a href="./amenities.html">More Details</a>
+					</p>
 				</div>
-				<div class="m-features-card-container dark">
-					<h2>SHOPPING</h2>
-					<div class="m-features-card-slideshow"></div>
-					<p>This is info about shopping features</p>
-					<div class="m-learn-more-button">This is a learn more button</div>
-				</div>
-			</section> -->
+				<!-- <div class="m-features-card-container dark">
+					<h2>VIGAN</h2>
+					<div class="m-features-card-slideshow">
+						<img src="./resources/images/vigan1.jpeg" alt="" class="dark" />
+					</div>
+					<p>
+						Feel the charm of Vigan City, a UNESCO World Heritage Site, right at
+						our doorstep. Immerse yourself in the rich history and vibrant
+						culture of Vigan City, renowned for its preserved Spanish colonial
+						architecture, cobblestone streets, and horse-drawn carriages.
+					</p>
+					<p class="m-features-card-details">
+						<a href="">More Details</a>
+					</p>
+				</div> -->
+			</section>
+			<script src="./resources/scripts/mSlides.js"></script>
 			<!-- LOCATION -->
 			<section id="m-location-section">
 				<div class="m-line-divider"></div>

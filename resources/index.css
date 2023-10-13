@@ -42,6 +42,114 @@
 		transform: scale(0.95);
 		box-shadow: 0 0px 2px rgba(0, 0, 0, 0.5);
 	}
+	/* FEATURE CARDS */
+	#m-features-cards-section {
+		padding-bottom: 7.5vh;
+	}
+	.m-features-card-container {
+		width: 80vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		margin-top: 7vh;
+		border-radius: 25px;
+		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
+		text-align: center;
+		font-size: 1.15rem;
+	}
+	.m-features-card-container.light {
+		background-color: #b9cce4;
+		border: 2px solid #4672b9;
+	}
+	.light h2,
+	.light p,
+	.light a {
+		color: #0f203e;
+	}
+	.m-features-card-container.dark {
+		background-color: #0f203e;
+		border: 2px solid #4672b9;
+	}
+	.dark h2,
+	.dark p,
+	.dark a {
+		color: #fbfcfe;
+	}
+	.m-features-card-container h2 {
+	}
+	.m-features-card-slideshow {
+		width: 100%;
+	}
+	.m-features-card-slideshow img.slides {
+		width: 100%;
+		object-fit: contain;
+		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
+		display: none;
+		opacity: 0;
+	}
+	.m-features-card-slideshow img.show {
+		opacity: 1;
+		display: block;
+	}
+	img.light {
+		border-top: 2px solid #4672b9;
+		border-bottom: 2px solid #4672b9;
+	}
+	img.dark {
+		border-top: 2px solid #4672b9;
+		border-bottom: 2px solid #4672b9;
+	}
+	.arrows-container {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		width: 100%;
+		transform: translateY(-160px);
+	}
+	.arrows-container img {
+		display: block;
+		opacity: 1;
+		height: 50px;
+	}
+	.arrows-container .left-arrow {
+		align-self: flex-start;
+	}
+	.arrows-container .right-arrow {
+		align-self: flex-end;
+	}
+	.dots-container {
+		justify-self: center;
+		position: relative;
+		transform: translateY(-75px);
+	}
+	.dots-container .dot {
+		height: 10px;
+		width: 10px;
+		margin: 0 3vw 0 3vw;
+		background-color: #b9cce4;
+		border-radius: 50%;
+		border: 1px solid #4672b9;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+		display: inline-block;
+		transition: all 0.2s ease-in-out;
+	}
+	.dots-container .dot.active {
+		background-color: #4672b9;
+	}
+	.m-features-card-container p {
+		width: 90%;
+		margin-bottom: 15px;
+		margin-top: -50px;
+	}
+	p.m-features-card-details {
+		margin-top: 10px;
+		padding-bottom: 1vh;
+	}
+	.m-features-card-container a {
+		font-weight: bold;
+	}
 	/* LOCATION */
 	#m-location-header {
 		display: flex;
