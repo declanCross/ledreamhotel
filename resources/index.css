@@ -29,16 +29,33 @@
 		color: #0f203e;
 		margin-top: 1vh;
 	}
-	.m-welcome-feature-icon img {
+	.m-img-wrapper {
+		position: relative;
 		width: 30vw;
 		height: 30vw;
+		border-radius: 50%;
+	}
+	.m-img-wrapper::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		background-color: rgba(70, 114, 185, 0.5);
+	}
+	.m-welcome-feature-icon img {
+		box-sizing: border-box;
+		width: 100%;
+		height: 100%;
 		border-radius: 50%;
 		object-fit: cover;
 		border: 2px solid #b9cce4;
 		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
 		transition: all 0.05s ease-in-out;
 	}
-	.m-welcome-feature-icon img:active {
+	.m-img-wrapper:active {
 		transform: scale(0.95);
 		box-shadow: 0 0px 2px rgba(0, 0, 0, 0.5);
 	}
