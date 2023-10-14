@@ -42,7 +42,8 @@
 	}
 	.m-sub-feature p {
 		width: 80vw;
-		margin: auto;
+		/* margin: auto; */
+		margin-bottom: 0;
 		padding-bottom: 2vh;
 	}
 	.m-sub-feature ul {
