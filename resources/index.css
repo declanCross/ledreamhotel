@@ -418,23 +418,20 @@
 	}
 	/* LOCATION */
 	#d-location-section {
-		padding-bottom: 10vh;
-	}
-	#d-location-section .d-line-divider.location {
-		margin-top: 7.5vh;
+		padding-bottom: 6vw;
 	}
 	#d-location-header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding-top: 5vh;
+		padding-top: 3vw;
 	}
 	#d-location-header h2 {
 		margin-right: 10px;
 	}
 	#d-location-header img {
 		height: auto;
-		width: 2em;
+		width: 2rem;
 	}
 	#d-location-address-bar {
 		display: flex;
