@@ -1,5 +1,5 @@
 /* MOBILE */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 675px) {
 	.m-sub-feature .m-socials-icons {
 		padding-bottom: 1vh;
 	}
@@ -104,7 +104,7 @@
 	}
 }
 /* DESKTOP */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 675px) {
 	#d-amenities-card-section {
 		display: flex;
 		align-items: center;

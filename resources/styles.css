@@ -30,7 +30,7 @@ body {
 }
 
 /* MOBILE */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 675px) {
 	#desktop {
 		display: none;
 	}
@@ -60,7 +60,7 @@ body {
 	}
 }
 /* DESKTOP */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 675px) {
 	#mobile {
 		display: none;
 	}

@@ -1,5 +1,5 @@
 /* MOBILE */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 675px) {
 	/* WELCOME */
 	#m-welcome-section {
 		margin-top: 60px;
@@ -217,7 +217,7 @@
 	}
 }
 /* DESKTOP */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 675px) {
 	/* WELCOME */
 	#d-welcome-section {
 		margin-top: 60px;

@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 675px) {
 	/* FOOTER */
 	#m-footer {
 		background-color: #0f203e;
@@ -27,7 +27,7 @@
 	}
 }
 /* DESKTOP */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 675px) {
 	/* FOOTER */
 	#d-footer {
 		background-color: #0f203e;

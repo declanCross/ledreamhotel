@@ -1,5 +1,5 @@
 /* MOBILE */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 675px) {
 	/* LEGAL */
 	#m-legal-section {
 		font-size: 1.1rem;
@@ -52,7 +52,7 @@
 	}
 }
 /* DESKTOP */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 675px) {
 	/* LEGAL */
 	#d-legal-section {
 		font-size: 1.25rem;

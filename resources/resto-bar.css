@@ -1,5 +1,5 @@
 /* MOBILE */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 675px) {
 	#m-feature-section {
 		padding-bottom: 0;
 	}
@@ -21,7 +21,7 @@
 	}
 }
 /* DESKTOP */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 675px) {
 	#d-feature-section {
 	}
 	#d-feature-section h1 {
