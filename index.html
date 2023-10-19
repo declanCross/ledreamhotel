@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./resources/reset.css" />
 		<link rel="stylesheet" href="./resources/styles.css" />
+		<link rel="stylesheet" href="./resources/amenities.css" />
 		<link rel="stylesheet" href="./resources/index.css" />
 		<link rel="stylesheet" href="./resources/style-components/nav.css" />
 		<link rel="stylesheet" href="./resources/style-components/landing.css" />
@@ -474,7 +475,7 @@
 						alt="landing image"
 					/>
 				</div>
-				<!-- <a href="#d-contact-section" class="d-book-button">Book Now</a> -->
+				<!-- <a href="./booking.html" class="d-book-button">Book Now</a> -->
 			</section>
 			<!-- WELCOME -->
 			<section id="d-welcome-section">
@@ -493,21 +494,10 @@
 							</a>
 						</div>
 						<h3>ROOMS</h3>
-						<p>Experience the blend of luxury and homely comfort at LeDream.</p>
-						<ul>
-							<li>
-								We offer five distinct room types to cater to your unique needs.
-							</li>
-							<li>
-								Each room is equipped with a host of amenities designed for your
-								comfort and convenience.
-							</li>
-							<li>
-								Start your day right with LeDream Hotel's complimentary
-								breakfast, included with every booking, and enjoy your welcome
-								drinks upon arrival.
-							</li>
-						</ul>
+						<p>
+							Experience the blend of luxury and homely comfort at Le Dream
+							Hotel.
+						</p>
 					</div>
 					<div class="d-welcome-feature">
 						<div class="d-welcome-feature-icon">
@@ -520,22 +510,11 @@
 								</div>
 							</a>
 						</div>
-						<h3>RESTO & BAR</h3>
+						<h3>RESTO + BAR</h3>
 						<p>
 							Indulge in a unique dining experience at our rooftop restaurant,
-							LAK's Bar + Resto.
+							LAK's Resto + Bar.
 						</p>
-						<ul>
-							<li>
-								Dine in style, with a stunning view that complements the
-								exquisite flavors of our menu.
-							</li>
-							<li>
-								Whether you're looking for a romantic dinner under the stars or
-								a lively evening with friends, LAK's Bar + Resto promises an
-								unforgettable experience.
-							</li>
-						</ul>
 					</div>
 					<div class="d-welcome-feature">
 						<div class="d-welcome-feature-icon">
@@ -548,7 +527,7 @@
 							Feel the charm of Vigan City, a UNESCO World Heritage Site, right
 							at our doorstep.
 						</p>
-						<ul>
+						<!-- <ul>
 							<li>
 								Immerse yourself in the rich history and vibrant culture of
 								Vigan City, renowned for its preserved Spanish colonial
@@ -559,7 +538,7 @@
 								local delicacies, there's an adventure waiting around every
 								corner.
 							</li>
-						</ul>
+						</ul> -->
 					</div>
 					<div class="d-welcome-feature">
 						<div class="d-welcome-feature-icon">
@@ -574,30 +553,348 @@
 							We're committed to providing you with top-notch services to
 							enhance your stay.
 						</p>
-						<ul>
-							<li>
-								iWash Laundry & Dry Cleaning service, ensuring your clothing
-								needs are taken care of.
-							</li>
-							<li>
-								Kalle Cafe' offers specialty coffee within the hotel, perfect
-								for a morning pick-me-up or a cozy afternoon.
-							</li>
-							<li>
-								Airport pick-up and drop-off services for a hassle-free travel
-								experience.
-							</li>
-							<li>
-								Our service van is available to take you wherever you need to
-								go.
-							</li>
-						</ul>
 					</div>
 				</div>
 			</section>
+			<!-- FEATURE-CARDS -->
+			<div class="d-line-divider"></div>
+			<section id="d-feature-section">
+				<div class="d-feature-container">
+					<h2>
+						<strong><a href="./rooms.html">ROOMS</a></strong>
+					</h2>
+					<div class="d-sub-features-container">
+						<div class="sub-feature-select" onclick="dChangeRoomsSlide(1)">
+							<h3 class="d-sub-feature-1">EXECUTIVE ROOM</h3>
+						</div>
+						<div class="sub-feature-select" onclick="dChangeRoomsSlide(2)">
+							<h3>DELUXE ROOM</h3>
+						</div>
+						<div class="sub-feature-select" onclick="dChangeRoomsSlide(3)">
+							<h3>SUPERIOR ROOM</h3>
+						</div>
+						<div class="sub-feature-select" onclick="dChangeRoomsSlide(4)">
+							<h3>STANDARD ROOM</h3>
+						</div>
+						<div class="sub-feature-select" onclick="dChangeRoomsSlide(5)">
+							<h3>FAMILY ROOM</h3>
+						</div>
+					</div>
+					<div class="d-feature-card-container">
+						<div
+							class="d-feature-card-text-container"
+							id="d-feature-card-rooms-text-container"
+						>
+							<img
+								src="./resources/images/icons/arrow_left.png"
+								alt=""
+								class="d-feature-text-collapse"
+								onclick="dRoomsCollapse()"
+							/>
+							<p>
+								We offer five distinct room types to cater to your unique needs.
+								Each room is equipped with a host of amenities designed for your
+								comfort and convenience.
+								<br />
+								<br />
+								Start your day right with LeDream Hotel's complimentary
+								breakfast, included with every booking, and enjoy your welcome
+								drinks upon arrival.
+							</p>
+						</div>
+						<div
+							class="d-feature-card-text-hidden-container hide"
+							id="d-feature-card-rooms-text-hidden-container"
+						>
+							<img
+								src="./resources/images/icons/arrow_right.png"
+								alt=""
+								class="d-feature-text-expand"
+								onclick="dRoomsExpand()"
+							/>
+						</div>
+						<img
+							src="./resources/images/desktop_images/402executive.jpg"
+							alt=""
+							class="d-feature-card-img dRoomsSlides show"
+						/>
+						<img
+							src="./resources/images/desktop_images/311deluxe.jpg"
+							alt=""
+							class="d-feature-card-img dRoomsSlides"
+						/>
+						<img
+							src="./resources/images/desktop_images/209superior.jpg"
+							alt=""
+							class="d-feature-card-img dRoomsSlides"
+						/>
+						<img
+							src="./resources/images/desktop_images/205standard.jpg"
+							alt=""
+							class="d-feature-card-img dRoomsSlides"
+						/>
+						<img
+							src="./resources/images/desktop_images/202family.jpg"
+							alt=""
+							class="d-feature-card-img dRoomsSlides"
+						/>
+					</div>
+				</div>
+				<div class="d-line-divider"></div>
+				<div class="d-feature-container">
+					<h2>
+						<strong><a href="./resto-bar.html">RESTO + BAR</a></strong>
+					</h2>
+					<div class="d-sub-features-container">
+						<div
+							class="sub-feature-arrow"
+							onclick="dChangeRestoSlide(dReturnValidRestoSlide(dCurrentRestoSlide - 1))"
+						>
+							<img src="./resources/images/icons/arrow_left.png" alt="" />
+						</div>
+						<div class="sub-feature-arrow">
+							<h3 class="resto">FEATURED MENU ITEMS</h3>
+						</div>
+						<div
+							class="sub-feature-arrow"
+							onclick="dChangeRestoSlide(dReturnValidRestoSlide(dCurrentRestoSlide + 1))"
+						>
+							<img src="./resources/images/icons/arrow_right.png" alt="" />
+						</div>
+					</div>
+					<div class="d-feature-card-container">
+						<div
+							class="d-feature-card-text-container"
+							id="d-feature-card-resto-text-container"
+						>
+							<img
+								src="./resources/images/icons/arrow_left.png"
+								alt=""
+								class="d-feature-text-collapse"
+								onclick="dRestoCollapse()"
+							/>
+							<p>
+								Dine in style, with a stunning view that complements the
+								exquisite flavors of our menu.
+								<br />
+								<br />
+								Whether you're looking for a romantic dinner under the stars or
+								a lively evening with friends, LAK's Bar + Resto promises an
+								unforgettable experience.
+							</p>
+						</div>
+						<div
+							class="d-feature-card-text-hidden-container hide"
+							id="d-feature-card-resto-text-hidden-container"
+						>
+							<img
+								src="./resources/images/icons/arrow_right.png"
+								alt=""
+								class="d-feature-text-expand"
+								onclick="dRestoExpand()"
+							/>
+						</div>
+						<img
+							src="./resources/images/desktop_images/laks1.jpg"
+							alt=""
+							class="d-feature-card-img dRestoSlides show"
+						/>
+						<img
+							src="./resources/images/desktop_images/Food-6.jpg"
+							alt=""
+							class="d-feature-card-img dRestoSlides"
+						/>
+						<img
+							src="./resources/images/desktop_images/Food-11.jpg"
+							alt=""
+							class="d-feature-card-img dRestoSlides"
+						/>
+						<img
+							src="./resources/images/desktop_images/Food-33.jpg"
+							alt=""
+							class="d-feature-card-img dRestoSlides"
+						/>
+						<img
+							src="./resources/images/desktop_images/Food-37.jpg"
+							alt=""
+							class="d-feature-card-img dRestoSlides"
+						/>
+						<img
+							src="./resources/images/desktop_images/Food-54.jpg"
+							alt=""
+							class="d-feature-card-img dRestoSlides"
+						/>
+						<img
+							src="./resources/images/desktop_images/Food-61.jpg"
+							alt=""
+							class="d-feature-card-img dRestoSlides"
+						/>
+						<img
+							src="./resources/images/desktop_images/Food-96.jpg"
+							alt=""
+							class="d-feature-card-img dRestoSlides"
+						/>
+						<img
+							src="./resources/images/desktop_images/Food-134.jpg"
+							alt=""
+							class="d-feature-card-img dRestoSlides"
+						/>
+						<img
+							src="./resources/images/desktop_images/Food-150.jpg"
+							alt=""
+							class="d-feature-card-img dRestoSlides"
+						/>
+						<img
+							src="./resources/images/desktop_images/Food-160.jpg"
+							alt=""
+							class="d-feature-card-img dRestoSlides"
+						/>
+						<img
+							src="./resources/images/desktop_images/Food-168.jpg"
+							alt=""
+							class="d-feature-card-img dRestoSlides"
+						/>
+						<img
+							src="./resources/images/desktop_images/Food-175.jpg"
+							alt=""
+							class="d-feature-card-img dRestoSlides"
+						/>
+					</div>
+				</div>
+				<div class="d-line-divider"></div>
+				<div class="d-feature-container">
+					<h2>
+						<strong><a href="./amenities.html">AMENITIES</a></strong>
+					</h2>
+					<div class="d-sub-features-container">
+						<div class="sub-feature-select" onclick="dChangeAmenitiesSlide(1)">
+							<h3 class="d-sub-feature-1">KALLE CAFE' SPECIALTY COFFEE</h3>
+						</div>
+						<div class="sub-feature-select" onclick="dChangeAmenitiesSlide(2)">
+							<h3>iWASH LAUNDRY & DRY-CLEANING</h3>
+						</div>
+						<div class="sub-feature-select" onclick="dChangeAmenitiesSlide(3)">
+							<h3>LAK'S RESTO + BAR</h3>
+						</div>
+						<div class="sub-feature-select" onclick="dChangeAmenitiesSlide(4)">
+							<h3>OTHER AMENITIES</h3>
+						</div>
+					</div>
+					<div class="d-feature-card-container">
+						<div
+							class="d-feature-card-text-container"
+							id="d-feature-card-amenities-text-container"
+						>
+							<img
+								src="./resources/images/icons/arrow_left.png"
+								alt=""
+								class="d-feature-text-collapse"
+								onclick="dAmenitiesCollapse()"
+							/>
+							<p>
+								Kalle Cafe' offers specialty coffee within the hotel, perfect
+								for a morning pick-me-up or a cozy afternoon.
+								<br />
+								<br />
+								iWash Laundry & Dry Cleaning service, ensuring your clothing
+								needs are taken care of.
+								<br />
+								<br />
+								Airport pick-up and drop-off services for a hassle-free travel
+								experience, as well as our service van, available to take you
+								wherever you need to go.
+							</p>
+						</div>
+						<div
+							class="d-feature-card-text-hidden-container hide"
+							id="d-feature-card-amenities-text-hidden-container"
+						>
+							<img
+								src="./resources/images/icons/arrow_right.png"
+								alt=""
+								class="d-feature-text-expand"
+								onclick="dAmenitiesExpand()"
+							/>
+						</div>
+						<img
+							src="./resources/images/desktop_images/kalle-cafe1.jpg"
+							alt=""
+							class="d-feature-card-img dAmenitiesSlides show"
+						/>
+						<img
+							src="./resources/images/mobile_images/iwash_logo.jpg"
+							alt=""
+							class="d-feature-card-img dAmenitiesSlides"
+						/>
+						<img
+							src="./resources/images/desktop_images/laks1.jpg"
+							alt=""
+							class="d-feature-card-img dAmenitiesSlides"
+						/>
+						<div class="d-feature-card-img dAmenitiesSlides">
+							<div id="d-amenities-card-section">
+								<div class="d-amenities-container">
+									<div class="d-amenities-header">
+										<h2>AMENITIES</h2>
+									</div>
+									<div class="d-amenities-content-container">
+										<ul>
+											<li class="d-amenities-item1">Air Conditioning</li>
+											<li class="d-amenities-item2">Smart TV</li>
+											<li class="d-amenities-item3">Complimentary WiFi</li>
+											<li class="d-amenities-item4">
+												Complimentary 2 bottles Mineral Water
+											</li>
+											<li class="d-amenities-item5">Free Parking</li>
+											<li class="d-amenities-item6">
+												Airport Pickup & Drop Off
+											</li>
+											<li class="d-amenities-item7">Car Rentals</li>
+											<li class="d-amenities-item8">
+												ATV Rides Farm View / Sea View
+											</li>
+											<li class="d-amenities-item9">
+												Tour Packages (Vigan & Laoag-Pagudpud)
+											</li>
+											<li class="d-amenities-item10">
+												Smoking & Non-Smoking Areas
+											</li>
+										</ul>
+										<ul>
+											<li class="d-amenities-item11">Hot & Cold Rain Shower</li>
+											<li class="d-amenities-item12">
+												Bath Essentials & Hair Dryer
+											</li>
+											<li class="d-amenities-item13">
+												In-room Coffee and Tea facilities
+											</li>
+											<li class="d-amenities-item14">LAK's Resto + Bar</li>
+											<li class="d-amenities-item15">
+												Kalle Cafe' Specialty Coffee
+											</li>
+											<li class="d-amenities-item16">iWash Laundry House</li>
+											<li class="d-amenities-item17">
+												Canadian Placement Agency
+											</li>
+											<li class="d-amenities-item18">
+												Mini-bar Refrigerator (excl. Standard Room)
+											</li>
+											<li class="d-amenities-item19">
+												Safety Deposit Box (excl. Standard Room)
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="d-line-divider"></div>
+			</section>
+			<script src="./resources/scripts/dSlides.js"></script>
 			<!-- LOCATION -->
 			<section id="d-location-section">
-				<div class="d-line-divider location"></div>
+				<!-- <div class="d-line-divider location"></div> -->
 				<header id="d-location-header">
 					<h2>LOCATION</h2>
 					<img

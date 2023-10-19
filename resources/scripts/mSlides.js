@@ -1,5 +1,5 @@
 //Rooms
-//Assign rooms slides, dots variables, and current rooms slides
+//Assign rooms slides, dots variables, and current rooms slide.
 let roomsSlides = document.getElementsByClassName("roomsSlides");
 let roomsDots = document.getElementsByClassName("roomsDots");
 let currentRoomsSlide = 1;
