@@ -85,6 +85,9 @@
 	.light a {
 		color: #0f203e;
 	}
+	.light h2 a {
+		text-decoration: none;
+	}
 	.m-features-card-container.dark {
 		background-color: #0f203e;
 		border: 2px solid #4672b9;
@@ -93,6 +96,9 @@
 	.dark p,
 	.dark a {
 		color: #fbfcfe;
+	}
+	.dark h2 a {
+		text-decoration: none;
 	}
 	.m-features-card-container h2 {
 	}
