@@ -99,6 +99,9 @@
 	li.m-amenities-item19 {
 		background: url(./images/icons/safety_icon.png) no-repeat;
 	}
+	li.m-amenities-item20 {
+		background: url(./images/icons/service_van_icon.png) no-repeat;
+	}
 }
 /* DESKTOP */
 @media screen and (min-width: 600px) {
@@ -195,5 +198,8 @@
 	}
 	li.d-amenities-item19 {
 		background: url(./images/icons/safety_icon.png) no-repeat;
+	}
+	li.d-amenities-item20 {
+		background: url(./images/icons/service_van_icon.png) no-repeat;
 	}
 }
