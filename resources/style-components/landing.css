@@ -14,10 +14,10 @@
 	#m-landing-section .image-filter::after {
 		content: "";
 		position: absolute;
-		top: 0;
+		top: -4px;
 		left: 0;
 		width: 100%;
-		height: 98%;
+		height: 100%;
 		background-color: rgba(70, 114, 185, 0.5);
 	}
 	#m-landing-section .m-book-button {
