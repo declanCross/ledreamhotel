@@ -217,7 +217,7 @@
 	}
 }
 /* DESKTOP */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
 	/* WELCOME */
 	#d-welcome-section {
 		margin-top: 60px;
@@ -226,21 +226,21 @@
 	}
 	#d-welcome-section h1 {
 		text-align: center;
-		padding-top: 60px;
-		padding-bottom: 3vh;
+		padding-top: 4.5vw;
+		padding-bottom: 2vw;
 	}
 	#d-welcome-features-container {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		padding-top: 7.5vh;
+		padding-top: 4vw;
 	}
 	.d-welcome-feature {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		max-width: 45vw;
+		max-width: 25vw;
 		margin-bottom: auto;
 	}
 	.d-img-wrapper {
