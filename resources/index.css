@@ -387,7 +387,7 @@
 	.d-feature-card-text-hidden-container {
 		position: absolute;
 		margin-top: 12vw;
-		width: 2vw;
+		width: 30px;
 		background-color: #fbfcfe;
 		border-top-right-radius: 25px;
 		border-bottom-right-radius: 25px;
