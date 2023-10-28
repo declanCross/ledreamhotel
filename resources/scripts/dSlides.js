@@ -64,7 +64,7 @@ let dAmenitiesSlides = document.getElementsByClassName("dAmenitiesSlides");
 let dCurrentAmenitiesSlide = 1;
 //Changes the current slide
 const dChangeAmenitiesSlide = (n) => {
-	dCurrentRoomsSlide = n;
+	dCurrentAmenitiesSlide = n;
 	for (let i = 0; i < dAmenitiesSlides.length; i++) {
 		dAmenitiesSlides[i].className = dAmenitiesSlides[i].className.replace(
 			" show",

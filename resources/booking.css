@@ -121,7 +121,7 @@
 	}
 }
 /* DESKTOP */
-@media screen and (min-width: 675px) {
+@media screen and (min-width: 1200px) {
 	#desktop {
 		font-size: 1.25rem;
 	}
@@ -340,5 +340,153 @@
 	}
 	#d-booking-admin-terms-section {
 		width: 30vw;
+	}
+}
+/* TABLET */
+@media screen and (min-width: 675px) and (max-width: 1200px) {
+	#tablet {
+		font-size: 1.15rem;
+	}
+	.above-section-link {
+		position: relative;
+		top: -60px;
+	}
+	/* BOOKING */
+	#t-booking-section {
+		margin-top: 60px;
+		padding-top: 3vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	h1.t-feature-header {
+		color: #0f203e;
+		padding-bottom: 3vw;
+	}
+	.t-booking-content-container {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 100vw;
+		padding-top: 3.8vw;
+	}
+	.t-booking-info-container {
+		width: 66vw;
+		font-size: 1.25rem;
+		margin: auto;
+		margin-bottom: 1vw;
+	}
+	#t-booking-section p {
+		color: #0f203e;
+		margin-top: auto;
+		margin-bottom: auto;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	#t-booking-section a {
+		color: #0f203e;
+		font-weight: bold;
+	}
+	.t-booking-info-container ul {
+		color: #0f203e;
+		text-align: left;
+		padding-left: 20vw;
+		margin-bottom: 2vw;
+	}
+	#t-booking-section ul li {
+		padding-bottom: 10px;
+	}
+	/* AMENITIES */
+	#t-amenities-card-section {
+		text-align: left;
+		margin-top: 5vw;
+	}
+	.t-line-divider.t-before {
+		margin-top: 5vw;
+	}
+	/* ADMIN */
+	#t-booking-admin-section {
+		display: flex;
+		flex-direction: column;
+		padding-top: 5vw;
+		align-items: center;
+		padding-bottom: 5vw;
+	}
+	.t-pricing-info-container {
+	}
+	#t-booking-admin-pricing-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	#t-booking-admin-pricing-section h3 {
+		text-align: center;
+		margin-top: -1vw;
+	}
+	#t-booking-admin-pricing-section a {
+		color: #0f203e;
+	}
+	.table-div {
+		border: 2px solid #4672b9;
+		border-radius: 25px;
+		overflow: hidden;
+		width: 80vw;
+		margin: auto;
+		box-shadow: 0 3px 15px 5px rgba(0, 0, 0, 0.5);
+	}
+	table {
+		border-collapse: collapse;
+		width: 80vw;
+	}
+	th,
+	td {
+		padding: 10px;
+		color: #0f203e;
+		text-align: center;
+	}
+	th {
+		background-color: #0f203e;
+		color: #fbfcfe;
+	}
+	th.border-right {
+		border-right: 1px solid #fbfcfe;
+	}
+	tr.blue {
+		background-color: #b9cce4;
+	}
+	.t-pricing-info-text {
+		width: auto;
+		margin: auto;
+		margin-top: 3vw;
+		padding-left: 15vw;
+		padding-right: 15vw;
+	}
+	#t-payment-terms-container {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 3vw;
+	}
+	#t-payment-terms-container h3 {
+		padding-left: 2vw;
+	}
+	#t-booking-admin-payment-section {
+		width: 40vw;
+	}
+
+	#t-booking-admin-payment-section a[href^="tel"] {
+		color: #0f203e;
+	}
+	#t-booking-admin-payment-section a[href^="mailto"] {
+		color: #0f203e;
+	}
+	.t-booking-admin-type {
+		list-style-type: none;
+	}
+	.t-booking-admin-type.body {
+		padding-top: 1vw;
+	}
+	#t-booking-admin-terms-section {
+		width: 40vw;
 	}
 }
