@@ -684,9 +684,20 @@
 		font-family: "Body", serif;
 	}
 
-	#map {
+	#map,
+	#map-cover {
 		width: 66vw;
+		height: 450px;
 		margin: auto;
+		position: relative;
+	}
+	#map-cover {
+		background-color: rgba(0, 0, 0, 0.1);
+		position: absolute;
+		border-radius: 25px;
+		top: 0;
+		left: 0;
+		z-index: 1;
 	}
 	#map iframe {
 		box-sizing: border-box;
