@@ -666,7 +666,7 @@
 		justify-content: center;
 	}
 	#t-location-address-bar {
-		padding-bottom: 5vh;
+		padding-bottom: 3vw;
 	}
 	#t-location-address-bar input {
 		width: 40vw;
@@ -683,9 +683,22 @@
 		font-size: 1.5rem;
 		font-family: "Body", serif;
 	}
+
+	#map {
+		width: 66vw;
+		margin: auto;
+	}
+	#map iframe {
+		box-sizing: border-box;
+		border-radius: 25px;
+		border: 2px solid #4672b9;
+		box-shadow: 0 3px 15px 5px rgba(0, 0, 0, 0.5);
+	}
+
 	#t-location-content {
 		width: 66vw;
 		margin: auto;
+		border: 1px solid blue;
 	}
 	#t-location-content img#t-location-map-img {
 		box-sizing: border-box;
