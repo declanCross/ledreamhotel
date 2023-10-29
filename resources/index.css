@@ -698,7 +698,6 @@
 	#t-location-content {
 		width: 66vw;
 		margin: auto;
-		border: 1px solid blue;
 	}
 	#t-location-content img#t-location-map-img {
 		box-sizing: border-box;
