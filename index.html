@@ -344,12 +344,8 @@
 				<div id="m-location-address-bar">
 					<input type="text" placeholder="Tamag, Vigan, Ilocos Sur" readonly />
 				</div>
-				<div id="m-location-map">
-					<img
-						src="./resources/images/google_maps_ledream1.png"
-						alt="location map"
-					/>
-				</div>
+				<div id="m-map"></div>
+				<script src="./resources/scripts/mMapFetch.js"></script>
 			</section>
 			<!-- CONTACT -->
 			<section id="m-contact-section">
@@ -960,11 +956,8 @@
 							<p>See you soon!</p>
 						</div>
 					</div>
-					<img
-						id="d-location-map-img"
-						src="./resources/images/google_maps_ledream1.png"
-						alt="location map"
-					/>
+					<div id="d-map"></div>
+					<script src="./resources/scripts/dMapFetch.js"></script>
 				</div>
 			</section>
 			<!-- SOCIALS -->
@@ -1432,7 +1425,6 @@
 				<div id="t-location-address-bar">
 					<input type="text" placeholder="Tamag, Vigan, Ilocos Sur" readonly />
 				</div>
-
 				<!-- <div id="t-location-content">
 					<img
 						id="t-location-map-img"
@@ -1440,20 +1432,9 @@
 						alt="location map"
 					/>
 				</div> -->
-
-				<div id="map">
-					<div id="map-cover"></div>
-					<script>
-						document
-							.getElementById("map-cover")
-							.addEventListener("click", function () {
-								this.style.display = "none";
-							});
-					</script>
-					
-				</div>
+				<div id="t-map"></div>
+				<script src="./resources/scripts/tMapFetch.js"></script>
 			</section>
-			<script src="./resources/scripts/tMapFetch.js"></script>
 			<!-- CONTACT -->
 			<div class="above-section-link" id="d-contact"></div>
 			<section id="d-feature-contact-section">
