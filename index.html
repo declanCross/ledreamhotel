@@ -1433,15 +1433,25 @@
 					<input type="text" placeholder="Tamag, Vigan, Ilocos Sur" readonly />
 				</div>
 
-				<div id="t-location-content">
+				<!-- <div id="t-location-content">
 					<img
 						id="t-location-map-img"
 						src="./resources/images/google_maps_ledream1.png"
 						alt="location map"
 					/>
-				</div>
+				</div> -->
 
-				
+				<div id="map">
+					<div id="map-cover"></div>
+					<script>
+						document
+							.getElementById("map-cover")
+							.addEventListener("click", function () {
+								this.style.display = "none";
+							});
+					</script>
+					
+				</div>
 			</section>
 			<script src="./resources/scripts/tMapFetch.js"></script>
 			<!-- CONTACT -->
