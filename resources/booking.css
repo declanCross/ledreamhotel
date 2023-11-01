@@ -71,6 +71,7 @@
 	}
 	table {
 		border-collapse: collapse;
+		width: 80vw;
 	}
 	th,
 	td {
