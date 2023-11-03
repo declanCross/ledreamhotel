@@ -62,6 +62,7 @@
 		padding-top: 2.5vh;
 	}
 	.table-div {
+		box-sizing: border-box;
 		border: 2px solid #4672b9;
 		border-radius: 25px;
 		overflow: hidden;
@@ -293,6 +294,8 @@
 		margin-top: -1vw;
 	}
 	.table-div {
+		box-sizing: border-box;
+		width: 40vw;
 		border: 2px solid #4672b9;
 		border-radius: 25px;
 		overflow: hidden;
@@ -429,6 +432,7 @@
 		color: #0f203e;
 	}
 	.table-div {
+		box-sizing: border-box;
 		border: 2px solid #4672b9;
 		border-radius: 25px;
 		overflow: hidden;
