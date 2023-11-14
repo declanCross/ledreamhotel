@@ -752,6 +752,7 @@
 	opacity: 0;
 	transition: 0.3s ease-in-out;
 	background-color: rgba(70, 114, 185, 0.5);
+	border-radius: 5px;
 }
 .package-img-container:hover .overlay {
 	opacity: 1;
