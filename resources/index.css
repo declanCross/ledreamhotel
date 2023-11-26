@@ -713,8 +713,7 @@
 /* PACKAGES */
 #packages-section {
 	background-color: #b9cce4;
-	padding-top: 2vw;
-	padding-bottom: 6vw;
+	padding-top: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -724,6 +723,15 @@
 #packages-section h2 {
 	text-align: center;
 }
+#packages-section p {
+	margin: 0;
+	padding-bottom: 10px;
+	color: #0f203e;
+	width: 80%;
+	max-width: 60ch;
+	text-align: center;
+	font-size: 1rem;
+}
 .packages-container {
 	display: flex;
 	flex-direction: row;
@@ -731,9 +739,15 @@
 	justify-content: space-around;
 	align-items: center;
 	width: 90vw;
+	margin-top: 10px;
 }
 .package-img-container {
 	position: relative;
+}
+.package-img-container h4 {
+	color: #0f203e;
+	text-align: center;
+	margin-top: 10px;
 }
 .package-img-container > img {
 	max-width: 12vw;
@@ -741,33 +755,7 @@
 	border-radius: 5px;
 	border: 1px solid #4672b9;
 	box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
-}
-.package-img-container .overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: 0.3s ease-in-out;
-	background-color: rgba(70, 114, 185, 0.5);
-	border-radius: 5px;
-}
-.package-img-container:hover .overlay {
-	opacity: 1;
 	cursor: pointer;
-}
-.overlay .text {
-	color: #fbfcfe;
-	font-size: 1rem;
-	font-family: "Body";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
 }
 .package-zoom {
 	visibility: hidden;
