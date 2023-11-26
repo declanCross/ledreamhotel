@@ -1,0 +1,32 @@
+.sub-feature-info {
+	margin-top: 10px;
+}
+.m-sub-feature p {
+	margin: 10px auto;
+	padding: 0;
+}
+.rooms-package-container {
+	width: 90vw;
+	background-color: #b9cce4;
+	border: 2px solid #4672b9;
+	border-radius: 10px;
+	box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
+	padding-bottom: 15px;
+	margin-top: 30px;
+}
+.rooms-package-container h3 {
+	color: #0f203e;
+	margin: 0;
+	padding: 10px 0;
+}
+.rooms-package-details-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid #0f203e;
+	padding: 15px 0 0 0;
+}
+.rooms-package-details-container ul {
+	margin: 0;
+}
