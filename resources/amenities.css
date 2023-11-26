@@ -11,10 +11,10 @@
 		padding-bottom: 6vh;
 	}
 	.m-amenities-container {
-		width: 80vw;
+		width: 90vw;
 		background-color: #0f203e;
 		border: 2px solid #4672b9;
-		border-radius: 25px;
+		border-radius: 10px;
 		box-shadow: 0 3px 15px 5px rgba(0, 0, 0, 0.5);
 	}
 	.m-amenities-header {
