@@ -1,8 +1,8 @@
 //Load or remove dropdown content when clicking the three lines on the navbar.
-document.getElementById("m-nav-more").addEventListener("click", (event) => {
+document.getElementById("nav-more").addEventListener("click", (event) => {
 	event.preventDefault();
 	let dropdownContent = document.getElementById("dropdown-content");
-	let mNav = document.getElementById("m-nav");
+	let mNav = document.getElementById("nav");
 	if (dropdownContent.style.display === "flex") {
 		dropdownContent.style.display = "none";
 		mNav.style.backgroundColor = "rgba(251, 252, 254, 0.8)";
@@ -15,7 +15,7 @@ document.getElementById("m-nav-more").addEventListener("click", (event) => {
 document.getElementById("dropdown-exit").addEventListener("click", (event) => {
 	event.preventDefault();
 	let dropdownContent = document.getElementById("dropdown-content");
-	let mNav = document.getElementById("m-nav");
+	let mNav = document.getElementById("nav");
 	dropdownContent.style.display = "none";
 	mNav.style.backgroundColor = "rgba(251, 252, 254, 0.8)";
 });

@@ -1,7 +1,7 @@
 .sub-feature-info {
 	margin-top: 10px;
 }
-.m-sub-feature p {
+.sub-feature p {
 	margin: 10px auto;
 	padding: 0;
 }
@@ -28,5 +28,60 @@
 	padding: 15px 0 0 0;
 }
 .rooms-package-details-container ul {
+	text-align: left;
 	margin: 0;
+	max-width: 90%;
+}
+/* TABLET */
+@media screen and (min-width: 675px) and (max-width: 1200px) {
+	.above-link {
+		position: relative;
+		top: -60px;
+	}
+	.rooms-package-holder {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.rooms-package-container {
+		max-width: 66vw;
+		width: -moz-fit-content;
+		width: fit-content;
+	}
+	.rooms-package-details-container {
+		text-align: left;
+		padding: 15px 15px 5px 5px;
+	}
+	.rooms-package-details-container li {
+		margin: 5px auto;
+	}
+}
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+	.above-link {
+		position: relative;
+		top: -170px;
+	}
+	.rooms-package-holder {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+	}
+	.rooms-package-container {
+		max-width: 38vw;
+		width: -moz-fit-content;
+		width: fit-content;
+		text-align: center;
+		margin: 50px 25px 0 25px;
+	}
+	.rooms-package-details-container {
+		text-align: left;
+		padding: 15px 15px 5px 5px;
+	}
+	.rooms-package-details-container li {
+		margin: 5px auto;
+	}
 }

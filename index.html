@@ -78,32 +78,30 @@
 		</script>
 	</head>
 	<body>
-		<!-- MOBILE -->
-		<div id="mobile">
-			<!-- NAV-BAR -->
-			<nav id="m-nav">
-				<a href="./index.html" class="m-nav-a-img m-nav-logo1"
+		<!-- MAIN MOBILE FIRST-->
+		<div id="main">
+			<!-- MOBILE NAV-BAR -->
+			<nav id="nav">
+				<a href="./index.html" class="nav-a-img nav-logo1"
 					><img
 						src="./resources/images/logo_no_background.png"
 						alt="Le Dream logo"
 					/>
 				</a>
-				<a href="./index.html" class="m-nav-a-img">
+				<a href="./index.html" class="nav-a-img">
 					<img
 						src="./resources/images/logo_words_no_background.png"
 						alt="Le Dream Hotel logo"
 					/>
 				</a>
-				<a href="./booking.html" class="m-book-button">Book Now</a>
-				<a href=""
-					><div class="m-nav-more" id="m-nav-more">
-						<div></div>
-						<div></div>
-						<div></div>
-					</div>
-				</a>
+				<a href="./booking.html" class="book-button">Book Now</a>
+				<div class="nav-more" id="nav-more">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
 			</nav>
-			<!-- DROPDOWN-MENU -->
+			<!-- MOBILE DROPDOWN-MENU -->
 			<div class="dropdown-content" id="dropdown-content">
 				<h1 id="dropdown-exit">x</h1>
 				<div class="dropdown-links">
@@ -114,79 +112,140 @@
 					<!-- <a href=""><strong>OUR STORY</strong></a> -->
 				</div>
 			</div>
-			<script src="./resources/scripts/mNav.js"></script>
-			<!-- LANDING -->
-			<section id="m-landing-section">
-				<div class="image-filter">
-					<img
-						src="./resources/images/mobile_images/ledream_outside_skyline_mobile1.jpg"
-						alt="street view of Le Dream Hotel"
-					/>
+			<script src="./resources/scripts/nav.js"></script>
+			<!-- TABLET AND DESKTOP NAV-BAR -->
+			<nav id="td-nav">
+				<div id="td-nav-left-container">
+					<a href="/"
+						><img
+							class="td-nav-logo1"
+							src="./resources/images/logo_no_background.png"
+							alt="Le Dream logo"
+						/>
+					</a>
+					<a href="/"
+						><img
+							class="td-nav-logo2"
+							src="./resources/images/logo_words_no_background.png"
+							alt="Le Dream Hotel logo"
+						/>
+					</a>
 				</div>
-				<!-- <a href="./booking.html" class="m-book-button">Book Now</a> -->
+				<div id="td-nav-right-container">
+					<div id="td-nav-links-container">
+						<a class="td-nav-link" href="/rooms"><h3>ROOMS</h3></a>
+						<div></div>
+						<a class="td-nav-link" href="/resto-bar"
+							><h3>RESTO &amp; BAR</h3></a
+						>
+						<div></div>
+						<a class="td-nav-link" href="/amenities"
+							><h3 class="td-nav-last-link">AMENITIES</h3></a
+						>
+						<div></div>
+						<!-- <a href="" class="td-nav-link"><h3>VIGAN</h3></a>
+						<div></div> -->
+						<!-- <a href="" class="td-nav-link"
+							><h3 class="td-nav-last-link">OUR STORY</h3></a
+						> -->
+					</div>
+					<a class="book-button" href="/booking">Book Now</a>
+				</div>
+			</nav>
+			<!-- LANDING -->
+			<section id="landing-section">
+				<div class="image-filter">
+					<picture>
+						<source
+							media="(min-width: 675px)"
+							srcset="
+								./resources/images/desktop_images/ledream_outside_skyline2.jpg
+							"
+						/>
+						<img
+							src="./resources/images/mobile_images/ledream_outside_skyline_mobile1.jpg"
+							alt="Le Dream Hotel from outside"
+						/>
+					</picture>
+				</div>
 			</section>
 			<!-- WELCOME -->
-			<section id="m-welcome-section">
+			<section id="welcome-section">
 				<h1>WELCOME HOME</h1>
-				<div class="m-line-divider"></div>
-				<div id="m-welcome-features-container">
-					<div class="m-welcome-feature">
-						<div class="m-welcome-feature-icon">
+				<div class="line-divider"></div>
+				<div id="welcome-features-container">
+					<div class="welcome-feature">
+						<div class="welcome-feature-icon">
 							<a href="./rooms.html">
-								<div class="m-img-wrapper">
+								<div class="img-wrapper">
 									<img
 										src="./resources/images/icons/room402_icon.jpg"
 										alt="preview of a room"
-										class="m-welcome-img"
+										class="welcome-img"
 									/>
 								</div>
 							</a>
 						</div>
 						<h3>ROOMS</h3>
+						<p>
+							Experience the blend of luxury and homely comfort at Le Dream
+							Hotel.
+						</p>
 					</div>
-					<div class="m-welcome-feature">
-						<div class="m-welcome-feature-icon">
+					<div class="welcome-feature">
+						<div class="welcome-feature-icon">
 							<a href="./resto-bar.html">
-								<div class="m-img-wrapper">
+								<div class="img-wrapper">
 									<img
 										src="./resources/images/icons/pizza-icon.jpg"
 										alt="preview of a meal from LAK's Resto + Bar"
-										class="m-welcome-img"
+										class="welcome-img"
 									/>
 								</div>
 							</a>
 						</div>
 						<h3>RESTO + BAR</h3>
+						<p>
+							Indulge in a unique dining experience at our rooftop restaurant,
+							LAK's Resto + Bar.
+						</p>
 					</div>
-					<div class="m-welcome-feature">
-						<div class="m-welcome-feature-icon">
+					<div class="welcome-feature">
+						<div class="welcome-feature-icon">
+							<div class="img-wrapper">
+								<img
+									src="./resources/images/vigan1.jpeg"
+									alt="preview of Vigan City"
+									class="welcome-img"
+								/>
+							</div>
+						</div>
+						<h3>VIGAN</h3>
+						<p>
+							Feel the charm of Vigan City, a UNESCO World Heritage Site, right
+							at our doorstep.
+						</p>
+					</div>
+					<div class="welcome-feature">
+						<div class="welcome-feature-icon">
 							<a href="./amenities.html">
-								<div class="m-img-wrapper">
+								<div class="img-wrapper">
 									<img
 										src="./resources/images/mobile_images/kalle-cafe2.jpg"
 										alt="preview of an amenity"
-										class="m-welcome-img"
+										class="welcome-img"
 									/>
 								</div>
 							</a>
 						</div>
 						<h3>AMENITIES</h3>
-					</div>
-					<div class="m-welcome-feature">
-						<div class="m-welcome-feature-icon">
-							<div class="m-img-wrapper">
-								<img
-									src="./resources/images/vigan1.jpeg"
-									alt="preview of Vigan City"
-									class="m-welcome-img"
-								/>
-							</div>
-						</div>
-						<h3>VIGAN</h3>
+						<p>
+							We're committed to providing you with top-notch services to
+							enhance your stay.
+						</p>
 					</div>
 				</div>
 			</section>
-			<!-- <div class="m-line-divider"></div> -->
 			<!-- PACKAGES -->
 			<section id="packages-section">
 				<h2>AVAILABLE PACKAGES</h2>
@@ -195,8 +254,8 @@
 					cost-effective package offerings.
 				</p>
 				<p>
-					Each accomodation option comes with a tailored package, providing a
-					range of choices suitable for family getaways or individual explorers.
+					Each room type comes with a tailored package, providing a range of
+					choices suitable for family getaways or individual explorers.
 				</p>
 				<p>( Click an icon to display package details. )</p>
 				<div class="packages-container">
@@ -206,7 +265,7 @@
 							alt="Package A - Executive Room"
 							onclick="zoomIn(event, this)"
 						/>
-						<h5>A</h5>
+						<h5>EXECUTIVE</h5>
 					</div>
 					<div class="package-img-container">
 						<img
@@ -214,7 +273,7 @@
 							alt="Package B - Deluxe Room"
 							onclick="zoomIn(event, this)"
 						/>
-						<h5>B</h5>
+						<h5>DELUXE</h5>
 					</div>
 					<div class="package-img-container">
 						<img
@@ -222,7 +281,7 @@
 							alt="Package C - Superior Room"
 							onclick="zoomIn(event, this)"
 						/>
-						<h5>C</h5>
+						<h5>SUPERIOR</h5>
 					</div>
 					<div class="package-img-container">
 						<img
@@ -230,7 +289,7 @@
 							alt="Package D - Standard Room"
 							onclick="zoomIn(event, this)"
 						/>
-						<h5>D</h5>
+						<h5>STANDARD</h5>
 					</div>
 					<div class="package-img-container">
 						<img
@@ -254,11 +313,11 @@
 				</div>
 			</section>
 			<script src="./resources/scripts/packagesZoom.js"></script>
-			<!-- FEATURE CARDS -->
-			<section id="m-features-cards-section">
-				<div class="m-features-card-container light">
+			<!-- FEATURE CARDS MOBILE-->
+			<section id="features-cards-section">
+				<div class="features-card-container light">
 					<h2><a href="./rooms.html">ROOMS</a></h2>
-					<div class="m-features-card-slideshow">
+					<div class="features-card-slideshow">
 						<img
 							src="./resources/images/mobile_images/402executive.jpg"
 							alt="Executive Room"
@@ -317,13 +376,13 @@
 						room is equipped with a host of amenities designed for your comfort
 						and convenience.
 					</p>
-					<p class="m-features-card-details">
+					<p class="features-card-details">
 						<a href="./rooms.html">More Details</a>
 					</p>
 				</div>
-				<div class="m-features-card-container dark">
+				<div class="features-card-container dark">
 					<h2><a href="./resto-bar.html">RESTO + BAR</a></h2>
-					<div class="m-features-card-slideshow">
+					<div class="features-card-slideshow">
 						<img
 							src="./resources/images/mobile_images/laks1.jpg"
 							alt="LAK's Resto + Bar"
@@ -381,13 +440,13 @@
 						LAK's Bar + Resto. Dine in style, with a stunning view that
 						complements the exquisite flavors of our menu.
 					</p>
-					<p class="m-features-card-details">
+					<p class="features-card-details">
 						<a href="./resto-bar.html">More Details</a>
 					</p>
 				</div>
-				<div class="m-features-card-container light">
+				<div class="features-card-container light">
 					<h2><a href="./amenities.html">AMENITIES</a></h2>
-					<div class="m-features-card-slideshow">
+					<div class="features-card-slideshow">
 						<img
 							src="./resources/images/mobile_images/iwash_logo.jpg"
 							alt="iWash Laundry and Dry-Cleaning"
@@ -440,13 +499,13 @@
 						Cafe' Specialty Coffee, Airport Pick-up & Drop-off, and our Service
 						Van, to name a few.
 					</p>
-					<p class="m-features-card-details">
+					<p class="features-card-details">
 						<a href="./amenities.html">More Details</a>
 					</p>
 				</div>
-				<!-- <div class="m-features-card-container dark">
+				<!-- <div class="features-card-container dark">
 					<h2>VIGAN</h2>
-					<div class="m-features-card-slideshow">
+					<div class="features-card-slideshow">
 						<img src="./resources/images/vigan1.jpeg" alt="Vigan City" class="dark" />
 					</div>
 					<p>
@@ -455,833 +514,21 @@
 						culture of Vigan City, renowned for its preserved Spanish colonial
 						architecture, cobblestone streets, and horse-drawn carriages.
 					</p>
-					<p class="m-features-card-details">
+					<p class="features-card-details">
 						<a href="">More Details</a>
 					</p>
 				</div> -->
+				<script src="./resources/scripts/slides.js"></script>
 			</section>
-			<script src="./resources/scripts/mSlides.js"></script>
-			<!-- LOCATION -->
-			<section id="m-location-section">
-				<div class="m-line-divider"></div>
-				<header id="m-location-header">
-					<h2>LOCATION</h2>
-					<img
-						src="./resources/images/icons/location_icon.png"
-						alt="location icon"
-					/>
-				</header>
-				<div id="m-location-address-bar">
-					<input type="text" placeholder="Tamag, Vigan, Ilocos Sur" readonly />
-				</div>
-				<div id="m-map"></div>
-				<script src="./resources/scripts/mMapFetch.js"></script>
-			</section>
-			<!-- CONTACT -->
-			<section id="m-contact-section">
-				<h2>CONTACT US</h2>
-				<div class="m-line-divider"></div>
-				<div class="m-contact-div">
-					<img src="./resources/images/icons/phone_icon.png" alt="phone icon" />
-					<div class="contact-phone-info">
-						<h3>Landline: <a href="tel:077-644-3273">077-644-3273</a></h3>
-						<h3>Mobile(local): <a href="tel:919-839-7493">919-839-7493</a></h3>
-						<h3>
-							Mobile(global):
-							<a href="tel:+63-956-974-3211">+63-956-974-3211</a>
-						</h3>
-					</div>
-				</div>
-				<div class="m-line-divider-contact"></div>
-				<div class="m-contact-div">
-					<img src="./resources/images/icons/email_icon.png" alt="email icon" />
-					<div>
-						<h3>
-							<a href="mailto:hotelledream@gmail.com">hotelledream@gmail.com</a>
-						</h3>
-					</div>
-				</div>
-				<div class="m-line-divider-contact"></div>
-				<div class="m-contact-div">
-					<img src="./resources/images/icons/clock_icon.png" alt="clock icon" />
-					<div>
-						<h3>Check-in 2:00pm</h3>
-						<h3>Check-out 12:00pm</h3>
-					</div>
-				</div>
-				<div class="m-line-divider-contact"></div>
-				<div id="m-contact-sendoff">
-					<p>Ready to book?</p>
-					<p>Need more information?</p>
-					<p>Call or email us and we'll take care of everything.</p>
-					<p>See you soon!</p>
-				</div>
-			</section>
-			<!-- SOCIALS -->
-			<section id="m-socials-section">
-				<header id="m-socials-header">
-					<h2>SHARE THE LOVE</h2>
-				</header>
-				<div class="m-socials-icons">
-					<a
-						href="https://www.instagram.com/le.dreamhotel/"
-						target="_blank"
-						rel="noopener"
-						><img
-							src="./resources/images/icons/instagram.png"
-							alt="instagram icon"
-						/>
-					</a>
-				</div>
-			</section>
-			<!-- FOOTER -->
-			<footer id="m-footer">
-				<div id="m-footer-links">
-					<div>
-						<p><a href="./legal.html#m-privacy">Privacy Policy</a></p>
-						<p><a href="./legal.html#m-safety">Safety & Security</a></p>
-					</div>
-					<div>
-						<p><a href="./legal.html#m-terms">Terms & Conditions</a></p>
-						<p>
-							<a href="./legal.html#m-supplier">Supplier Code of Conduct</a>
-						</p>
-					</div>
-				</div>
-				<p>©2023 Le Dream Hotel, All Rights Reserved</p>
-			</footer>
-		</div>
-		<!-- DESKTOP -->
-		<div id="desktop">
-			<!-- NAV-BAR -->
-			<nav id="d-nav">
-				<div id="d-nav-left-container">
-					<a href="./index.html"
-						><img
-							class="d-nav-logo1"
-							src="./resources/images/logo_no_background.png"
-							alt="Le Dream logo"
-						/>
-					</a>
-					<a href="./index.html"
-						><img
-							class="d-nav-logo2"
-							src="./resources/images/logo_words_no_background.png"
-							alt="Le Dream Hotel logo"
-						/>
-					</a>
-				</div>
-				<div id="d-nav-right-container">
-					<div id="d-nav-links-container">
-						<a href="./rooms.html" class="d-nav-link"><h3>ROOMS</h3></a>
-						<div></div>
-						<a href="./resto-bar.html" class="d-nav-link"
-							><h3>RESTO & BAR</h3></a
-						>
-						<div></div>
-						<a href="./amenities.html" class="d-nav-link"
-							><h3 class="d-nav-last-link">AMENITIES</h3></a
-						>
-						<div></div>
-						<!-- <a href="" class="d-nav-link"><h3>VIGAN</h3></a>
-						<div></div> -->
-						<!-- <a href="" class="d-nav-link"
-							><h3 class="d-nav-last-link">OUR STORY</h3></a
-						> -->
-					</div>
-					<a href="./booking.html" class="d-book-button">Book Now</a>
-				</div>
-			</nav>
-			<!-- LANDING -->
-			<section id="d-landing-section">
-				<div class="image-filter">
-					<img
-						src="./resources/images/desktop_images/ledream_outside_skyline2.jpg"
-						alt="street view of Le Dream Hotel"
-					/>
-				</div>
-				<!-- <a href="./booking.html" class="d-book-button">Book Now</a> -->
-			</section>
-			<!-- WELCOME -->
-			<section id="d-welcome-section">
-				<h1>WELCOME HOME</h1>
-				<div class="d-line-divider"></div>
-				<div id="d-welcome-features-container">
-					<div class="d-welcome-feature">
-						<div class="d-welcome-feature-icon">
-							<a href="./rooms.html">
-								<div class="d-img-wrapper">
-									<img
-										src="./resources/images/icons/room402_icon.jpg"
-										alt="preview of a room"
-									/>
-								</div>
-							</a>
-						</div>
-						<h3>ROOMS</h3>
-						<p>
-							Experience the blend of luxury and homely comfort at Le Dream
-							Hotel.
-						</p>
-					</div>
-					<div class="d-welcome-feature">
-						<div class="d-welcome-feature-icon">
-							<a href="./resto-bar.html">
-								<div class="d-img-wrapper">
-									<img
-										src="./resources/images/icons/pizza-icon.jpg"
-										alt="preview of a meal from LAK's Resto + Bar"
-									/>
-								</div>
-							</a>
-						</div>
-						<h3>RESTO + BAR</h3>
-						<p>
-							Indulge in a unique dining experience at our rooftop restaurant,
-							LAK's Resto + Bar.
-						</p>
-					</div>
-					<div class="d-welcome-feature">
-						<div class="d-welcome-feature-icon">
-							<div class="d-img-wrapper">
-								<img
-									src="./resources/images/vigan1.jpeg"
-									alt="preview of Vigan City"
-								/>
-							</div>
-						</div>
-						<h3>VIGAN</h3>
-						<p>
-							Feel the charm of Vigan City, a UNESCO World Heritage Site, right
-							at our doorstep.
-						</p>
-						<!-- <ul>
-							<li>
-								Immerse yourself in the rich history and vibrant culture of
-								Vigan City, renowned for its preserved Spanish colonial
-								architecture, cobblestone streets, and horse-drawn carriages.
-							</li>
-							<li>
-								From the captivating historic houses to the bustling markets and
-								local delicacies, there's an adventure waiting around every
-								corner.
-							</li>
-						</ul> -->
-					</div>
-					<div class="d-welcome-feature">
-						<div class="d-welcome-feature-icon">
-							<a href="./amenities.html">
-								<div class="d-img-wrapper">
-									<img
-										src="./resources/images/iwash1.jpg"
-										alt="preview of an amenity"
-									/>
-								</div>
-							</a>
-						</div>
-						<h3>AMENITIES</h3>
-						<p>
-							We're committed to providing you with top-notch services to
-							enhance your stay.
-						</p>
-					</div>
-				</div>
-			</section>
-			<!-- FEATURE-CARDS -->
-			<div class="d-line-divider"></div>
-			<section id="d-feature-section">
-				<div class="d-feature-container">
+			<!-- FEATURE CARDS TABLET AND DESKTOP -->
+			<section id="feature-section">
+				<div class="feature-container">
 					<h2>
-						<strong><a href="./rooms.html">ROOMS</a></strong>
+						<strong><a href="/rooms.html">ROOMS</a></strong>
 					</h2>
-					<div class="d-sub-features-container">
-						<div class="sub-feature-select" onclick="dChangeRoomsSlide(1)">
-							<h3 class="d-sub-feature-1">EXECUTIVE ROOM</h3>
-						</div>
-						<div class="sub-feature-select" onclick="dChangeRoomsSlide(2)">
-							<h3>DELUXE ROOM</h3>
-						</div>
-						<div class="sub-feature-select" onclick="dChangeRoomsSlide(3)">
-							<h3>SUPERIOR ROOM</h3>
-						</div>
-						<div class="sub-feature-select" onclick="dChangeRoomsSlide(4)">
-							<h3>STANDARD ROOM</h3>
-						</div>
-						<div class="sub-feature-select" onclick="dChangeRoomsSlide(5)">
-							<h3>FAMILY ROOM</h3>
-						</div>
-					</div>
-					<div class="d-feature-card-container">
-						<div
-							class="d-feature-card-text-container"
-							id="d-feature-card-rooms-text-container"
-						>
-							<img
-								src="./resources/images/icons/arrow_left.png"
-								alt="left arrow"
-								class="d-feature-text-collapse"
-								onclick="dRoomsCollapse()"
-							/>
-							<p>
-								We offer five distinct room types to cater to your unique needs.
-								Each room is equipped with a host of amenities designed for your
-								comfort and convenience.
-								<br />
-								<br />
-								Start your day right with Le Dream Hotel's complimentary
-								breakfast, included with every booking, and enjoy your welcome
-								drinks upon arrival.
-							</p>
-						</div>
-						<div
-							class="d-feature-card-text-hidden-container hide"
-							id="d-feature-card-rooms-text-hidden-container"
-						>
-							<img
-								src="./resources/images/icons/arrow_right.png"
-								alt="right arrow"
-								class="d-feature-text-expand"
-								onclick="dRoomsExpand()"
-							/>
-						</div>
-						<img
-							src="./resources/images/desktop_images/402executive.jpg"
-							alt="Executive Room"
-							class="d-feature-card-img dRoomsSlides show"
-						/>
-						<img
-							src="./resources/images/desktop_images/311deluxe.jpg"
-							alt="Deluxe Room"
-							class="d-feature-card-img dRoomsSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/209superior.jpg"
-							alt="Superior Room"
-							class="d-feature-card-img dRoomsSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/205standard.jpg"
-							alt="Standard Room"
-							class="d-feature-card-img dRoomsSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/202family.jpg"
-							alt="Family Room"
-							class="d-feature-card-img dRoomsSlides"
-						/>
-					</div>
-				</div>
-				<div class="d-line-divider"></div>
-				<div class="d-feature-container">
-					<h2>
-						<strong><a href="./resto-bar.html">RESTO + BAR</a></strong>
-					</h2>
-					<div class="d-sub-features-container">
-						<div
-							class="sub-feature-arrow"
-							onclick="dChangeRestoSlide(dReturnValidRestoSlide(dCurrentRestoSlide - 1))"
-						>
-							<img
-								src="./resources/images/icons/arrow_left.png"
-								alt="left arrow"
-							/>
-						</div>
-						<div class="sub-feature-arrow">
-							<h3 class="resto">FEATURED MENU ITEMS</h3>
-						</div>
-						<div
-							class="sub-feature-arrow"
-							onclick="dChangeRestoSlide(dReturnValidRestoSlide(dCurrentRestoSlide + 1))"
-						>
-							<img
-								src="./resources/images/icons/arrow_right.png"
-								alt="right arrow"
-							/>
-						</div>
-					</div>
-					<div class="d-feature-card-container">
-						<div
-							class="d-feature-card-text-container"
-							id="d-feature-card-resto-text-container"
-						>
-							<img
-								src="./resources/images/icons/arrow_left.png"
-								alt="left arrow"
-								class="d-feature-text-collapse"
-								onclick="dRestoCollapse()"
-							/>
-							<p>
-								Dine in style, with a stunning view that complements the
-								exquisite flavors of our menu.
-								<br />
-								<br />
-								Whether you're looking for a romantic dinner under the stars or
-								a lively evening with friends, LAK's Bar + Resto promises an
-								unforgettable experience.
-							</p>
-						</div>
-						<div
-							class="d-feature-card-text-hidden-container hide"
-							id="d-feature-card-resto-text-hidden-container"
-						>
-							<img
-								src="./resources/images/icons/arrow_right.png"
-								alt="right arrow"
-								class="d-feature-text-expand"
-								onclick="dRestoExpand()"
-							/>
-						</div>
-						<img
-							src="./resources/images/desktop_images/laks1.jpg"
-							alt="LAK's Resto + Bar"
-							class="d-feature-card-img dRestoSlides show"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-6.jpg"
-							alt="Ahi tuna salad"
-							class="d-feature-card-img dRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-11.jpg"
-							alt="Sinuglao"
-							class="d-feature-card-img dRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-33.jpg"
-							alt="Pumpkin soup"
-							class="d-feature-card-img dRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-37.jpg"
-							alt="Seafood Chowder"
-							class="d-feature-card-img dRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-54.jpg"
-							alt="Shrimp Gambas"
-							class="d-feature-card-img dRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-61.jpg"
-							alt="Roasted Chicken Salad"
-							class="d-feature-card-img dRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-96.jpg"
-							alt="Ribeye Steak"
-							class="d-feature-card-img dRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-134.jpg"
-							alt="Panserod Salmon with Ponzo Sauce"
-							class="d-feature-card-img dRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-150.jpg"
-							alt="Mahi Mahi"
-							class="d-feature-card-img dRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-160.jpg"
-							alt="Roasted Chicken Thigh"
-							class="d-feature-card-img dRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-168.jpg"
-							alt="Seafood Pasta"
-							class="d-feature-card-img dRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-175.jpg"
-							alt="All-meat pizza"
-							class="d-feature-card-img dRestoSlides"
-						/>
-					</div>
-				</div>
-				<div class="d-line-divider"></div>
-				<div class="d-feature-container">
-					<h2>
-						<strong><a href="./amenities.html">AMENITIES</a></strong>
-					</h2>
-					<div class="d-sub-features-container">
-						<div class="sub-feature-select" onclick="dChangeAmenitiesSlide(1)">
-							<h3 class="d-sub-feature-1">KALLE CAFE' SPECIALTY COFFEE</h3>
-						</div>
-						<div class="sub-feature-select" onclick="dChangeAmenitiesSlide(2)">
-							<h3>iWASH LAUNDRY & DRY-CLEANING</h3>
-						</div>
-						<div class="sub-feature-select" onclick="dChangeAmenitiesSlide(3)">
-							<h3>LAK'S RESTO + BAR</h3>
-						</div>
-						<div class="sub-feature-select" onclick="dChangeAmenitiesSlide(4)">
-							<h3>OTHER AMENITIES</h3>
-						</div>
-					</div>
-					<div class="d-feature-card-container">
-						<div
-							class="d-feature-card-text-container"
-							id="d-feature-card-amenities-text-container"
-						>
-							<img
-								src="./resources/images/icons/arrow_left.png"
-								alt="left arrow"
-								class="d-feature-text-collapse"
-								onclick="dAmenitiesCollapse()"
-							/>
-							<p>
-								Kalle Cafe' offers specialty coffee within the hotel, perfect
-								for a morning pick-me-up or a cozy afternoon.
-								<br />
-								<br />
-								iWash Laundry & Dry Cleaning service, ensuring your clothing
-								needs are taken care of.
-								<br />
-								<br />
-								Airport pick-up and drop-off services for a hassle-free travel
-								experience, as well as our service van to and from the Vigan
-								Heritage Site at Calle Crisologo.
-							</p>
-						</div>
-						<div
-							class="d-feature-card-text-hidden-container hide"
-							id="d-feature-card-amenities-text-hidden-container"
-						>
-							<img
-								src="./resources/images/icons/arrow_right.png"
-								alt="right arrow"
-								class="d-feature-text-expand"
-								onclick="dAmenitiesExpand()"
-							/>
-						</div>
-						<img
-							src="./resources/images/desktop_images/kalle-cafe1.jpg"
-							alt="Kalle Cafe' Specialty Coffee"
-							class="d-feature-card-img dAmenitiesSlides show"
-						/>
-						<img
-							src="./resources/images/mobile_images/iwash_logo.jpg"
-							alt="iWash Laundry and Dry-Cleaning"
-							class="d-feature-card-img dAmenitiesSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/laks1.jpg"
-							alt="LAK's Resto + Bar"
-							class="d-feature-card-img dAmenitiesSlides"
-						/>
-						<div class="d-feature-card-img dAmenitiesSlides">
-							<div id="d-amenities-card-section">
-								<div class="d-amenities-container">
-									<div class="d-amenities-header">
-										<h2>AMENITIES</h2>
-									</div>
-									<div class="d-amenities-content-container">
-										<ul>
-											<li class="d-amenities-item1">Air Conditioning</li>
-											<li class="d-amenities-item2">Smart TV</li>
-											<li class="d-amenities-item3">Complimentary WiFi</li>
-											<li class="d-amenities-item4">
-												Complimentary 2 bottles Mineral Water
-											</li>
-											<li class="d-amenities-item5">Free Parking</li>
-											<li class="d-amenities-item6">
-												Airport Pickup & Drop Off
-											</li>
-											<li class="d-amenities-item7">Car Rentals</li>
-											<li class="d-amenities-item8">
-												ATV Rides Farm View / Sea View
-											</li>
-											<li class="d-amenities-item9">
-												Tour Packages (Vigan & Laoag-Pagudpud)
-											</li>
-											<li class="d-amenities-item10">
-												Smoking & Non-Smoking Areas
-											</li>
-										</ul>
-										<ul>
-											<li class="d-amenities-item11">Hot & Cold Rain Shower</li>
-											<li class="d-amenities-item12">
-												Bath Essentials & Hair Dryer
-											</li>
-											<li class="d-amenities-item13">
-												In-room Coffee and Tea facilities
-											</li>
-											<li class="d-amenities-item14">LAK's Resto + Bar</li>
-											<li class="d-amenities-item15">
-												Kalle Cafe' Specialty Coffee
-											</li>
-											<li class="d-amenities-item16">iWash Laundry House</li>
-											<li class="d-amenities-item17">
-												Canadian Placement Agency
-											</li>
-											<li class="d-amenities-item18">
-												Mini-bar Refrigerator (excl. Standard Room)
-											</li>
-											<li class="d-amenities-item19">
-												Safety Deposit Box (excl. Standard Room)
-											</li>
-											<li class="d-amenities-item20">
-												Service Van to and from Vigan Heritage Site
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="d-line-divider"></div>
-			</section>
-			<script src="./resources/scripts/dSlides.js"></script>
-			<!-- LOCATION -->
-			<section id="d-location-section">
-				<header id="d-location-header">
-					<h2>LOCATION</h2>
-					<img
-						src="./resources/images/icons/location_icon.png"
-						alt="location icon"
-					/>
-				</header>
-				<div id="d-location-address-bar">
-					<input type="text" placeholder="Tamag, Vigan, Ilocos Sur" readonly />
-				</div>
-				<div id="d-location-content">
-					<div class="d-contact-card">
-						<!-- CONTACT -->
-						<h2>CONTACT US</h2>
-						<div class="d-line-divider d-line-contact-h2"></div>
-						<div class="d-contact-div">
-							<img
-								src="./resources/images/icons/phone_icon.png"
-								alt="phone icon"
-							/>
-							<div>
-								<h3>Landline: <a href="tel:077-644-3273">077-644-3273</a></h3>
-								<h3>
-									Mobile(local): <a href="tel:919-839-7493">919-839-7493</a>
-								</h3>
-								<h3>
-									Mobile(global):
-									<a href="tel:+63-956-974-3211">+63-956-974-3211</a>
-								</h3>
-							</div>
-						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
-							<img
-								src="./resources/images/icons/email_icon.png"
-								alt="email icon"
-							/>
-							<div>
-								<h3>
-									<a href="mailto:hotelledream@gmail.com"
-										>hotelledream@gmail.com</a
-									>
-								</h3>
-							</div>
-						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
-							<img
-								src="./resources/images/icons/clock_icon.png"
-								alt="clock icon"
-							/>
-							<div>
-								<h3>Check-in 2:00pm</h3>
-								<h3>Check-out 12:00pm</h3>
-							</div>
-						</div>
-						<div class="d-line-divider-contact"></div>
-						<div id="d-contact-sendoff" class="d-index-contact-sendoff">
-							<p>Ready to book? Need more information?</p>
-							<p>Call or email us and we'll take care of everything.</p>
-							<p>See you soon!</p>
-						</div>
-					</div>
-					<div id="d-map"></div>
-					<script src="./resources/scripts/dMapFetch.js"></script>
-				</div>
-			</section>
-			<!-- SOCIALS -->
-			<section id="d-socials-section">
-				<header id="d-socials-header">
-					<h2>SHARE THE LOVE</h2>
-					<img src="./resources/images/icons/heart_icon.png" alt="heart icon" />
-				</header>
-				<div class="d-socials-icons">
-					<a
-						href="https://www.instagram.com/le.dreamhotel/"
-						target="_blank"
-						rel="noopener"
-						><img
-							src="./resources/images/icons/instagram.png"
-							alt="instagram icon"
-						/>
-					</a>
-				</div>
-			</section>
-			<!-- FOOTER -->
-			<footer id="d-footer">
-				<div id="d-footer-links">
-					<ul>
-						<li><a href="./legal.html#d-privacy">Privacy Policy</a></li>
-						<div>|</div>
-						<li><a href="./legal.html#d-safety">Safety & Security</a></li>
-						<div>|</div>
-						<li><a href="./legal.html#d-terms">Terms & Conditions</a></li>
-						<div>|</div>
-						<li>
-							<a href="./legal.html#d-supplier">Supplier Code of Conduct</a>
-						</li>
-					</ul>
-				</div>
-				<p>©2023 Le Dream Hotel, All Rights Reserved</p>
-			</footer>
-		</div>
-		<div id="tablet">
-			<!-- NAV-BAR -->
-			<nav id="d-nav">
-				<div id="d-nav-left-container">
-					<a href="./index.html"
-						><img
-							class="d-nav-logo1"
-							src="./resources/images/logo_no_background.png"
-							alt="Le Dream logo"
-						/>
-					</a>
-					<a href="./index.html"
-						><img
-							class="d-nav-logo2"
-							src="./resources/images/logo_words_no_background.png"
-							alt="Le Dream Hotel logo"
-						/>
-					</a>
-				</div>
-				<div id="d-nav-right-container">
-					<div id="d-nav-links-container">
-						<a href="./rooms.html" class="d-nav-link"><h3>ROOMS</h3></a>
-						<div></div>
-						<a href="./resto-bar.html" class="d-nav-link"
-							><h3>RESTO & BAR</h3></a
-						>
-						<div></div>
-						<a href="./amenities.html" class="d-nav-link"
-							><h3 class="d-nav-last-link">AMENITIES</h3></a
-						>
-						<div></div>
-						<!-- <a href="" class="d-nav-link"><h3>VIGAN</h3></a>
-						<div></div> -->
-						<!-- <a href="" class="d-nav-link"
-							><h3 class="d-nav-last-link">OUR STORY</h3></a
-						> -->
-					</div>
-					<a href="./booking.html" class="d-book-button">Book Now</a>
-				</div>
-			</nav>
-			<!-- LANDING -->
-			<section id="d-landing-section">
-				<div class="image-filter">
-					<img
-						src="./resources/images/desktop_images/ledream_outside_skyline2.jpg"
-						alt="street view of Le Dream Hotel"
-					/>
-				</div>
-				<!-- <a href="./booking.html" class="d-book-button">Book Now</a> -->
-			</section>
-			<!-- WELCOME -->
-			<section id="d-welcome-section">
-				<h1>WELCOME HOME</h1>
-				<div class="t-line-divider"></div>
-				<div id="d-welcome-features-container">
-					<div class="d-welcome-feature">
-						<div class="d-welcome-feature-icon">
-							<a href="./rooms.html">
-								<div class="d-img-wrapper">
-									<img
-										src="./resources/images/icons/room402_icon.jpg"
-										alt="preview of a room"
-									/>
-								</div>
-							</a>
-						</div>
-						<h3>ROOMS</h3>
-						<p>
-							Experience the blend of luxury and homely comfort at Le Dream
-							Hotel.
-						</p>
-					</div>
-					<div class="d-welcome-feature">
-						<div class="d-welcome-feature-icon">
-							<a href="./resto-bar.html">
-								<div class="d-img-wrapper">
-									<img
-										src="./resources/images/icons/pizza-icon.jpg"
-										alt="preview of a meal from LAK's Resto + Bar"
-									/>
-								</div>
-							</a>
-						</div>
-						<h3>RESTO + BAR</h3>
-						<p>
-							Indulge in a unique dining experience at our rooftop restaurant,
-							LAK's Resto + Bar.
-						</p>
-					</div>
-					<div class="d-welcome-feature">
-						<div class="d-welcome-feature-icon">
-							<div class="d-img-wrapper">
-								<img
-									src="./resources/images/vigan1.jpeg"
-									alt="preview of Vigan City"
-								/>
-							</div>
-						</div>
-						<h3>VIGAN</h3>
-						<p>
-							Feel the charm of Vigan City, a UNESCO World Heritage Site, right
-							at our doorstep.
-						</p>
-						<!-- <ul>
-							<li>
-								Immerse yourself in the rich history and vibrant culture of
-								Vigan City, renowned for its preserved Spanish colonial
-								architecture, cobblestone streets, and horse-drawn carriages.
-							</li>
-							<li>
-								From the captivating historic houses to the bustling markets and
-								local delicacies, there's an adventure waiting around every
-								corner.
-							</li>
-						</ul> -->
-					</div>
-					<div class="d-welcome-feature">
-						<div class="d-welcome-feature-icon">
-							<a href="./amenities.html">
-								<div class="d-img-wrapper">
-									<img
-										src="./resources/images/iwash1.jpg"
-										alt="preview of an amenity"
-									/>
-								</div>
-							</a>
-						</div>
-						<h3>AMENITIES</h3>
-						<p>
-							We're committed to providing you with top-notch services to
-							enhance your stay.
-						</p>
-					</div>
-				</div>
-			</section>
-			<!-- FEATURE-CARDS -->
-			<div class="t-line-divider"></div>
-			<section id="t-feature-section">
-				<div class="t-feature-container">
-					<h2>
-						<strong><a href="./rooms.html">ROOMS</a></strong>
-					</h2>
-					<div class="t-sub-features-container">
+					<div class="sub-features-container">
 						<div class="sub-feature-select" onclick="tChangeRoomsSlide(1)">
-							<h3 class="t-sub-feature-1">EXECUTIVE ROOM</h3>
+							<h3 class="sub-feature-1">EXECUTIVE ROOM</h3>
 						</div>
 						<div class="sub-feature-select" onclick="tChangeRoomsSlide(2)">
 							<h3>DELUXE ROOM</h3>
@@ -1296,55 +543,57 @@
 							<h3>FAMILY ROOM</h3>
 						</div>
 					</div>
-					<div class="t-feature-card-container">
-						<img
-							src="./resources/images/desktop_images/402executive.jpg"
-							alt="Executive Room"
-							class="t-feature-card-img tRoomsSlides show"
-						/>
-						<img
-							src="./resources/images/desktop_images/311deluxe.jpg"
-							alt="Deluxe Room"
-							class="t-feature-card-img tRoomsSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/209superior.jpg"
-							alt="Superior Room"
-							class="t-feature-card-img tRoomsSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/205standard.jpg"
-							alt="Standard Room"
-							class="t-feature-card-img tRoomsSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/202family.jpg"
-							alt="Family Room"
-							class="t-feature-card-img tRoomsSlides"
-						/>
-					</div>
-					<div
-						class="t-feature-card-text-container"
-						id="t-feature-card-rooms-text-container"
-					>
-						<p>
-							We offer five distinct room types to cater to your unique needs.
-							Each room is equipped with a host of amenities designed for your
-							comfort and convenience.
-						</p>
-						<p>
-							Start your day right with Le Dream Hotel's complimentary
-							breakfast, included with every booking, and enjoy your welcome
-							drinks upon arrival.
-						</p>
+					<div class="d-feature-card-container-holder img-right">
+						<div class="feature-card-container">
+							<img
+								src="./resources/images/desktop_images/402executive.jpg"
+								alt="Executive Room"
+								class="feature-card-img tRoomsSlides show"
+							/>
+							<img
+								src="./resources/images/desktop_images/311deluxe.jpg"
+								alt="Deluxe Room"
+								class="feature-card-img tRoomsSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/209superior.jpg"
+								alt="Superior Room"
+								class="feature-card-img tRoomsSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/205standard.jpg"
+								alt="Standard Room"
+								class="feature-card-img tRoomsSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/202family.jpg"
+								alt="Family Room"
+								class="feature-card-img tRoomsSlides"
+							/>
+						</div>
+						<div
+							class="feature-card-text-container"
+							id="feature-card-rooms-text-container"
+						>
+							<p>
+								We offer five distinct room types to cater to your unique needs.
+								Each room is equipped with a host of amenities designed for your
+								comfort and convenience.
+							</p>
+							<p>
+								Start your day right with Le Dream Hotel's complimentary
+								breakfast, included with every booking, and enjoy your welcome
+								drinks upon arrival.
+							</p>
+						</div>
 					</div>
 				</div>
-				<div class="t-line-divider"></div>
-				<div class="t-feature-container">
+				<div class="line-divider"></div>
+				<div class="feature-container">
 					<h2>
-						<strong><a href="./resto-bar.html">RESTO + BAR</a></strong>
+						<strong><a href="/resto-bar.html">RESTO + BAR</a></strong>
 					</h2>
-					<div class="t-sub-features-container">
+					<div class="sub-features-container">
 						<div
 							class="sub-feature-arrow tablet"
 							onclick="tChangeRestoSlide(tReturnValidRestoSlide(tCurrentRestoSlide - 1))"
@@ -1367,99 +616,101 @@
 							/>
 						</div>
 					</div>
-					<div class="t-feature-card-container">
-						<img
-							src="./resources/images/desktop_images/laks1.jpg"
-							alt="LAK's Resto + Bar"
-							class="t-feature-card-img tRestoSlides show"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-6.jpg"
-							alt="Ahi tuna salad"
-							class="t-feature-card-img tRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-11.jpg"
-							alt="Sinuglao"
-							class="t-feature-card-img tRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-33.jpg"
-							alt="Pumpkin soup"
-							class="t-feature-card-img tRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-37.jpg"
-							alt="Seafood Chowder"
-							class="t-feature-card-img tRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-54.jpg"
-							alt="Shrimp Gambas"
-							class="t-feature-card-img tRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-61.jpg"
-							alt="Roasted Chicken Salad"
-							class="t-feature-card-img tRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-96.jpg"
-							alt="Ribeye Steak"
-							class="t-feature-card-img tRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-134.jpg"
-							alt="Panserod Salmon with Ponzo Sauce"
-							class="t-feature-card-img tRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-150.jpg"
-							alt="Mahi Mahi"
-							class="t-feature-card-img tRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-160.jpg"
-							alt="Roasted Chicken Thigh"
-							class="t-feature-card-img tRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-168.jpg"
-							alt="Seafood Pasta"
-							class="t-feature-card-img tRestoSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/Food-175.jpg"
-							alt="All-meat pizza"
-							class="t-feature-card-img tRestoSlides"
-						/>
-					</div>
-					<div
-						class="t-feature-card-text-container"
-						id="t-feature-card-resto-text-container"
-					>
-						<p>
-							Dine in style, with a stunning view that complements the exquisite
-							flavors of our menu.
-						</p>
-						<p>
-							Whether you're looking for a romantic dinner under the stars or a
-							lively evening with friends, LAK's Bar + Resto promises an
-							unforgettable experience.
-						</p>
+					<div class="d-feature-card-container-holder img-left">
+						<div class="feature-card-container">
+							<img
+								src="./resources/images/desktop_images/laks1.jpg"
+								alt="LAK's Resto + Bar"
+								class="feature-card-img tRestoSlides show"
+							/>
+							<img
+								src="./resources/images/desktop_images/Food-6.jpg"
+								alt="Ahi tuna salad"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/Food-11.jpg"
+								alt="Sinuglao"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/Food-33.jpg"
+								alt="Pumpkin soup"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/Food-37.jpg"
+								alt="Seafood Chowder"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/Food-54.jpg"
+								alt="Shrimp Gambas"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/Food-61.jpg"
+								alt="Roasted Chicken Salad"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/Food-96.jpg"
+								alt="Ribeye Steak"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/Food-134.jpg"
+								alt="Panserod Salmon with Ponzo Sauce"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/Food-150.jpg"
+								alt="Mahi Mahi"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/Food-160.jpg"
+								alt="Roasted Chicken Thigh"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/Food-168.jpg"
+								alt="Seafood Pasta"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/Food-175.jpg"
+								alt="All-meat pizza"
+								class="feature-card-img tRestoSlides"
+							/>
+						</div>
+						<div
+							class="feature-card-text-container"
+							id="feature-card-resto-text-container"
+						>
+							<p>
+								Dine in style, with a stunning view that complements the
+								exquisite flavors of our menu.
+							</p>
+							<p>
+								Whether you're looking for a romantic dinner under the stars or
+								a lively evening with friends, LAK's Bar + Resto promises an
+								unforgettable experience.
+							</p>
+						</div>
 					</div>
 				</div>
-				<div class="t-line-divider"></div>
-				<div class="t-feature-container">
+				<div class="line-divider"></div>
+				<div class="feature-container">
 					<h2>
-						<strong><a href="./amenities.html">AMENITIES</a></strong>
+						<strong><a href="/amenities.html">AMENITIES</a></strong>
 					</h2>
-					<div class="t-sub-features-container">
+					<div class="sub-features-container">
 						<div class="sub-feature-select" onclick="tChangeAmenitiesSlide(1)">
-							<h3 class="t-sub-feature-1">KALLE CAFE' SPECIALTY COFFEE</h3>
+							<h3 class="sub-feature-1">KALLE CAFE' SPECIALTY COFFEE</h3>
 						</div>
 						<div class="sub-feature-select" onclick="tChangeAmenitiesSlide(2)">
-							<h3>iWASH LAUNDRY & DRY-CLEANING</h3>
+							<h3>iWASH LAUNDRY &amp; DRY-CLEANING</h3>
 						</div>
 						<div class="sub-feature-select" onclick="tChangeAmenitiesSlide(3)">
 							<h3>LAK'S RESTO + BAR</h3>
@@ -1468,132 +719,126 @@
 							<h3>OTHER AMENITIES</h3>
 						</div>
 					</div>
-					<div class="t-feature-card-container">
-						<img
-							src="./resources/images/desktop_images/kalle-cafe1.jpg"
-							alt="Kalle Cafe' Specialty Coffee"
-							class="t-feature-card-img tAmenitiesSlides show"
-						/>
-						<img
-							src="./resources/images/mobile_images/iwash_logo.jpg"
-							alt="iWash Laundry and Dry-Cleaning"
-							class="t-feature-card-img tAmenitiesSlides"
-						/>
-						<img
-							src="./resources/images/desktop_images/laks1.jpg"
-							alt="LAK's Resto + Bar"
-							class="t-feature-card-img tAmenitiesSlides"
-						/>
-						<div class="t-feature-card-img tAmenitiesSlides">
-							<div id="t-amenities-card-section">
-								<div class="t-amenities-container">
-									<div class="t-amenities-header">
-										<h2>AMENITIES</h2>
-									</div>
-									<div class="t-amenities-content-container">
-										<ul>
-											<li class="t-amenities-item1">Air Conditioning</li>
-											<li class="t-amenities-item2">Smart TV</li>
-											<li class="t-amenities-item3">Complimentary WiFi</li>
-											<li class="t-amenities-item4">
-												Complimentary 2 bottles Mineral Water
-											</li>
-											<li class="t-amenities-item5">Free Parking</li>
-											<li class="t-amenities-item6">
-												Airport Pickup & Drop Off
-											</li>
-											<li class="t-amenities-item7">Car Rentals</li>
-											<li class="t-amenities-item8">
-												ATV Rides Farm View / Sea View
-											</li>
-											<li class="t-amenities-item9">
-												Tour Packages (Vigan & Laoag-Pagudpud)
-											</li>
-											<li class="t-amenities-item10">
-												Smoking & Non-Smoking Areas
-											</li>
-										</ul>
-										<ul>
-											<li class="t-amenities-item11">Hot & Cold Rain Shower</li>
-											<li class="t-amenities-item12">
-												Bath Essentials & Hair Dryer
-											</li>
-											<li class="t-amenities-item13">
-												In-room Coffee and Tea facilities
-											</li>
-											<li class="t-amenities-item14">LAK's Resto + Bar</li>
-											<li class="t-amenities-item15">
-												Kalle Cafe' Specialty Coffee
-											</li>
-											<li class="t-amenities-item16">iWash Laundry House</li>
-											<li class="t-amenities-item17">
-												Canadian Placement Agency
-											</li>
-											<li class="t-amenities-item18">
-												Mini-bar Refrigerator (excl. Standard Room)
-											</li>
-											<li class="t-amenities-item19">
-												Safety Deposit Box (excl. Standard Room)
-											</li>
-											<li class="t-amenities-item20">
-												Service Van to and from Vigan Heritage Site
-											</li>
-										</ul>
+					<div class="d-feature-card-container-holder img-right">
+						<div class="feature-card-container">
+							<img
+								src="./resources/images/desktop_images/kalle-cafe1.jpg"
+								alt="Kalle Cafe' Specialty Coffee"
+								class="feature-card-img tAmenitiesSlides show"
+							/>
+							<img
+								src="./resources/images/mobile_images/iwash_logo.jpg"
+								alt="iWash Laundry and Dry-Cleaning"
+								class="feature-card-img tAmenitiesSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/laks1.jpg"
+								alt="LAK's Resto + Bar"
+								class="feature-card-img tAmenitiesSlides"
+							/>
+							<div class="feature-card-img tAmenitiesSlides">
+								<div id="amenities-card-section">
+									<div class="amenities-container">
+										<div class="amenities-header">
+											<h2>AMENITIES</h2>
+										</div>
+										<div class="amenities-content-container">
+											<ul>
+												<li class="amenities-item1">Air Conditioning</li>
+												<li class="amenities-item2">Smart TV</li>
+												<li class="amenities-item3">Complimentary WiFi</li>
+												<li class="amenities-item4">
+													Complimentary 2 bottles Mineral Water
+												</li>
+												<li class="amenities-item5">Free Parking</li>
+												<li class="amenities-item6">
+													Airport Pickup &amp; Drop Off
+												</li>
+												<li class="amenities-item7">Car Rentals</li>
+												<li class="amenities-item8">
+													ATV Rides Farm View / Sea View
+												</li>
+												<li class="amenities-item9">
+													Tour Packages (Vigan &amp; Laoag-Pagudpud)
+												</li>
+												<li class="amenities-item10">
+													Smoking &amp; Non-Smoking Areas
+												</li>
+											</ul>
+											<ul>
+												<li class="amenities-item11">
+													Hot &amp; Cold Rain Shower
+												</li>
+												<li class="amenities-item12">
+													Bath Essentials &amp; Hair Dryer
+												</li>
+												<li class="amenities-item13">
+													In-room Coffee and Tea facilities
+												</li>
+												<li class="amenities-item14">LAK's Resto + Bar</li>
+												<li class="amenities-item15">
+													Kalle Cafe' Specialty Coffee
+												</li>
+												<li class="amenities-item16">iWash Laundry House</li>
+												<li class="amenities-item17">
+													Canadian Placement Agency
+												</li>
+												<li class="amenities-item18">
+													Mini-bar Refrigerator (excl. Standard Room)
+												</li>
+												<li class="amenities-item19">
+													Safety Deposit Box (excl. Standard Room)
+												</li>
+												<li class="amenities-item20">
+													Service Van to and from Vigan Heritage Site
+												</li>
+											</ul>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div
-						class="t-feature-card-text-container"
-						id="t-feature-card-amenities-text-container"
-					>
-						<p>
-							Kalle Cafe' offers specialty coffee within the hotel, perfect for
-							a morning pick-me-up or a cozy afternoon.
-						</p>
-						<p>
-							iWash Laundry & Dry Cleaning service, ensuring your clothing needs
-							are taken care of.
-						</p>
-						<p>
-							Airport pick-up and drop-off services for a hassle-free travel
-							experience, as well as our service van to and from the Vigan
-							Heritage Site at Calle Crisologo.
-						</p>
+						<div
+							class="feature-card-text-container"
+							id="feature-card-amenities-text-container"
+						>
+							<p>
+								Kalle Cafe' offers specialty coffee within the hotel, perfect
+								for a morning pick-me-up or a cozy afternoon.
+							</p>
+							<p>
+								iWash Laundry &amp; Dry Cleaning service, ensuring your clothing
+								needs are taken care of.
+							</p>
+							<p>
+								Airport pick-up and drop-off services for a hassle-free travel
+								experience, as well as our service van to and from the Vigan
+								Heritage Site at Calle Crisologo.
+							</p>
+						</div>
 					</div>
 				</div>
-				<div class="t-line-divider"></div>
+				<script src="./resources/scripts/bigSlides.js"></script>
 			</section>
-			<script src="./resources/scripts/tSlides.js"></script>
 			<!-- LOCATION -->
-			<section id="t-location-section">
-				<header id="t-location-header">
+			<div class="line-divider"></div>
+			<section id="location-section">
+				<header id="location-header">
 					<h2>LOCATION</h2>
 					<img
 						src="./resources/images/icons/location_icon.png"
 						alt="location icon"
 					/>
 				</header>
-				<div id="t-location-address-bar">
+				<div id="location-address-bar">
 					<input type="text" placeholder="Tamag, Vigan, Ilocos Sur" readonly />
 				</div>
-				<div id="t-map"></div>
-				<script src="./resources/scripts/tMapFetch.js"></script>
-			</section>
-			<!-- CONTACT -->
-			<div class="above-section-link" id="d-contact"></div>
-			<section id="d-feature-contact-section">
-				<h2>CONTACT US</h2>
-				<div class="d-feature-contact-container">
-					<div class="d-feature-contact-sendoff">
-						<p>Ready to book?</p>
-						<p>Need more information?</p>
-						<p>Call or email us and we'll take care of everything.</p>
-						<p>See you soon!</p>
-					</div>
-					<div class="d-feature-contact-info">
-						<div class="d-contact-div">
+				<div id="d-index-contact-location-holder">
+					<div class="contact-card">
+						<!-- DESKTOP CONTACT -->
+						<h2>CONTACT US</h2>
+						<div class="line-divider line-contact-h2"></div>
+						<div class="contact-div">
 							<img
 								src="./resources/images/icons/phone_icon.png"
 								alt="phone icon"
@@ -1609,8 +854,8 @@
 								</h3>
 							</div>
 						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
+						<div class="line-divider-contact"></div>
+						<div class="contact-div">
 							<img
 								src="./resources/images/icons/email_icon.png"
 								alt="email icon"
@@ -1623,8 +868,112 @@
 								</h3>
 							</div>
 						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
+						<div class="line-divider-contact"></div>
+						<div class="contact-div">
+							<img
+								src="./resources/images/icons/clock_icon.png"
+								alt="clock icon"
+							/>
+							<div>
+								<h3>Check-in 2:00pm</h3>
+								<h3>Check-out 12:00pm</h3>
+							</div>
+						</div>
+						<div class="line-divider-contact"></div>
+						<div class="contact-sendoff index-contact-sendoff">
+							<p>Ready to book? Need more information?</p>
+							<p>Call or email us and we'll take care of everything.</p>
+							<p>See you soon!</p>
+						</div>
+					</div>
+					<div id="map"></div>
+					<script src="./resources/scripts/mapFetch.js"></script>
+				</div>
+			</section>
+			<!-- CONTACT MOBILE-->
+			<section id="contact-section">
+				<h2>CONTACT US</h2>
+				<div class="line-divider"></div>
+				<div class="contact-div">
+					<img src="./resources/images/icons/phone_icon.png" alt="phone icon" />
+					<div class="contact-phone-info">
+						<h3>Landline: <a href="tel:077-644-3273">077-644-3273</a></h3>
+						<h3>Mobile(local): <a href="tel:919-839-7493">919-839-7493</a></h3>
+						<h3>
+							Mobile(global):
+							<a href="tel:+63-956-974-3211">+63-956-974-3211</a>
+						</h3>
+					</div>
+				</div>
+				<div class="line-divider-contact"></div>
+				<div class="contact-div">
+					<img src="./resources/images/icons/email_icon.png" alt="email icon" />
+					<div>
+						<h3>
+							<a href="mailto:hotelledream@gmail.com">hotelledream@gmail.com</a>
+						</h3>
+					</div>
+				</div>
+				<div class="line-divider-contact"></div>
+				<div class="contact-div">
+					<img src="./resources/images/icons/clock_icon.png" alt="clock icon" />
+					<div>
+						<h3>Check-in 2:00pm</h3>
+						<h3>Check-out 12:00pm</h3>
+					</div>
+				</div>
+				<div class="line-divider-contact"></div>
+				<div class="contact-sendoff">
+					<p>Ready to book?</p>
+					<p>Need more information?</p>
+					<p>Call or email us and we'll take care of everything.</p>
+					<p>See you soon!</p>
+				</div>
+			</section>
+			<!-- CONTACT TABLET -->
+			<section id="feature-contact-section">
+				<h2>CONTACT US</h2>
+				<div class="feature-contact-container">
+					<div class="feature-contact-sendoff">
+						<p>Ready to book?</p>
+						<p>Need more information?</p>
+						<p>Call or email us and we'll take care of everything.</p>
+						<p>See you soon!</p>
+					</div>
+					<div class="td-contact-midline"></div>
+					<div class="feature-contact-info">
+						<div class="contact-div">
+							<img
+								src="./resources/images/icons/phone_icon.png"
+								alt="phone icon"
+							/>
+							<div>
+								<h3>Landline: <a href="tel:077-644-3273">077-644-3273</a></h3>
+								<h3>
+									Mobile(local): <a href="tel:919-839-7493">919-839-7493</a>
+								</h3>
+								<h3>
+									Mobile(global):
+									<a href="tel:+63-956-974-3211">+63-956-974-3211</a>
+								</h3>
+							</div>
+						</div>
+						<div class="line-divider-contact"></div>
+						<div class="contact-div">
+							<img
+								src="./resources/images/icons/email_icon.png"
+								alt="email icon"
+							/>
+							<div>
+								<h3>
+									<a href="mailto:hotelledream@gmail.com"
+										>hotelledream@gmail.com</a
+									>
+								</h3>
+							</div>
+						</div>
+						<div class="line-divider-contact"></div>
+						<div class="contact-div">
 							<img
 								src="./resources/images/icons/clock_icon.png"
 								alt="clock icon"
@@ -1638,12 +987,11 @@
 				</div>
 			</section>
 			<!-- SOCIALS -->
-			<section id="d-socials-section">
-				<header id="d-socials-header">
+			<section id="socials-section">
+				<header id="socials-header">
 					<h2>SHARE THE LOVE</h2>
-					<img src="./resources/images/icons/heart_icon.png" alt="heart icon" />
 				</header>
-				<div class="d-socials-icons">
+				<div class="socials-icons">
 					<a
 						href="https://www.instagram.com/le.dreamhotel/"
 						target="_blank"
@@ -1655,18 +1003,34 @@
 					</a>
 				</div>
 			</section>
-			<!-- FOOTER -->
-			<footer id="d-footer">
-				<div id="d-footer-links">
+			<!-- FOOTER MOBILE -->
+			<footer id="footer">
+				<div id="footer-links">
+					<div>
+						<p><a href="./legal.html#privacy">Privacy Policy</a></p>
+						<p><a href="./legal.html#safety">Safety & Security</a></p>
+					</div>
+					<div>
+						<p><a href="./legal.html#terms">Terms & Conditions</a></p>
+						<p>
+							<a href="./legal.html#supplier">Supplier Code of Conduct</a>
+						</p>
+					</div>
+				</div>
+				<p>©2023 Le Dream Hotel, All Rights Reserved</p>
+			</footer>
+			<!-- FOOTER TABLET AND DESKTOP -->
+			<footer id="td-footer">
+				<div id="td-footer-links">
 					<ul>
-						<li><a href="./legal.html#t-privacy">Privacy Policy</a></li>
+						<li><a href="/legal.html#privacy">Privacy Policy</a></li>
 						<div>|</div>
-						<li><a href="./legal.html#t-safety">Safety & Security</a></li>
+						<li><a href="/legal.html#safety">Safety &amp; Security</a></li>
 						<div>|</div>
-						<li><a href="./legal.html#t-terms">Terms & Conditions</a></li>
+						<li><a href="/legal.html#terms">Terms &amp; Conditions</a></li>
 						<div>|</div>
 						<li>
-							<a href="./legal.html#t-supplier">Supplier Code of Conduct</a>
+							<a href="/legal.html#supplier">Supplier Code of Conduct</a>
 						</li>
 					</ul>
 				</div>

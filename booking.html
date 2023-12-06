@@ -9,6 +9,7 @@
 		/>
 		<link rel="stylesheet" href="./resources/reset.css" />
 		<link rel="stylesheet" href="./resources/styles.css" />
+		<link rel="stylesheet" href="./resources/feature.css" />
 		<link rel="stylesheet" href="./resources/amenities.css" />
 		<link rel="stylesheet" href="./resources/booking.css" />
 		<link rel="stylesheet" href="./resources/style-components/nav.css" />
@@ -19,30 +20,29 @@
 		<title>Le Dream Hotel - Booking</title>
 	</head>
 	<body>
-		<div id="mobile">
-			<!-- NAV-BAR -->
-			<nav id="m-nav">
-				<a href="./index.html" class="m-nav-a-img m-nav-logo1"
+		<div id="main">
+			<!-- MOBILE NAV-BAR -->
+			<nav id="nav">
+				<a href="./index.html" class="nav-a-img nav-logo1"
 					><img
 						src="./resources/images/logo_no_background.png"
 						alt="Le Dream logo"
 					/>
 				</a>
-				<a href="./index.html" class="m-nav-a-img">
+				<a href="./index.html" class="nav-a-img">
 					<img
 						src="./resources/images/logo_words_no_background.png"
 						alt="Le Dream Hotel logo"
 					/>
 				</a>
-				<a href=""
-					><div class="m-nav-more" id="m-nav-more">
-						<div></div>
-						<div></div>
-						<div></div>
-					</div>
-				</a>
+				<a href="./booking.html" class="book-button">Book Now</a>
+				<div class="nav-more" id="nav-more">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
 			</nav>
-			<!-- DROPDOWN-MENU -->
+			<!-- MOBILE DROPDOWN-MENU -->
 			<div class="dropdown-content" id="dropdown-content">
 				<h1 id="dropdown-exit">x</h1>
 				<div class="dropdown-links">
@@ -53,100 +53,155 @@
 					<!-- <a href=""><strong>OUR STORY</strong></a> -->
 				</div>
 			</div>
-			<script src="./resources/scripts/mNav.js"></script>
+			<script src="./resources/scripts/nav.js"></script>
+			<!-- TABLET AND DESKTOP NAV-BAR -->
+			<nav id="td-nav">
+				<div id="td-nav-left-container">
+					<a href="/"
+						><img
+							class="td-nav-logo1"
+							src="./resources/images/logo_no_background.png"
+							alt="Le Dream logo"
+						/>
+					</a>
+					<a href="/"
+						><img
+							class="td-nav-logo2"
+							src="./resources/images/logo_words_no_background.png"
+							alt="Le Dream Hotel logo"
+						/>
+					</a>
+				</div>
+				<div id="td-nav-right-container">
+					<div id="td-nav-links-container">
+						<a class="td-nav-link" href="/rooms"><h3>ROOMS</h3></a>
+						<div></div>
+						<a class="td-nav-link" href="/resto-bar"
+							><h3>RESTO &amp; BAR</h3></a
+						>
+						<div></div>
+						<a class="td-nav-link" href="/amenities"
+							><h3 class="td-nav-last-link">AMENITIES</h3></a
+						>
+						<div></div>
+						<!-- <a href="" class="td-nav-link"><h3>VIGAN</h3></a>
+						<div></div> -->
+						<!-- <a href="" class="td-nav-link"
+							><h3 class="td-nav-last-link">OUR STORY</h3></a
+						> -->
+					</div>
+					<a class="book-button" href="/booking">Book Now</a>
+				</div>
+			</nav>
 			<!-- LANDING -->
-			<section id="m-landing-section">
+			<section id="landing-section">
 				<div class="image-filter">
-					<img
-						src="./resources/images/mobile_images/reception.jpg"
-						alt="Reception desk"
-					/>
+					<picture>
+						<source
+							media="(min-width: 675px)"
+							srcset="./resources/images/desktop_images/reception.jpg"
+						/>
+						<img
+							src="./resources/images/mobile_images/reception.jpg"
+							alt="Reception desk"
+						/>
+					</picture>
 				</div>
 			</section>
 			<!-- BOOKING -->
-			<section id="m-booking-section">
-				<h2>BOOKING</h2>
-				<div class="m-line-divider"></div>
-				<div class="m-booking-info">
-					<p>Welcome to Le Dream Hotel.</p>
-					<p>We're delighted to have you with us!</p>
-					<p>
-						Booking your stay is as simple as a
-						<a href="#above-m-contact-section">phone call</a> or an
-						<a href="#above-m-contact-section">email</a>. Our dedicated team is
-						always ready to assist you. For your convenience, we accept all
-						major credit cards and bank transfers for payment.
-					</p>
-					<ul>
-						<li>
-							<a href="#above-m-booking-admin-section">Pricing Information</a>
-						</li>
-						<li>
-							<a href="#above-m-booking-admin-payment-section"
-								>Payment Information</a
-							>
-						</li>
-						<li>
-							<a href="#above-m-booking-admin-terms-section"
-								>General Terms & Conditions</a
-							>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<!-- AMENITIES -->
-			<div class="m-line-divider"></div>
-			<section id="m-booking-amenities-section">
-				<div class="m-amenities-container">
-					<div class="m-amenities-header">
-						<h2>AMENITIES</h2>
-					</div>
-					<div class="m-amenities-content-container">
+			<section id="booking-section">
+				<h2 class="m-only">BOOKING</h2>
+				<h1 class="td-only feature-header">BOOKING</h1>
+				<div class="line-divider title"></div>
+				<div class="booking-content-container">
+					<div class="booking-info">
+						<p>Welcome to Le Dream Hotel.</p>
+						<p>We're delighted to have you with us!</p>
+						<p>
+							Booking your stay is as simple as a
+							<a href="#above-contact-section">phone call</a> or an
+							<a href="#above-contact-section">email</a>. Our dedicated team is
+							always ready to assist you. For your convenience, we accept all
+							major credit cards and bank transfers for payment.
+						</p>
 						<ul>
-							<li class="m-amenities-item1">Air Conditioning</li>
-							<li class="m-amenities-item2">Smart TV</li>
-							<li class="m-amenities-item3">Complimentary WiFi</li>
-							<li class="m-amenities-item4">
-								Complimentary 2 bottles Mineral Water
+							<li>
+								<a href="#above-booking-admin-section">Pricing Information</a>
 							</li>
-							<li class="m-amenities-item5">Free Parking</li>
-							<li class="m-amenities-item6">Airport Pickup & Drop Off</li>
-							<li class="m-amenities-item7">Car Rentals</li>
-							<li class="m-amenities-item8">ATV Rides Farm View / Sea View</li>
-							<li class="m-amenities-item9">
-								Tour Packages (Vigan & Laoag-Pagudpud)
+							<li>
+								<a href="#above-booking-admin-payment-section"
+									>Payment Information</a
+								>
 							</li>
-							<li class="m-amenities-item10">Smoking & Non-Smoking Areas</li>
-							<li class="m-amenities-item11">Hot & Cold Rain Shower</li>
-						</ul>
-						<ul>
-							<li class="m-amenities-item12">Bath Essentials & Hair Dryer</li>
-							<li class="m-amenities-item13">
-								In-room Coffee and Tea facilities
+							<li class="m-only">
+								<a href="#above-booking-admin-terms-section"
+									>General Terms & Conditions</a
+								>
 							</li>
-							<li class="m-amenities-item14">LAK's Resto + Bar</li>
-							<li class="m-amenities-item15">Kalle Cafe'</li>
-							<li class="m-amenities-item16">iWash Laundry House</li>
-							<li class="m-amenities-item17">Canadian Placement Agency</li>
-							<li class="m-amenities-item18">
-								Mini-bar Refrigerator (excl. Standard Room)
-							</li>
-							<li class="m-amenities-item19">
-								Safety Deposit Box (excl. Standard Room)
-							</li>
-							<li class="m-amenities-item20">
-								Service Van to and from Vigan Heritage Site
+							<li class="td-only">
+								<a href="#above-booking-admin-payment-section"
+									>General Terms & Conditions</a
+								>
 							</li>
 						</ul>
 					</div>
+					<!-- AMENITIES -->
+					<div class="line-divider tm-only"></div>
+					<section id="booking-amenities-section">
+						<div class="amenities-container">
+							<div class="amenities-header">
+								<h2>AMENITIES</h2>
+							</div>
+							<div class="amenities-content-container">
+								<ul>
+									<li class="amenities-item1">Air Conditioning</li>
+									<li class="amenities-item2">Smart TV</li>
+									<li class="amenities-item3">Complimentary WiFi</li>
+									<li class="amenities-item4">
+										Complimentary 2 bottles Mineral Water
+									</li>
+									<li class="amenities-item5">Free Parking</li>
+									<li class="amenities-item6">Airport Pickup & Drop Off</li>
+									<li class="amenities-item7">Car Rentals</li>
+									<li class="amenities-item8">
+										ATV Rides Farm View / Sea View
+									</li>
+									<li class="amenities-item9">
+										Tour Packages (Vigan & Laoag-Pagudpud)
+									</li>
+									<li class="amenities-item10">Smoking & Non-Smoking Areas</li>
+									<li class="amenities-item11">Hot & Cold Rain Shower</li>
+								</ul>
+								<ul>
+									<li class="amenities-item12">Bath Essentials & Hair Dryer</li>
+									<li class="amenities-item13">
+										In-room Coffee and Tea facilities
+									</li>
+									<li class="amenities-item14">LAK's Resto + Bar</li>
+									<li class="amenities-item15">Kalle Cafe'</li>
+									<li class="amenities-item16">iWash Laundry House</li>
+									<li class="amenities-item17">Canadian Placement Agency</li>
+									<li class="amenities-item18">
+										Mini-bar Refrigerator (excl. Standard Room)
+									</li>
+									<li class="amenities-item19">
+										Safety Deposit Box (excl. Standard Room)
+									</li>
+									<li class="amenities-item20">
+										Service Van to and from Vigan Heritage Site
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
 				</div>
 			</section>
 			<!-- ADMIN -->
-			<div id="above-m-booking-admin-section"></div>
-			<div class="m-line-divider"></div>
-			<section id="m-booking-admin-section">
-				<div id="m-booking-admin-pricing-section">
-					<h3>PRICING INFORMATION</h3>
+			<div id="above-booking-admin-section" class="above-section-link"></div>
+			<div class="line-divider"></div>
+			<section id="booking-admin-section">
+				<div id="booking-admin-pricing-section">
+					<h3 class="tm-only">PRICING INFORMATION</h3>
 					<div class="table-div">
 						<table>
 							<tr>
@@ -157,7 +212,7 @@
 							</tr>
 							<tr>
 								<td>
-									<a href="./rooms.html#above-m-executive"
+									<a href="./rooms.html#above-executive"
 										><strong>Executive Room</strong></a
 									>
 								</td>
@@ -173,7 +228,7 @@
 							</tr> -->
 							<tr class="blue">
 								<td>
-									<a href="./rooms.html#above-m-deluxe"
+									<a href="./rooms.html#above-deluxe"
 										><strong>Deluxe Room</strong></a
 									>
 								</td>
@@ -183,7 +238,7 @@
 							</tr>
 							<tr>
 								<td>
-									<a href="./rooms.html#above-m-family"
+									<a href="./rooms.html#above-family"
 										><strong>Family Room</strong></a
 									>
 								</td>
@@ -193,7 +248,7 @@
 							</tr>
 							<tr class="blue">
 								<td>
-									<a href="./rooms.html#above-m-superior"
+									<a href="./rooms.html#above-superior"
 										><strong>Superior Room</strong></a
 									>
 								</td>
@@ -203,7 +258,7 @@
 							</tr>
 							<tr>
 								<td>
-									<a href="./rooms.html#above-m-standard"
+									<a href="./rooms.html#above-standard"
 										><strong>Standard Room</strong></a
 									>
 								</td>
@@ -213,307 +268,17 @@
 							</tr>
 						</table>
 					</div>
-					<p>
-						All bookings include Welcome Drinks upon arrival, Complimentary
-						Breakfast, 2 Bottled Waters, and In-Room Complimentary Tea & Coffee.
-					</p>
-					<ul>
-						<li>
-							Above rates are inclusive of applicable government taxes and
-							service charge.
-						</li>
-						<li>Extra person/bed: ₱1,000.00 with breakfast.</li>
-						<li>
-							Child Policy: Up to 7 years old, free of charge (max. 2 children
-							allowed)
-						</li>
-					</ul>
-				</div>
-				<div id="above-m-booking-admin-payment-section"></div>
-				<div class="m-line-divider"></div>
-				<div id="m-booking-admin-payment-section">
-					<h3>PAYMENT INFORMATION</h3>
-					<ul>
-						<li class="m-booking-admin-type">Credit Payments</li>
-						<li>
-							Please call Le Dream Hotel for assistance with credit payments.
-						</li>
-						<li>
-							<strong
-								>Landline: <a href="tel:077-644-3273">077-644-3273</a></strong
-							>
-						</li>
-						<li>
-							<strong
-								>Mobile(local):
-								<a href="tel:919-839-7493">919-839-7493</a></strong
-							>
-						</li>
-						<li>
-							<strong
-								>Mobile(global):
-								<a href="tel:+63-956-974-3211">+63-956-974-3211</a></strong
-							>
-						</li>
-						<li class="m-booking-admin-type body">Bank Deposits</li>
-						<li>
-							All desposited payments to be made payable to
-							<strong>LE DREAM HOTEL</strong>, through
-							<strong>BANCO DE ORO (VIGAN BRANCH)</strong>.
-						</li>
-						<li><strong>Savings Account: 008228003556</strong></li>
-						<li>
-							Please scan and email validated deposit slip to us for payment
-							confirmation.
-						</li>
-						<li class="m-booking-admin-type body">Questions?</li>
-						<li>
-							Call or email
-							<strong
-								><a href="mailto:hotelledream@gmail.com"
-									>hotelledream@gmail.com</a
-								></strong
-							>
-							and we'd be happy to assist you.
-						</li>
-					</ul>
-				</div>
-				<div id="above-m-booking-admin-terms-section"></div>
-				<div class="m-line-divider"></div>
-				<div id="m-booking-admin-terms-section">
-					<h3>GENERAL TERMS & CONDITIONS</h3>
-					<ul>
-						<li>Check-in 2:00PM / Check-out 12:00PM</li>
-						<li>
-							Requests for early check-in / late check-out will be subject to
-							availability and confirmation with our Front-Desk Manager.
-						</li>
-						<li>
-							All guests are requested to present their Government issued ID or
-							valid Passport and Visa for Foreign Nationals upon arrival.
-						</li>
-						<li class="m-booking-admin-type body">Cancellation Policy:</li>
-						<li>
-							Upon confirmation of your booking and signing of the agreement,
-							cancellation shall no longer be accepted.
-						</li>
-						<li>
-							In case of cancellation, the client agrees to pay the cancellation
-							charge equivalent to the total guaranteed cost.
-						</li>
-					</ul>
-				</div>
-			</section>
-			<!-- CONTACT -->
-			<div id="above-m-contact-section"></div>
-			<section id="m-contact-section">
-				<h2>CONTACT US</h2>
-				<div class="m-line-divider"></div>
-				<div class="m-contact-div">
-					<img src="./resources/images/icons/phone_icon.png" alt="phone icon" />
-					<div>
-						<h3>Landline: <a href="tel:077-644-3273">077-644-3273</a></h3>
-						<h3>Mobile(local): <a href="tel:919-839-7493">919-839-7493</a></h3>
-						<h3>
-							Mobile(global):
-							<a href="tel:+63-956-974-3211">+63-956-974-3211</a>
-						</h3>
-					</div>
-				</div>
-				<div class="m-line-divider-contact"></div>
-				<div class="m-contact-div">
-					<img src="./resources/images/icons/email_icon.png" alt="email icon" />
-					<div>
-						<h3>
-							<a href="mailto:hotelledream@gmail.com">hotelledream@gmail.com</a>
-						</h3>
-					</div>
-				</div>
-				<div class="m-line-divider-contact"></div>
-				<div class="m-contact-div">
-					<img src="./resources/images/icons/clock_icon.png" alt="clock icon" />
-					<div>
-						<h3>Check-in 2:00pm</h3>
-						<h3>Check-out 12:00pm</h3>
-					</div>
-				</div>
-				<div class="m-line-divider-contact"></div>
-				<div id="m-contact-sendoff">
-					<p>Ready to book?</p>
-					<p>Need more information?</p>
-					<p>Call or email us and we'll take care of everything.</p>
-					<p>See you soon!</p>
-				</div>
-			</section>
-			<!-- SOCIALS -->
-			<section id="m-socials-section">
-				<header id="m-socials-header">
-					<h2>SHARE THE LOVE</h2>
-					<img src="./resources/images/icons/heart_icon.png" alt="heart icon" />
-				</header>
-				<div class="m-socials-icons">
-					<a
-						href="https://www.instagram.com/le.dreamhotel/"
-						target="_blank"
-						rel="noopener"
-						><img
-							src="./resources/images/icons/instagram.png"
-							alt="instagram icon"
-						/>
-					</a>
-				</div>
-			</section>
-			<!-- FOOTER -->
-			<footer id="m-footer">
-				<div id="m-footer-links">
-					<div>
-						<p><a href="./legal.html#m-privacy">Privacy Policy</a></p>
-						<p><a href="./legal.html#m-safety">Safety & Security</a></p>
-					</div>
-					<div>
-						<p><a href="./legal.html#m-terms">Terms & Conditions</a></p>
+					<div class="pricing-info-container">
+						<h3 class="d-only">PRICING INFORMATION</h3>
 						<p>
-							<a href="./legal.html#m-supplier">Supplier Code of Conduct</a>
+							All bookings include Welcome Drinks upon arrival, Complimentary
+							Breakfast, 2 Bottled Waters, and In-Room Complimentary Tea &
+							Coffee.
 						</p>
-					</div>
-				</div>
-				<p>©2023 Le Dream Hotel, All Rights Reserved</p>
-			</footer>
-		</div>
-		<div id="desktop">
-			<!-- NAV-BAR -->
-			<nav id="d-nav">
-				<div id="d-nav-left-container">
-					<a href="./index.html"
-						><img
-							class="d-nav-logo1"
-							src="./resources/images/logo_no_background.png"
-							alt="Le Dream logo"
-						/>
-					</a>
-					<a href="./index.html"
-						><img
-							class="d-nav-logo2"
-							src="./resources/images/logo_words_no_background.png"
-							alt="Le Dream Hotel logo"
-						/>
-					</a>
-				</div>
-				<div id="d-nav-right-container">
-					<div id="d-nav-links-container">
-						<a href="./rooms.html" class="d-nav-link"><h3>ROOMS</h3></a>
-						<div></div>
-						<a href="./resto-bar.html" class="d-nav-link"
-							><h3>RESTO & BAR</h3></a
-						>
-						<div></div>
-						<a href="./amenities.html" class="d-nav-link"
-							><h3 class="d-nav-last-link">AMENITIES</h3></a
-						>
-						<div></div>
-						<!-- <a href="" class="d-nav-link"><h3>VIGAN</h3></a>
-						<div></div> -->
-						<!-- <a href="" class="d-nav-link"
-							><h3 class="d-nav-last-link">OUR STORY</h3></a
-						> -->
-					</div>
-				</div>
-			</nav>
-			<!-- LANDING -->
-			<section id="d-landing-section">
-				<div class="image-filter">
-					<img
-						src="./resources/images/desktop_images/reception.jpg"
-						alt="Reception desk"
-					/>
-				</div>
-			</section>
-			<!-- BOOKING -->
-			<section id="d-booking-section">
-				<h1 class="d-feature-header">BOOKING</h1>
-				<div class="d-line-divider"></div>
-				<div class="d-booking-content-container">
-					<div class="d-booking-info-container">
-						<p>Welcome to Le Dream Hotel!</p>
-						<p>We're delighted to have you with us.</p>
-						<p>
-							Booking your stay is as simple as a
-							<a href="#d-contact">phone call</a> or an
-							<a href="#d-contact">email</a>. Our dedicated team is always ready
-							to assist you. For your convenience, we accept all major credit
-							cards and bank transfers for payment.
-						</p>
-						<ul>
+						<ul class="pricing-info-text">
 							<li>
-								<a href="#d-booking-admin-section">Pricing Information</a>
-							</li>
-							<li>
-								<a href="#d-payment-terms-container">Payment Information</a>
-							</li>
-							<li>
-								<a href="#d-payment-terms-container"
-									>General Terms & Conditions</a
-								>
-							</li>
-						</ul>
-					</div>
-					<div class="d-amenities-container">
-						<div class="d-amenities-header">
-							<h2>AMENITIES</h2>
-						</div>
-						<div class="d-amenities-content-container">
-							<ul>
-								<li class="d-amenities-item1">Air Conditioning</li>
-								<li class="d-amenities-item2">Smart TV</li>
-								<li class="d-amenities-item3">Complimentary WiFi</li>
-								<li class="d-amenities-item4">
-									Complimentary 2 bottles Mineral Water
-								</li>
-								<li class="d-amenities-item5">Free Parking</li>
-								<li class="d-amenities-item6">Airport Pickup & Drop Off</li>
-								<li class="d-amenities-item7">Car Rentals</li>
-								<li class="d-amenities-item8">
-									ATV Rides Farm View / Sea View
-								</li>
-								<li class="d-amenities-item9">
-									Tour Packages (Vigan & Laoag-Pagudpud)
-								</li>
-								<li class="d-amenities-item10">Smoking & Non-Smoking Areas</li>
-							</ul>
-							<ul>
-								<li class="d-amenities-item11">Hot & Cold Rain Shower</li>
-								<li class="d-amenities-item12">Bath Essentials & Hair Dryer</li>
-								<li class="d-amenities-item13">
-									In-room Coffee and Tea facilities
-								</li>
-								<li class="d-amenities-item14">LAK's Resto + Bar</li>
-								<li class="d-amenities-item15">Kalle Cafe'</li>
-								<li class="d-amenities-item16">iWash Laundry House</li>
-								<li class="d-amenities-item17">Canadian Placement Agency</li>
-								<li class="d-amenities-item18">
-									Mini-bar Refrigerator (excl. Standard Room)
-								</li>
-								<li class="d-amenities-item19">
-									Safety Deposit Box (excl. Standard Room)
-								</li>
-								<li class="d-amenities-item20">
-									Service Van to and from Vigan Heritage Site
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class="d-line-divider d-before"></div>
-			<!-- ADMIN -->
-			<section id="d-booking-admin-section">
-				<div id="d-booking-admin-pricing-section">
-					<div class="d-pricing-info-container">
-						<h3>PRICING INFORMATION</h3>
-						<ul>
-							<li>
-								Rates are inclusive of applicable government taxes and service
-								charge.
+								Above rates are inclusive of applicable government taxes and
+								service charge.
 							</li>
 							<li>Extra person/bed: ₱1,000.00 with breakfast.</li>
 							<li>
@@ -522,79 +287,17 @@
 							</li>
 						</ul>
 					</div>
-					<div class="table-div">
-						<table>
-							<tr>
-								<th class="border-right">Room Type</th>
-								<th class="border-right">Number of Guests</th>
-								<th class="border-right">Published Rate</th>
-								<!-- <th>Promo Rate</th> -->
-							</tr>
-							<tr>
-								<td>
-									<a href="./rooms.html#above-d-executive"
-										><strong>Executive Room</strong></a
-									>
-								</td>
-								<td>2</td>
-								<td>₱6,780</td>
-								<!-- <td><strong>₱6,500</strong></td> -->
-							</tr>
-							<!-- <tr class="blue">
-								<td>Junior Suite</td>
-								<td>2</td>
-								<td>₱7,200</td>
-								<td>₱5,500</td>
-							</tr> -->
-							<tr class="blue">
-								<td>
-									<a href="./rooms.html#above-d-deluxe"
-										><strong>Deluxe Room</strong></a
-									>
-								</td>
-								<td>2</td>
-								<td>₱5,680</td>
-								<!-- <td><strong>₱5,500</strong></td> -->
-							</tr>
-							<tr>
-								<td>
-									<a href="./rooms.html#above-d-family"
-										><strong>Family Room</strong></a
-									>
-								</td>
-								<td>3</td>
-								<td>₱8,800</td>
-								<!-- <td><strong>₱7,500</strong></td> -->
-							</tr>
-							<tr class="blue">
-								<td>
-									<a href="./rooms.html#above-d-superior"
-										><strong>Superior Room</strong></a
-									>
-								</td>
-								<td>2</td>
-								<td>₱4,500</td>
-								<!-- <td><strong>₱4,500</strong></td> -->
-							</tr>
-							<tr>
-								<td>
-									<a href="./rooms.html#above-d-standard"
-										><strong>Standard Room</strong></a
-									>
-								</td>
-								<td>2</td>
-								<td>₱3,500</td>
-								<!-- <td><strong>₱3,500</strong></td> -->
-							</tr>
-						</table>
-					</div>
 				</div>
-				<div class="d-line-divider d-before"></div>
-				<div id="d-payment-terms-container">
-					<div id="d-booking-admin-payment-section">
+				<div
+					id="above-booking-admin-payment-section"
+					class="above-section-link"
+				></div>
+				<div class="line-divider"></div>
+				<div id="payment-terms-container">
+					<div id="booking-admin-payment-section">
 						<h3>PAYMENT INFORMATION</h3>
 						<ul>
-							<li class="d-booking-admin-type">Credit Payments</li>
+							<li class="booking-admin-type">Credit Payments</li>
 							<li>
 								Please call Le Dream Hotel for assistance with credit payments.
 							</li>
@@ -615,7 +318,7 @@
 									<a href="tel:+63-956-974-3211">+63-956-974-3211</a></strong
 								>
 							</li>
-							<li class="d-booking-admin-type body">Bank Deposits</li>
+							<li class="booking-admin-type body">Bank Deposits</li>
 							<li>
 								All desposited payments to be made payable to
 								<strong>LE DREAM HOTEL</strong>, through
@@ -626,7 +329,7 @@
 								Please scan and email validated deposit slip to us for payment
 								confirmation.
 							</li>
-							<li class="d-booking-admin-type body">Questions?</li>
+							<li class="booking-admin-type body">Questions?</li>
 							<li>
 								Call or email
 								<strong
@@ -638,7 +341,9 @@
 							</li>
 						</ul>
 					</div>
-					<div id="d-booking-admin-terms-section">
+					<div id="above-booking-admin-terms-section"></div>
+					<div class="line-divider m-only"></div>
+					<div id="booking-admin-terms-section">
 						<h3>GENERAL TERMS & CONDITIONS</h3>
 						<ul>
 							<li>Check-in 2:00PM / Check-out 12:00PM</li>
@@ -650,7 +355,7 @@
 								All guests are requested to present their Government issued ID
 								or valid Passport and Visa for Foreign Nationals upon arrival.
 							</li>
-							<li class="d-booking-admin-type body">Cancellation Policy:</li>
+							<li class="booking-admin-type body">Cancellation Policy:</li>
 							<li>
 								Upon confirmation of your booking and signing of the agreement,
 								cancellation shall no longer be accepted.
@@ -663,19 +368,60 @@
 					</div>
 				</div>
 			</section>
-			<!-- CONTACT -->
-			<div class="above-section-link" id="d-contact"></div>
-			<section id="d-feature-contact-section">
+			<!-- CONTACT MOBILE-->
+			<div id="above-contact-section"></div>
+			<section id="contact-section">
 				<h2>CONTACT US</h2>
-				<div class="d-feature-contact-container">
-					<div class="d-feature-contact-sendoff">
+				<div class="line-divider"></div>
+				<div class="contact-div">
+					<img src="./resources/images/icons/phone_icon.png" alt="phone icon" />
+					<div class="contact-phone-info">
+						<h3>Landline: <a href="tel:077-644-3273">077-644-3273</a></h3>
+						<h3>Mobile(local): <a href="tel:919-839-7493">919-839-7493</a></h3>
+						<h3>
+							Mobile(global):
+							<a href="tel:+63-956-974-3211">+63-956-974-3211</a>
+						</h3>
+					</div>
+				</div>
+				<div class="line-divider-contact"></div>
+				<div class="contact-div">
+					<img src="./resources/images/icons/email_icon.png" alt="email icon" />
+					<div>
+						<h3>
+							<a href="mailto:hotelledream@gmail.com">hotelledream@gmail.com</a>
+						</h3>
+					</div>
+				</div>
+				<div class="line-divider-contact"></div>
+				<div class="contact-div">
+					<img src="./resources/images/icons/clock_icon.png" alt="clock icon" />
+					<div>
+						<h3>Check-in 2:00pm</h3>
+						<h3>Check-out 12:00pm</h3>
+					</div>
+				</div>
+				<div class="line-divider-contact"></div>
+				<div class="contact-sendoff">
+					<p>Ready to book?</p>
+					<p>Need more information?</p>
+					<p>Call or email us and we'll take care of everything.</p>
+					<p>See you soon!</p>
+				</div>
+			</section>
+			<!-- CONTACT TABLET AND DESKTOP -->
+			<section id="feature-contact-section">
+				<h2>CONTACT US</h2>
+				<div class="feature-contact-container">
+					<div class="feature-contact-sendoff">
 						<p>Ready to book?</p>
 						<p>Need more information?</p>
 						<p>Call or email us and we'll take care of everything.</p>
 						<p>See you soon!</p>
 					</div>
-					<div class="d-feature-contact-info">
-						<div class="d-contact-div">
+					<div class="td-contact-midline"></div>
+					<div class="feature-contact-info">
+						<div class="contact-div">
 							<img
 								src="./resources/images/icons/phone_icon.png"
 								alt="phone icon"
@@ -691,8 +437,8 @@
 								</h3>
 							</div>
 						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
+						<div class="line-divider-contact"></div>
+						<div class="contact-div">
 							<img
 								src="./resources/images/icons/email_icon.png"
 								alt="email icon"
@@ -705,8 +451,8 @@
 								</h3>
 							</div>
 						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
+						<div class="line-divider-contact"></div>
+						<div class="contact-div">
 							<img
 								src="./resources/images/icons/clock_icon.png"
 								alt="clock icon"
@@ -720,12 +466,11 @@
 				</div>
 			</section>
 			<!-- SOCIALS -->
-			<section id="d-socials-section">
-				<header id="d-socials-header">
+			<section id="socials-section">
+				<header id="socials-header">
 					<h2>SHARE THE LOVE</h2>
-					<img src="./resources/images/icons/heart_icon.png" alt="heart icon" />
 				</header>
-				<div class="d-socials-icons">
+				<div class="socials-icons">
 					<a
 						href="https://www.instagram.com/le.dreamhotel/"
 						target="_blank"
@@ -737,402 +482,34 @@
 					</a>
 				</div>
 			</section>
-			<!-- FOOTER -->
-			<footer id="d-footer">
-				<div id="d-footer-links">
-					<ul>
-						<li><a href="./legal.html#d-privacy">Privacy Policy</a></li>
-						<div>|</div>
-						<li><a href="./legal.html#d-safety">Safety & Security</a></li>
-						<div>|</div>
-						<li><a href="./legal.html#d-terms">Terms & Conditions</a></li>
-						<div>|</div>
-						<li>
-							<a href="./legal.html#d-supplier">Supplier Code of Conduct</a>
-						</li>
-					</ul>
+			<!-- FOOTER MOBILE -->
+			<footer id="footer">
+				<div id="footer-links">
+					<div>
+						<p><a href="./legal.html#privacy">Privacy Policy</a></p>
+						<p><a href="./legal.html#safety">Safety & Security</a></p>
+					</div>
+					<div>
+						<p><a href="./legal.html#terms">Terms & Conditions</a></p>
+						<p>
+							<a href="./legal.html#supplier">Supplier Code of Conduct</a>
+						</p>
+					</div>
 				</div>
 				<p>©2023 Le Dream Hotel, All Rights Reserved</p>
 			</footer>
-		</div>
-		<div id="tablet">
-			<!-- NAV-BAR -->
-			<nav id="d-nav">
-				<div id="d-nav-left-container">
-					<a href="./index.html"
-						><img
-							class="d-nav-logo1"
-							src="./resources/images/logo_no_background.png"
-							alt="Le Dream logo"
-						/>
-					</a>
-					<a href="./index.html"
-						><img
-							class="d-nav-logo2"
-							src="./resources/images/logo_words_no_background.png"
-							alt="Le Dream Hotel logo"
-						/>
-					</a>
-				</div>
-				<div id="d-nav-right-container">
-					<div id="d-nav-links-container">
-						<a href="./rooms.html" class="d-nav-link"><h3>ROOMS</h3></a>
-						<div></div>
-						<a href="./resto-bar.html" class="d-nav-link"
-							><h3>RESTO & BAR</h3></a
-						>
-						<div></div>
-						<a href="./amenities.html" class="d-nav-link"
-							><h3 class="d-nav-last-link">AMENITIES</h3></a
-						>
-						<div></div>
-						<!-- <a href="" class="d-nav-link"><h3>VIGAN</h3></a>
-						<div></div> -->
-						<!-- <a href="" class="d-nav-link"
-							><h3 class="d-nav-last-link">OUR STORY</h3></a
-						> -->
-					</div>
-				</div>
-			</nav>
-			<!-- LANDING -->
-			<section id="d-landing-section">
-				<div class="image-filter">
-					<img
-						src="./resources/images/desktop_images/reception.jpg"
-						alt="Reception desk"
-					/>
-				</div>
-			</section>
-			<!-- BOOKING -->
-			<section id="t-booking-section">
-				<h1 class="t-feature-header">BOOKING</h1>
-				<div class="t-line-divider"></div>
-				<div class="t-booking-content-container">
-					<div class="t-booking-info-container">
-						<p>Welcome to Le Dream Hotel!</p>
-						<p>We're delighted to have you with us.</p>
-						<p>
-							Booking your stay is as simple as a
-							<a href="#t-contact">phone call</a> or an
-							<a href="#t-contact">email</a>. Our dedicated team is always ready
-							to assist you. For your convenience, we accept all major credit
-							cards and bank transfers for payment.
-						</p>
-						<ul>
-							<li>
-								<a href="#t-pricing-information-link">Pricing Information</a>
-							</li>
-							<li>
-								<a href="#t-payment-terms-link">Payment Information</a>
-							</li>
-							<li>
-								<a href="#t-payment-terms-link">General Terms & Conditions</a>
-							</li>
-						</ul>
-					</div>
-					<div class="t-line-divider"></div>
-					<div id="t-amenities-card-section">
-						<div class="t-amenities-container">
-							<div class="t-amenities-header">
-								<h2>AMENITIES</h2>
-							</div>
-							<div class="t-amenities-content-container">
-								<ul>
-									<li class="t-amenities-item1">Air Conditioning</li>
-									<li class="t-amenities-item2">Smart TV</li>
-									<li class="t-amenities-item3">Complimentary WiFi</li>
-									<li class="t-amenities-item4">
-										Complimentary 2 bottles Mineral Water
-									</li>
-									<li class="t-amenities-item5">Free Parking</li>
-									<li class="t-amenities-item6">Airport Pickup & Drop Off</li>
-									<li class="t-amenities-item7">Car Rentals</li>
-									<li class="t-amenities-item8">
-										ATV Rides Farm View / Sea View
-									</li>
-									<li class="t-amenities-item9">
-										Tour Packages (Vigan & Laoag-Pagudpud)
-									</li>
-									<li class="t-amenities-item10">
-										Smoking & Non-Smoking Areas
-									</li>
-								</ul>
-								<ul>
-									<li class="t-amenities-item11">Hot & Cold Rain Shower</li>
-									<li class="t-amenities-item12">
-										Bath Essentials & Hair Dryer
-									</li>
-									<li class="t-amenities-item13">
-										In-room Coffee and Tea facilities
-									</li>
-									<li class="t-amenities-item14">LAK's Resto + Bar</li>
-									<li class="t-amenities-item15">
-										Kalle Cafe' Specialty Coffee
-									</li>
-									<li class="t-amenities-item16">iWash Laundry House</li>
-									<li class="t-amenities-item17">Canadian Placement Agency</li>
-									<li class="t-amenities-item18">
-										Mini-bar Refrigerator (excl. Standard Room)
-									</li>
-									<li class="t-amenities-item19">
-										Safety Deposit Box (excl. Standard Room)
-									</li>
-									<li class="t-amenities-item20">
-										Service Van to and from Vigan Heritage Site
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class="t-line-divider t-before"></div>
-			<!-- ADMIN -->
-			<div class="section-link" id="t-pricing-information-link"></div>
-			<section id="t-booking-admin-section">
-				<div id="t-booking-admin-pricing-section">
-					<h3>PRICING INFORMATION</h3>
-					<div class="t-pricing-info-container">
-						<div class="table-div">
-							<table>
-								<tr>
-									<th class="border-right">Room Type</th>
-									<th class="border-right">Number of Guests</th>
-									<th class="border-right">Published Rate</th>
-									<!-- <th>Promo Rate</th> -->
-								</tr>
-								<tr>
-									<td>
-										<a href="./rooms.html#t-executive-link"
-											><strong>Executive Room</strong></a
-										>
-									</td>
-									<td>2</td>
-									<td>₱6,780</td>
-									<!-- <td><strong>₱6,500</strong></td> -->
-								</tr>
-								<!-- <tr class="blue">
-									<td>Junior Suite</td>
-									<td>2</td>
-									<td>₱7,200</td>
-									<td>₱5,500</td>
-								</tr> -->
-								<tr class="blue">
-									<td>
-										<a href="./rooms.html#t-deluxe-link"
-											><strong>Deluxe Room</strong></a
-										>
-									</td>
-									<td>2</td>
-									<td>₱5,680</td>
-									<!-- <td><strong>₱5,500</strong></td> -->
-								</tr>
-								<tr>
-									<td>
-										<a href="./rooms.html#t-family-link"
-											><strong>Family Room</strong></a
-										>
-									</td>
-									<td>3</td>
-									<td>₱8,800</td>
-									<!-- <td><strong>₱7,500</strong></td> -->
-								</tr>
-								<tr class="blue">
-									<td>
-										<a href="./rooms.html#t-superior-link"
-											><strong>Superior Room</strong></a
-										>
-									</td>
-									<td>2</td>
-									<td>₱4,500</td>
-									<!-- <td><strong>₱4,500</strong></td> -->
-								</tr>
-								<tr>
-									<td>
-										<a href="./rooms.html#t-standard-link"
-											><strong>Standard Room</strong></a
-										>
-									</td>
-									<td>2</td>
-									<td>₱3,500</td>
-									<!-- <td><strong>₱3,500</strong></td> -->
-								</tr>
-							</table>
-						</div>
-						<ul class="t-pricing-info-text">
-							<li>
-								Rates are inclusive of applicable government taxes and service
-								charge.
-							</li>
-							<li>Extra person/bed: ₱1,000.00 with breakfast.</li>
-							<li>
-								Child Policy: Up to 7 years old, free of charge (max. 2 children
-								allowed)
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="t-line-divider t-before"></div>
-				<div class="section-link" id="t-payment-terms-link"></div>
-				<div id="t-payment-terms-container">
-					<div id="t-booking-admin-payment-section">
-						<h3>PAYMENT INFORMATION</h3>
-						<ul>
-							<li class="t-booking-admin-type">Credit Payments</li>
-							<li>
-								Please call Le Dream Hotel for assistance with credit payments.
-							</li>
-							<li>
-								<strong
-									>Landline: <a href="tel:077-644-3273">077-644-3273</a></strong
-								>
-							</li>
-							<li>
-								<strong
-									>Mobile(local):
-									<a href="tel:919-839-7493">919-839-7493</a></strong
-								>
-							</li>
-							<li>
-								<strong
-									>Mobile(global):
-									<a href="tel:+63-956-974-3211">+63-956-974-3211</a></strong
-								>
-							</li>
-							<li class="t-booking-admin-type body">Bank Deposits</li>
-							<li>
-								All desposited payments to be made payable to
-								<strong>LE DREAM HOTEL</strong>, through
-								<strong>BANCO DE ORO (VIGAN BRANCH)</strong>.
-							</li>
-							<li><strong>Savings Account: 008228003556</strong></li>
-							<li>
-								Please scan and email validated deposit slip to us for payment
-								confirmation.
-							</li>
-							<li class="t-booking-admin-type body">Questions?</li>
-							<li>
-								Call or email
-								<strong
-									><a href="mailto:hotelledream@gmail.com"
-										>hotelledream@gmail.com</a
-									></strong
-								>
-								and we't be happy to assist you.
-							</li>
-						</ul>
-					</div>
-					<div id="t-booking-admin-terms-section">
-						<h3>GENERAL TERMS & CONDITIONS</h3>
-						<ul>
-							<li>Check-in 2:00PM / Check-out 12:00PM</li>
-							<li>
-								Requests for early check-in / late check-out will be subject to
-								availability and confirmation with our Front-Desk Manager.
-							</li>
-							<li>
-								All guests are requested to present their Government issued ID
-								or valid Passport and Visa for Foreign Nationals upon arrival.
-							</li>
-							<li class="t-booking-admin-type body">Cancellation Policy:</li>
-							<li>
-								Upon confirmation of your booking and signing of the agreement,
-								cancellation shall no longer be accepted.
-							</li>
-							<li>
-								In case of cancellation, the client agrees to pay the
-								cancellation charge equivalent to the total guaranteed cost.
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!-- CONTACT -->
-			<div class="above-section-link" id="t-contact"></div>
-			<section id="d-feature-contact-section">
-				<h2>CONTACT US</h2>
-				<div class="d-feature-contact-container">
-					<div class="d-feature-contact-sendoff">
-						<p>Ready to book?</p>
-						<p>Need more information?</p>
-						<p>Call or email us and we'll take care of everything.</p>
-						<p>See you soon!</p>
-					</div>
-					<div class="d-feature-contact-info">
-						<div class="d-contact-div">
-							<img
-								src="./resources/images/icons/phone_icon.png"
-								alt="phone icon"
-							/>
-							<div>
-								<h3>Landline: <a href="tel:077-644-3273">077-644-3273</a></h3>
-								<h3>
-									Mobile(local): <a href="tel:919-839-7493">919-839-7493</a>
-								</h3>
-								<h3>
-									Mobile(global):
-									<a href="tel:+63-956-974-3211">+63-956-974-3211</a>
-								</h3>
-							</div>
-						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
-							<img
-								src="./resources/images/icons/email_icon.png"
-								alt="email icon"
-							/>
-							<div>
-								<h3>
-									<a href="mailto:hotelledream@gmail.com"
-										>hotelledream@gmail.com</a
-									>
-								</h3>
-							</div>
-						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
-							<img
-								src="./resources/images/icons/clock_icon.png"
-								alt="clock icon"
-							/>
-							<div>
-								<h3>Check-in 2:00pm</h3>
-								<h3>Check-out 12:00pm</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- SOCIALS -->
-			<section id="d-socials-section">
-				<header id="d-socials-header">
-					<h2>SHARE THE LOVE</h2>
-					<img src="./resources/images/icons/heart_icon.png" alt="heart icon" />
-				</header>
-				<div class="d-socials-icons">
-					<a
-						href="https://www.instagram.com/le.dreamhotel/"
-						target="_blank"
-						rel="noopener"
-						><img
-							src="./resources/images/icons/instagram.png"
-							alt="instagram icon"
-						/>
-					</a>
-				</div>
-			</section>
-			<!-- FOOTER -->
-			<footer id="d-footer">
-				<div id="d-footer-links">
+			<!-- FOOTER TABLET AND DESKTOP -->
+			<footer id="td-footer">
+				<div id="td-footer-links">
 					<ul>
-						<li><a href="./legal.html#t-privacy">Privacy Policy</a></li>
+						<li><a href="/legal.html#privacy">Privacy Policy</a></li>
 						<div>|</div>
-						<li><a href="./legal.html#t-safety">Safety & Security</a></li>
+						<li><a href="/legal.html#safety">Safety &amp; Security</a></li>
 						<div>|</div>
-						<li><a href="./legal.html#t-terms">Terms & Conditions</a></li>
+						<li><a href="/legal.html#terms">Terms &amp; Conditions</a></li>
 						<div>|</div>
 						<li>
-							<a href="./legal.html#t-supplier">Supplier Code of Conduct</a>
+							<a href="/legal.html#supplier">Supplier Code of Conduct</a>
 						</li>
 					</ul>
 				</div>

@@ -19,32 +19,30 @@
 		<title>Le Dream Hotel - Rooms</title>
 	</head>
 	<body>
-		<!-- MOBILE -->
-		<div id="mobile">
-			<!-- NAV-BAR -->
-			<nav id="m-nav">
-				<a href="./index.html" class="m-nav-a-img m-nav-logo1"
+		<!-- MAIN MOBILE FIRST -->
+		<div id="main">
+			<!-- MOBILE NAV-BAR -->
+			<nav id="nav">
+				<a href="./index.html" class="nav-a-img nav-logo1"
 					><img
 						src="./resources/images/logo_no_background.png"
 						alt="Le Dream logo"
 					/>
 				</a>
-				<a href="./index.html" class="m-nav-a-img">
+				<a href="./index.html" class="nav-a-img">
 					<img
 						src="./resources/images/logo_words_no_background.png"
 						alt="Le Dream Hotel logo"
 					/>
 				</a>
-				<a href="./booking.html" class="m-book-button">Book Now</a>
-				<a href=""
-					><div class="m-nav-more" id="m-nav-more">
-						<div></div>
-						<div></div>
-						<div></div>
-					</div>
-				</a>
+				<a href="./booking.html" class="book-button">Book Now</a>
+				<div class="nav-more" id="nav-more">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
 			</nav>
-			<!-- DROPDOWN-MENU -->
+			<!-- MOBILE DROPDOWN-MENU -->
 			<div class="dropdown-content" id="dropdown-content">
 				<h1 id="dropdown-exit">x</h1>
 				<div class="dropdown-links">
@@ -55,278 +53,394 @@
 					<!-- <a href=""><strong>OUR STORY</strong></a> -->
 				</div>
 			</div>
-			<script src="./resources/scripts/mNav.js"></script>
+			<script src="./resources/scripts/nav.js"></script>
+			<!-- TABLET AND DESKTOP NAV-BAR -->
+			<nav id="td-nav">
+				<div id="td-nav-left-container">
+					<a href="/"
+						><img
+							class="td-nav-logo1"
+							src="./resources/images/logo_no_background.png"
+							alt="Le Dream logo"
+						/>
+					</a>
+					<a href="/"
+						><img
+							class="td-nav-logo2"
+							src="./resources/images/logo_words_no_background.png"
+							alt="Le Dream Hotel logo"
+						/>
+					</a>
+				</div>
+				<div id="td-nav-right-container">
+					<div id="td-nav-links-container">
+						<a class="td-nav-link" href="/rooms"><h3>ROOMS</h3></a>
+						<div></div>
+						<a class="td-nav-link" href="/resto-bar"
+							><h3>RESTO &amp; BAR</h3></a
+						>
+						<div></div>
+						<a class="td-nav-link" href="/amenities"
+							><h3 class="td-nav-last-link">AMENITIES</h3></a
+						>
+						<div></div>
+						<!-- <a href="" class="td-nav-link"><h3>VIGAN</h3></a>
+						<div></div> -->
+						<!-- <a href="" class="td-nav-link"
+							><h3 class="td-nav-last-link">OUR STORY</h3></a
+						> -->
+					</div>
+					<a class="book-button" href="/booking">Book Now</a>
+				</div>
+			</nav>
+			<!-- LANDING -->
+			<section id="landing-section">
+				<div class="image-filter">
+					<img
+						src="./resources/images/desktop_images/room402.jpg"
+						alt="Executive Room bed"
+					/>
+				</div>
+			</section>
 			<!-- FEATURE -->
-			<section id="m-feature-section">
-				<div id="above-m-executive" class="above-link"></div>
-				<div class="m-sub-feature">
-					<div class="m-feature-landing">
-						<img
-							src="./resources/images/mobile_images/402executive.jpg"
-							alt="Executive Room"
-						/>
-					</div>
-					<h2>EXECUTIVE ROOM</h2>
-					<div class="m-line-divider"></div>
-					<div class="sub-feature-info">
-						<p>
-							Welcome to our Executive Room, a haven of comfort and luxury
-							designed for the discerning traveler(s). Thoughtfully designed,
-							this room offers a blend of elegance and functionality.
-						</p>
-						<p>
-							All bookings include Welcome Drinks upon arrival, Complimentary
-							Breakfast, 2 Bottled Waters, and In-Room Complimentary Tea &
-							Coffee.
-						</p>
-					</div>
-					<ul>
-						<li>Equipped for two guests.</li>
-						<li>1 King Bed, 1 Pull-out Bed</li>
-						<li>Rate ₱6,780 / night.</li>
-						<!-- <li><strong>Special Promotional Rate </strong>₱6,500 / night.</li>
-						<li class="m-sub-li">
-							Promo rate is <em>valid for the month of October</em>, to
-							celebrate our Grand Opening and to thank you for choosing Le Dream
-							Hotel for your stay.
-						</li> -->
-					</ul>
-					<!-- <p class="m-feature-details"><a href="">More details</a></p> -->
-					<a href="./booking.html" class="m-book-button long">Book Now</a>
-					<div class="rooms-package-container">
-						<h3>EXECUTIVE ROOM - PACKAGE A</h3>
-						<div class="rooms-package-details-container">
+			<section id="feature-section">
+				<header class="td-only">
+					<h1>ROOMS</h1>
+					<div class="line-divider title"></div>
+				</header>
+				<div id="above-executive" class="above-link"></div>
+				<div class="sub-feature">
+					<div class="sub-feature-img-info-holder">
+						<div class="feature-landing">
+							<picture>
+								<source
+									media="(min-width: 675px)"
+									srcset="./resources/images/desktop_images/402executive.jpg"
+								/>
+								<img
+									src="./resources/images/mobile_images/402executive.jpg"
+									alt="Executive Room"
+								/>
+							</picture>
+						</div>
+						<div class="sub-feature-info-holder">
+							<h2>EXECUTIVE ROOM</h2>
+							<div class="line-divider m-only"></div>
+							<div class="sub-feature-info">
+								<p>
+									Welcome to our Executive Room, a haven of comfort and luxury
+									designed for the discerning traveler(s). Thoughtfully
+									designed, this room offers a blend of elegance and
+									functionality.
+								</p>
+								<p>
+									All bookings include Welcome Drinks upon arrival,
+									Complimentary Breakfast, 2 Bottled Waters, and In-Room
+									Complimentary Tea & Coffee.
+								</p>
+							</div>
 							<ul>
-								<li>₱10,800</li>
-								<li>
-									<em>ATV Ride</em> (1hr) Miramar Beach with Lunch of Fish and
-									Pinakbet
-								</li>
-								<li>Extra ATV Ride is ₱600/hr</li>
+								<li>Equipped for two guests.</li>
+								<li>1 King Bed, 1 Pull-out Bed</li>
+								<li>Rate ₱6,780 / night.</li>
+								<!-- <li><strong>Special Promotional Rate </strong>₱6,500 / night.</li>
+								<li class="sub-li">
+									Promo rate is <em>valid for the month of October</em>, to
+									celebrate our Grand Opening and to thank you for choosing Le Dream
+									Hotel for your stay.
+								</li> -->
 							</ul>
-							<ul>
-								<li>Complimentary <em>Service Van</em> to Miramar Beach</li>
-								<li><em>8kg Laundry</em> at iWash Laundry & Dry-Cleaning</li>
-								<li><em>Dinner for 2</em>, choices of Chicken or Bagnet</li>
-								<li>Complimentary (2) 5oz glasses of <em>Red Wine</em></li>
-							</ul>
+							<!-- <p class="feature-details"><a href="">More details</a></p> -->
+							<a href="./booking.html" class="book-button long">Book Now</a>
 						</div>
 					</div>
-					<div class="rooms-package-container">
-						<h3>EXECUTIVE ROOM - VIP PACKAGE</h3>
-						<div class="rooms-package-details-container">
-							<ul>
-								<li>₱22,000</li>
-								<li>
-									<em>ATV Ride</em> (2hrs) Miramar Beach with Lunch of Fish,
-									Bagnet and Pinakbet
-								</li>
-								<li>Complimentary <em>Service Van</em> to Miramar Beach</li>
-								<li>
-									Complimentary <em>Coffee or Cold Drinks</em> in Kalle Cafe'
-									Specialty Coffee
-								</li>
-							</ul>
-							<ul>
-								<li>
-									<em>Dinner for 2</em> at LAK's Resto + Bar, with choice of
-									Ribeye, Bagnet, Fish or Chicken
-								</li>
-								<li>
-									Complimentary 5oz glass of imported Italian <em>Red Wine</em>
-								</li>
-								<li>1 Bottle of <em>Ice Wine</em> for dessert from Italy</li>
-							</ul>
+					<div class="rooms-package-holder">
+						<div class="rooms-package-container">
+							<h3>EXECUTIVE ROOM - PACKAGE A</h3>
+							<div class="rooms-package-details-container">
+								<ul>
+									<li>₱10,800</li>
+									<li>
+										<em>ATV Ride</em> (1hr) Miramar Beach with Lunch of Fish and
+										Pinakbet
+									</li>
+									<li>Extra ATV Ride is ₱600/hr</li>
+									<li>Complimentary <em>Service Van</em> to Miramar Beach</li>
+									<li><em>8kg Laundry</em> at iWash Laundry & Dry-Cleaning</li>
+									<li><em>Dinner for 2</em>, choices of Chicken or Bagnet</li>
+									<li>Complimentary (2) 5oz glasses of <em>Red Wine</em></li>
+								</ul>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div id="above-m-deluxe" class="above-link"></div>
-				<div class="m-sub-feature">
-					<div class="m-feature-landing">
-						<img
-							src="./resources/images/mobile_images/311deluxe.jpg"
-							alt="Deluxe Room"
-						/>
-					</div>
-					<h2>DELUXE ROOM</h2>
-					<div class="m-line-divider"></div>
-					<p>
-						Enter the Deluxe Room, a space designed to maximize comfort and
-						value, offering a mix of style and convenience.
-					</p>
-					<ul>
-						<li>Equipped for two guests.</li>
-						<li>1 King Bed</li>
-						<li>Rate ₱5,680 / night.</li>
-						<!-- <li><strong>Special Promotional Rate </strong>₱5,500 / night.</li>
-						<li class="m-sub-li">
-							Promo rate is <em>valid for the month of October</em>, to
-							celebrate our Grand Opening and to thank you for choosing Le Dream
-							Hotel for your stay.
-						</li> -->
-					</ul>
-					<!-- <p class="m-feature-details"><a href="">More details</a></p> -->
-					<a href="./booking.html" class="m-book-button long">Book Now</a>
-					<div class="rooms-package-container">
-						<h3>DELUXE ROOM - PACKAGE B</h3>
-						<div class="rooms-package-details-container">
-							<ul>
-								<li>₱9,800</li>
-								<li><em>Ribeye Dinner for 2</em> at LAK's Resto + Bar</li>
-								<li>Complimentary (2) 5oz glasses of <em>Red Wine</em></li>
-							</ul>
-							<ul></ul>
+						<div class="rooms-package-container">
+							<h3>EXECUTIVE ROOM - VIP PACKAGE</h3>
+							<div class="rooms-package-details-container">
+								<ul>
+									<li>₱22,000</li>
+									<li>
+										<em>ATV Ride</em> (2hrs) Miramar Beach with Lunch of Fish,
+										Bagnet and Pinakbet
+									</li>
+									<li>Complimentary <em>Service Van</em> to Miramar Beach</li>
+									<li>
+										Complimentary <em>Coffee or Cold Drinks</em> in Kalle Cafe'
+										Specialty Coffee
+									</li>
+									<li>
+										<em>Dinner for 2</em> at LAK's Resto + Bar, with choice of
+										Ribeye, Bagnet, Fish or Chicken
+									</li>
+									<li>
+										Complimentary 5oz glass of imported Italian
+										<em>Red Wine</em>
+									</li>
+									<li>1 Bottle of <em>Ice Wine</em> for dessert from Italy</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div id="above-m-superior" class="above-link"></div>
-				<div class="m-sub-feature">
-					<div class="m-feature-landing">
-						<img
-							src="./resources/images/mobile_images/209superior.jpg"
-							alt="Superior Room"
-						/>
+				<div class="line-divider td-only"></div>
+				<div id="above-deluxe" class="above-link"></div>
+				<div class="sub-feature">
+					<div class="sub-feature-img-info-holder">
+						<div class="feature-landing">
+							<picture>
+								<source
+									media="(min-width: 675px)"
+									srcset="./resources/images/desktop_images/311deluxe.jpg"
+								/>
+								<img
+									src="./resources/images/mobile_images/311deluxe.jpg"
+									alt="Deluxe Room"
+								/>
+							</picture>
+						</div>
+						<div class="sub-feature-info-holder">
+							<h2>DELUXE ROOM</h2>
+							<div class="line-divider m-only"></div>
+							<div class="sub-feature-info">
+								<p>
+									Enter the Deluxe Room, a space designed to maximize comfort
+									and value, offering a mix of style and convenience.
+								</p>
+							</div>
+							<ul>
+								<li>Equipped for two guests.</li>
+								<li>1 King Bed</li>
+								<li>Rate ₱5,680 / night.</li>
+								<!-- <li><strong>Special Promotional Rate </strong>₱5,500 / night.</li>
+								<li class="sub-li">
+									Promo rate is <em>valid for the month of October</em>, to
+									celebrate our Grand Opening and to thank you for choosing Le Dream
+									Hotel for your stay.
+								</li> -->
+							</ul>
+							<!-- <p class="feature-details"><a href="">More details</a></p> -->
+							<a href="./booking.html" class="book-button long">Book Now</a>
+						</div>
 					</div>
-					<h2>SUPERIOR ROOM</h2>
-					<div class="m-line-divider"></div>
-					<p>
-						Experience the sanctuary of relaxation and tranquility that is our
-						Superior Room. Modern comfort is made affordable in this quality
-						accommodation.
-					</p>
-					<ul>
-						<li>Equipped for two guests.</li>
-						<li>1 King Bed or 2 Single Beds</li>
-						<li>Rate ₱4,500 / night.</li>
-						<!-- <li><strong>Special Promotional Rate </strong>₱4,500 / night.</li>
-						<li class="m-sub-li">
-							Promo rate is <em>valid for the month of October</em>, to
-							celebrate our Grand Opening and to thank you for choosing Le Dream
-							Hotel for your stay.
-						</li> -->
-					</ul>
-					<!-- <p class="m-feature-details"><a href="">More details</a></p> -->
-					<a href="./booking.html" class="m-book-button long">Book Now</a>
-					<div class="rooms-package-container">
-						<h3>SUPERIOR ROOM - PACKAGE C</h3>
-						<div class="rooms-package-details-container">
-							<ul>
-								<li>₱6,500</li>
-								<li>
-									<em>ATV Ride</em> (1hr) Miramar Beach with Lunch of Fish and
-									Pinakbet
-								</li>
-							</ul>
-							<ul>
-								<li>Complimentary <em>Service Van</em> to Miramar Beach</li>
-								<li><em>8kg Laundry</em> at iWash Laundry & Dry-Cleaning</li>
-							</ul>
+					<div class="rooms-package-holder">
+						<div class="rooms-package-container">
+							<h3>DELUXE ROOM - PACKAGE B</h3>
+							<div class="rooms-package-details-container">
+								<ul>
+									<li>₱9,800</li>
+									<li><em>Ribeye Dinner for 2</em> at LAK's Resto + Bar</li>
+									<li>Complimentary (2) 5oz glasses of <em>Red Wine</em></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div id="above-m-standard" class="above-link"></div>
-				<div class="m-sub-feature">
-					<div class="m-feature-landing">
-						<img
-							src="./resources/images/mobile_images/205standard.jpg"
-							alt="Standard Room"
-						/>
-					</div>
-					<h2>STANDARD ROOM</h2>
-					<div class="m-line-divider"></div>
-					<p>
-						Simplicity and comfort are found in Le Dream Hotel's Standard Room.
-						We look forward to making your stay a pleasant one.
-					</p>
-					<ul>
-						<li>Equipped for two guests.</li>
-						<li>2 Single Beds</li>
-						<li>Rate ₱3,500 / night.</li>
-						<!-- <li><strong>Special Promotional Rate </strong>₱3,500 / night.</li>
-						<li class="m-sub-li">
-							Promo rate is <em>valid for the month of October</em>, to
-							celebrate our Grand Opening and to thank you for choosing Le Dream
-							Hotel for your stay.
-						</li> -->
-					</ul>
-					<!-- <p class="m-feature-details"><a href="">More details</a></p> -->
-					<a href="./booking.html" class="m-book-button long">Book Now</a>
-					<div class="rooms-package-container">
-						<h3>STANDARD ROOM - PACKAGE D</h3>
-						<div class="rooms-package-details-container">
+				<div class="line-divider td-only"></div>
+				<div id="above-superior" class="above-link"></div>
+				<div class="sub-feature">
+					<div class="sub-feature-img-info-holder">
+						<div class="feature-landing">
+							<picture>
+								<source
+									media="(min-width: 675px)"
+									srcset="./resources/images/desktop_images/209superior.jpg"
+								/>
+								<img
+									src="./resources/images/mobile_images/209superior.jpg"
+									alt="Superior Room"
+								/>
+							</picture>
+						</div>
+						<div class="sub-feature-info-holder">
+							<h2>SUPERIOR ROOM</h2>
+							<div class="line-divider m-only"></div>
+							<div class="sub-feature-info">
+								<p>
+									Experience the sanctuary of relaxation and tranquility that is
+									our Superior Room. Modern comfort is made affordable in this
+									quality accommodation.
+								</p>
+							</div>
 							<ul>
-								<li>₱5,500</li>
-								<li>
-									<em>Dinner for 2</em> at LAK's Resto + Bar, choice of Fish,
-									Chicken, or Bagnet
-								</li>
-								<li>Complimentary (2) 5oz glasses of <em>Red Wine</em></li>
+								<li>Equipped for two guests.</li>
+								<li>1 King Bed or 2 Single Beds</li>
+								<li>Rate ₱4,500 / night.</li>
+								<!-- <li><strong>Special Promotional Rate </strong>₱4,500 / night.</li>
+								<li class="sub-li">
+									Promo rate is <em>valid for the month of October</em>, to
+									celebrate our Grand Opening and to thank you for choosing Le Dream
+									Hotel for your stay.
+								</li> -->
 							</ul>
-							<ul></ul>
+							<!-- <p class="feature-details"><a href="">More details</a></p> -->
+							<a href="./booking.html" class="book-button long">Book Now</a>
+						</div>
+					</div>
+					<div class="rooms-package-holder">
+						<div class="rooms-package-container">
+							<h3>SUPERIOR ROOM - PACKAGE C</h3>
+							<div class="rooms-package-details-container">
+								<ul>
+									<li>₱6,500</li>
+									<li>
+										<em>ATV Ride</em> (1hr) Miramar Beach with Lunch of Fish and
+										Pinakbet
+									</li>
+									<li>Complimentary <em>Service Van</em> to Miramar Beach</li>
+									<li><em>8kg Laundry</em> at iWash Laundry & Dry-Cleaning</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div id="above-m-family" class="above-link"></div>
-				<div class="m-sub-feature">
-					<div class="m-feature-landing">
-						<img
-							src="./resources/images/mobile_images/202family.jpg"
-							alt="Family Room"
-						/>
+				<div class="line-divider td-only"></div>
+				<div id="above-standard" class="above-link"></div>
+				<div class="sub-feature">
+					<div class="sub-feature-img-info-holder">
+						<div class="feature-landing">
+							<picture>
+								<source
+									media="(min-width: 675px)"
+									srcset="./resources/images/desktop_images/205standard.jpg"
+								/>
+								<img
+									src="./resources/images/mobile_images/205standard.jpg"
+									alt="Standard Room"
+								/>
+							</picture>
+						</div>
+						<div class="sub-feature-info-holder">
+							<h2>STANDARD ROOM</h2>
+							<div class="line-divider m-only"></div>
+							<div class="sub-feature-info">
+								<p>
+									Simplicity and comfort are found in Le Dream Hotel's Standard
+									Room. We look forward to making your stay a pleasant one.
+								</p>
+							</div>
+							<ul>
+								<li>Equipped for two guests.</li>
+								<li>2 Single Beds</li>
+								<li>Rate ₱3,500 / night.</li>
+								<!-- <li><strong>Special Promotional Rate </strong>₱3,500 / night.</li>
+								<li class="sub-li">
+									Promo rate is <em>valid for the month of October</em>, to
+									celebrate our Grand Opening and to thank you for choosing Le Dream
+									Hotel for your stay.
+								</li> -->
+							</ul>
+							<!-- <p class="feature-details"><a href="">More details</a></p> -->
+							<a href="./booking.html" class="book-button long">Book Now</a>
+						</div>
 					</div>
-					<h2>FAMILY ROOM</h2>
-					<div class="m-line-divider"></div>
-					<p>
-						Your family is invited to stay in the spacious comfort of our Family
-						Room. This room offers a larger space to make lasting memories in
-						the beautiful Le Dream Hotel and Vigan City.
-					</p>
-					<ul>
-						<li>Equipped for three guests.</li>
-						<li>1 King Bed, 1 Single Bed</li>
-						<li>Rate ₱8,800 / night.</li>
-						<!-- <li><strong>Special Promotional Rate </strong>₱7,500 / night.</li>
-						<li class="m-sub-li">
-							Promo rate is <em>valid for the month of October</em>, to
-							celebrate our Grand Opening and to thank you for choosing Le Dream
-							Hotel for your stay.
-						</li> -->
-						<li class="m-sub-li">
-							Extra person/bed: ₱1,000.00 with breakfast.
-						</li>
-					</ul>
-					<!-- <p class="m-feature-details"><a href="">More details</a></p> -->
-					<a href="./booking.html" class="m-book-button long">Book Now</a>
-					<div class="rooms-package-container">
-						<h3>FAMILY ROOM - SPECIAL PACKAGE</h3>
-						<div class="rooms-package-details-container">
+					<div class="rooms-package-holder">
+						<div class="rooms-package-container">
+							<h3>STANDARD ROOM - PACKAGE D</h3>
+							<div class="rooms-package-details-container">
+								<ul>
+									<li>₱5,500</li>
+									<li>
+										<em>Dinner for 2</em> at LAK's Resto + Bar, choice of Fish,
+										Chicken, or Bagnet
+									</li>
+									<li>Complimentary (2) 5oz glasses of <em>Red Wine</em></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="line-divider td-only"></div>
+				<div id="above-family" class="above-link"></div>
+				<div class="sub-feature">
+					<div class="sub-feature-img-info-holder">
+						<div class="feature-landing">
+							<picture>
+								<source
+									media="(min-width: 675px)"
+									srcset="./resources/images/desktop_images/202family.jpg"
+								/>
+								<img
+									src="./resources/images/mobile_images/202family.jpg"
+									alt="Family Room"
+								/>
+							</picture>
+						</div>
+						<div class="sub-feature-info-holder">
+							<h2>FAMILY ROOM</h2>
+							<div class="line-divider m-only"></div>
+							<div class="sub-feature-info">
+								<p>
+									Your family is invited to stay in the spacious comfort of our
+									Family Room. This room offers a larger space to make lasting
+									memories in the beautiful Le Dream Hotel and Vigan City.
+								</p>
+							</div>
 							<ul>
-								<li>₱16,800</li>
-								<li>4 Guests</li>
-								<li>4 Bottled Waters</li>
-							</ul>
-							<ul>
-								<li>
-									<em>Dinner for 4</em> at LAK's Resto + Bar, choice of Steak,
-									Chicken, Fish or Bagnet
-								</li>
-								<li>1 Bottle imported Italian <em>Red Wine</em></li>
-								<li>
-									Complimentary <em>Coffee</em> at Kalle Cafe' Specialty Coffee
-									after dinner
+								<li>Equipped for three guests.</li>
+								<li>1 King Bed, 1 Single Bed</li>
+								<li>Rate ₱8,800 / night.</li>
+								<!-- <li><strong>Special Promotional Rate </strong>₱7,500 / night.</li>
+								<li class="sub-li">
+									Promo rate is <em>valid for the month of October</em>, to
+									celebrate our Grand Opening and to thank you for choosing Le Dream
+									Hotel for your stay.
+								</li> -->
+								<li class="sub-li">
+									Extra person/bed: ₱1,000.00 with breakfast.
 								</li>
 							</ul>
+							<!-- <p class="feature-details"><a href="">More details</a></p> -->
+							<a href="./booking.html" class="book-button long">Book Now</a>
+						</div>
+					</div>
+					<div class="rooms-package-holder">
+						<div class="rooms-package-container">
+							<h3>FAMILY ROOM - SPECIAL PACKAGE</h3>
+							<div class="rooms-package-details-container">
+								<ul>
+									<li>₱16,800</li>
+									<li>4 Guests</li>
+									<li>4 Bottled Waters</li>
+									<li>
+										<em>Dinner for 4</em> at LAK's Resto + Bar, choice of Steak,
+										Chicken, Fish or Bagnet
+									</li>
+									<li>1 Bottle imported Italian <em>Red Wine</em></li>
+									<li>
+										Complimentary <em>Coffee</em> at Kalle Cafe' Specialty
+										Coffee after dinner
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- CONTACT -->
-			<section id="m-contact-section">
+			<!-- CONTACT MOBILE-->
+			<section id="contact-section">
 				<h2>CONTACT US</h2>
-				<div class="m-line-divider"></div>
-				<div class="m-contact-div">
+				<div class="line-divider"></div>
+				<div class="contact-div">
 					<img src="./resources/images/icons/phone_icon.png" alt="phone icon" />
-					<div>
+					<div class="contact-phone-info">
 						<h3>Landline: <a href="tel:077-644-3273">077-644-3273</a></h3>
 						<h3>Mobile(local): <a href="tel:919-839-7493">919-839-7493</a></h3>
 						<h3>
@@ -335,8 +449,8 @@
 						</h3>
 					</div>
 				</div>
-				<div class="m-line-divider-contact"></div>
-				<div class="m-contact-div">
+				<div class="line-divider-contact"></div>
+				<div class="contact-div">
 					<img src="./resources/images/icons/email_icon.png" alt="email icon" />
 					<div>
 						<h3>
@@ -344,291 +458,35 @@
 						</h3>
 					</div>
 				</div>
-				<div class="m-line-divider-contact"></div>
-				<div class="m-contact-div">
+				<div class="line-divider-contact"></div>
+				<div class="contact-div">
 					<img src="./resources/images/icons/clock_icon.png" alt="clock icon" />
 					<div>
 						<h3>Check-in 2:00pm</h3>
 						<h3>Check-out 12:00pm</h3>
 					</div>
 				</div>
-				<div class="m-line-divider-contact"></div>
-				<div id="m-contact-sendoff">
+				<div class="line-divider-contact"></div>
+				<div class="contact-sendoff">
 					<p>Ready to book?</p>
 					<p>Need more information?</p>
 					<p>Call or email us and we'll take care of everything.</p>
 					<p>See you soon!</p>
 				</div>
 			</section>
-			<!-- SOCIALS -->
-			<section id="m-socials-section">
-				<header id="m-socials-header">
-					<h2>SHARE THE LOVE</h2>
-					<img src="./resources/images/icons/heart_icon.png" alt="heart icon" />
-				</header>
-				<div class="m-socials-icons">
-					<a
-						href="https://www.instagram.com/le.dreamhotel/"
-						target="_blank"
-						rel="noopener"
-						><img
-							src="./resources/images/icons/instagram.png"
-							alt="instagram icon"
-						/>
-					</a>
-				</div>
-			</section>
-			<!-- FOOTER -->
-			<footer id="m-footer">
-				<div id="m-footer-links">
-					<div>
-						<p><a href="./legal.html#m-privacy">Privacy Policy</a></p>
-						<p><a href="./legal.html#m-safety">Safety & Security</a></p>
-					</div>
-					<div>
-						<p><a href="./legal.html#m-terms">Terms & Conditions</a></p>
-						<p>
-							<a href="./legal.html#m-supplier">Supplier Code of Conduct</a>
-						</p>
-					</div>
-				</div>
-				<p>©2023 Le Dream Hotel, All Rights Reserved</p>
-			</footer>
-		</div>
-		<!-- DESKTOP -->
-		<div id="desktop">
-			<!-- NAV-BAR -->
-			<nav id="d-nav">
-				<div id="d-nav-left-container">
-					<a href="./index.html"
-						><img
-							class="d-nav-logo1"
-							src="./resources/images/logo_no_background.png"
-							alt="Le Dream logo"
-						/>
-					</a>
-					<a href="./index.html"
-						><img
-							class="d-nav-logo2"
-							src="./resources/images/logo_words_no_background.png"
-							alt="Le Dream Hotel logo"
-						/>
-					</a>
-				</div>
-				<div id="d-nav-right-container">
-					<div id="d-nav-links-container">
-						<a href="./rooms.html" class="d-nav-link"><h3>ROOMS</h3></a>
-						<div></div>
-						<a href="./resto-bar.html" class="d-nav-link"
-							><h3>RESTO & BAR</h3></a
-						>
-						<div></div>
-						<a href="./amenities.html" class="d-nav-link"
-							><h3 class="d-nav-last-link">AMENITIES</h3></a
-						>
-						<div></div>
-						<!-- <a href="" class="d-nav-link"><h3>VIGAN</h3></a>
-						<div></div> -->
-						<!-- <a href="" class="d-nav-link"
-							><h3 class="d-nav-last-link">OUR STORY</h3></a
-						> -->
-					</div>
-					<a href="./booking.html" class="d-book-button">Book Now</a>
-				</div>
-			</nav>
-			<!-- LANDING -->
-			<section id="d-landing-section">
-				<div class="image-filter">
-					<img
-						src="./resources/images/desktop_images/room402.jpg"
-						alt="Executive Room bed"
-					/>
-				</div>
-				<!-- <a href="#d-contact-section" class="d-book-button">Book Now</a> -->
-			</section>
-			<!-- FEATURE -->
-			<section id="d-feature-section">
-				<h1>ROOMS</h1>
-				<div id="above-d-executive" class="above-link"></div>
-				<div class="d-line-divider"></div>
-				<div class="d-sub-feature">
-					<div class="d-sub-feature-info">
-						<h2>EXECUTIVE ROOM</h2>
-						<p>
-							Welcome to our Executive Room, a haven of comfort and luxury
-							designed for the discerning traveler(s). Thoughtfully designed,
-							this room offers a blend of elegance and functionality.
-						</p>
-						<ul>
-							<li>Equipped for two guests.</li>
-							<li>1 King Bed, 1 Pull-out Bed</li>
-							<li>Rate ₱6,780 / night.</li>
-							<!-- <li><strong>Special Promotional Rate </strong>₱6,500 / night.</li>
-							<li class="d-sub-li">
-								Promo rate is <em>valid for the month of October</em>, to
-								celebrate our Grand Opening and to thank you for choosing Le
-								Dream Hotel for your stay.
-							</li> -->
-						</ul>
-						<!-- <p class="d-feature-details"><a href="">More details</a></p> -->
-						<div class="d-book-button-container">
-							<a href="./booking.html" class="d-book-button long">Book Now</a>
-						</div>
-					</div>
-					<div class="d-sub-feature-image">
-						<img
-							src="./resources/images/desktop_images/402executive.jpg"
-							alt="Executive Room"
-						/>
-					</div>
-				</div>
-				<div id="above-d-deluxe" class="above-link"></div>
-				<div class="d-line-divider"></div>
-				<div class="d-sub-feature">
-					<div class="d-sub-feature-info">
-						<h2>DELUXE ROOM</h2>
-						<p>
-							Enter the Deluxe Room, a space designed to maximize comfort and
-							value, offering a mix of style and convenience.
-						</p>
-						<ul>
-							<li>Equipped for two guests.</li>
-							<li>1 King Bed</li>
-							<li>Rate ₱5,680 / night.</li>
-							<!-- <li><strong>Special Promotional Rate </strong>₱5,500 / night.</li>
-							<li class="d-sub-li">
-								Promo rate is <em>valid for the month of October</em>, to
-								celebrate our Grand Opening and to thank you for choosing Le
-								Dream Hotel for your stay.
-							</li> -->
-						</ul>
-						<!-- <p class="d-feature-details"><a href="">More details</a></p> -->
-						<div class="d-book-button-container">
-							<a href="./booking.html" class="d-book-button long">Book Now</a>
-						</div>
-					</div>
-					<div class="d-sub-feature-image">
-						<img
-							src="./resources/images/desktop_images/311deluxe.jpg"
-							alt="Deluxe Room"
-						/>
-					</div>
-				</div>
-				<div id="above-d-superior" class="above-link"></div>
-				<div class="d-line-divider"></div>
-				<div class="d-sub-feature">
-					<div class="d-sub-feature-info">
-						<h2>SUPERIOR ROOM</h2>
-						<p>
-							Experience the sanctuary of relaxation and tranquility that is our
-							Superior Room. Modern comfort is made affordable in this quality
-							accommodation.
-						</p>
-						<ul>
-							<li>Equipped for two guests.</li>
-							<li>1 King Bed or 2 Single Beds</li>
-							<li>Rate ₱4,500 / night.</li>
-							<!-- <li><strong>Special Promotional Rate </strong>₱4,500 / night.</li>
-							<li class="d-sub-li">
-								Promo rate is <em>valid for the month of October</em>, to
-								celebrate our Grand Opening and to thank you for choosing Le
-								Dream Hotel for your stay.
-							</li> -->
-						</ul>
-						<!-- <p class="d-feature-details"><a href="">More details</a></p> -->
-						<div class="d-book-button-container">
-							<a href="./booking.html" class="d-book-button long">Book Now</a>
-						</div>
-					</div>
-					<div class="d-sub-feature-image">
-						<img
-							src="./resources/images/desktop_images/209superior.jpg"
-							alt="Superior Room"
-						/>
-					</div>
-				</div>
-				<div id="above-d-standard" class="above-link"></div>
-				<div class="d-line-divider"></div>
-				<div class="d-sub-feature">
-					<div class="d-sub-feature-info">
-						<h2>STANDARD ROOM</h2>
-						<p>
-							Simplicity and comfort are found in Le Dream Hotel's Standard
-							Room. We look forward to making your stay a pleasant one.
-						</p>
-						<ul>
-							<li>Equipped for two guests.</li>
-							<li>2 Single Beds</li>
-							<li>Rate ₱3,500 / night.</li>
-							<!-- <li><strong>Special Promotional Rate </strong>₱3,500 / night.</li>
-							<li class="d-sub-li">
-								Promo rate is <em>valid for the month of October</em>, to
-								celebrate our Grand Opening and to thank you for choosing Le
-								Dream Hotel for your stay.
-							</li> -->
-						</ul>
-						<!-- <p class="d-feature-details"><a href="">More details</a></p> -->
-						<div class="d-book-button-container">
-							<a href="./booking.html" class="d-book-button long">Book Now</a>
-						</div>
-					</div>
-					<div class="d-sub-feature-image">
-						<img
-							src="./resources/images/desktop_images/205standard.jpg"
-							alt="Standard Room"
-						/>
-					</div>
-				</div>
-				<div id="above-d-family" class="above-link"></div>
-				<div class="d-line-divider"></div>
-				<div class="d-sub-feature">
-					<div class="d-sub-feature-info">
-						<h2>FAMILY ROOM</h2>
-						<p>
-							Your family is invited to stay in the spacious comfort of our
-							Family Room. This room offers a larger space to make lasting
-							memories in the beautiful Le Dream Hotel and Vigan City.
-						</p>
-						<ul>
-							<li>Equipped for three guests.</li>
-							<li>1 King Bed, 1 Single Bed</li>
-							<li>Rate ₱8,800 / night.</li>
-							<!-- <li><strong>Special Promotional Rate </strong>₱7,500 / night.</li>
-							<li class="d-sub-li">
-								Promo rate is <em>valid for the month of October</em>, to
-								celebrate our Grand Opening and to thank you for choosing Le
-								Dream Hotel for your stay.
-							</li> -->
-							<li class="d-sub-li">
-								Extra person/bed: ₱1,000.00 with breakfast.
-							</li>
-						</ul>
-						<!-- <p class="d-feature-details"><a href="">More details</a></p> -->
-						<div class="d-book-button-container">
-							<a href="./booking.html" class="d-book-button long">Book Now</a>
-						</div>
-					</div>
-					<div class="d-sub-feature-image">
-						<img
-							src="./resources/images/desktop_images/202family.jpg"
-							alt="Family Room"
-						/>
-					</div>
-				</div>
-			</section>
-			<!-- CONTACT -->
-			<div class="above-section-link" id="d-contact"></div>
-			<section id="d-feature-contact-section">
+			<!-- CONTACT TABLET AND DESKTOP -->
+			<section id="feature-contact-section">
 				<h2>CONTACT US</h2>
-				<div class="d-feature-contact-container">
-					<div class="d-feature-contact-sendoff">
+				<div class="feature-contact-container">
+					<div class="feature-contact-sendoff">
 						<p>Ready to book?</p>
 						<p>Need more information?</p>
 						<p>Call or email us and we'll take care of everything.</p>
 						<p>See you soon!</p>
 					</div>
-					<div class="d-feature-contact-info">
-						<div class="d-contact-div">
+					<div class="td-contact-midline"></div>
+					<div class="feature-contact-info">
+						<div class="contact-div">
 							<img
 								src="./resources/images/icons/phone_icon.png"
 								alt="phone icon"
@@ -644,8 +502,8 @@
 								</h3>
 							</div>
 						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
+						<div class="line-divider-contact"></div>
+						<div class="contact-div">
 							<img
 								src="./resources/images/icons/email_icon.png"
 								alt="email icon"
@@ -658,8 +516,8 @@
 								</h3>
 							</div>
 						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
+						<div class="line-divider-contact"></div>
+						<div class="contact-div">
 							<img
 								src="./resources/images/icons/clock_icon.png"
 								alt="clock icon"
@@ -673,12 +531,11 @@
 				</div>
 			</section>
 			<!-- SOCIALS -->
-			<section id="d-socials-section">
-				<header id="d-socials-header">
+			<section id="socials-section">
+				<header id="socials-header">
 					<h2>SHARE THE LOVE</h2>
-					<img src="./resources/images/icons/heart_icon.png" alt="heart icon" />
 				</header>
-				<div class="d-socials-icons">
+				<div class="socials-icons">
 					<a
 						href="https://www.instagram.com/le.dreamhotel/"
 						target="_blank"
@@ -690,330 +547,34 @@
 					</a>
 				</div>
 			</section>
-			<!-- FOOTER -->
-			<footer id="d-footer">
-				<div id="d-footer-links">
-					<ul>
-						<li><a href="./legal.html#d-privacy">Privacy Policy</a></li>
-						<div>|</div>
-						<li><a href="./legal.html#d-safety">Safety & Security</a></li>
-						<div>|</div>
-						<li><a href="./legal.html#d-terms">Terms & Conditions</a></li>
-						<div>|</div>
-						<li>
-							<a href="./legal.html#d-supplier">Supplier Code of Conduct</a>
-						</li>
-					</ul>
+			<!-- FOOTER MOBILE -->
+			<footer id="footer">
+				<div id="footer-links">
+					<div>
+						<p><a href="./legal.html#privacy">Privacy Policy</a></p>
+						<p><a href="./legal.html#safety">Safety & Security</a></p>
+					</div>
+					<div>
+						<p><a href="./legal.html#terms">Terms & Conditions</a></p>
+						<p>
+							<a href="./legal.html#supplier">Supplier Code of Conduct</a>
+						</p>
+					</div>
 				</div>
 				<p>©2023 Le Dream Hotel, All Rights Reserved</p>
 			</footer>
-		</div>
-		<div id="tablet">
-			<!-- NAV-BAR -->
-			<nav id="d-nav">
-				<div id="d-nav-left-container">
-					<a href="./index.html"
-						><img
-							class="d-nav-logo1"
-							src="./resources/images/logo_no_background.png"
-							alt="Le Dream logo"
-						/>
-					</a>
-					<a href="./index.html"
-						><img
-							class="d-nav-logo2"
-							src="./resources/images/logo_words_no_background.png"
-							alt="Le Dream Hotel logo"
-						/>
-					</a>
-				</div>
-				<div id="d-nav-right-container">
-					<div id="d-nav-links-container">
-						<a href="./rooms.html" class="d-nav-link"><h3>ROOMS</h3></a>
-						<div></div>
-						<a href="./resto-bar.html" class="d-nav-link"
-							><h3>RESTO & BAR</h3></a
-						>
-						<div></div>
-						<a href="./amenities.html" class="d-nav-link"
-							><h3 class="d-nav-last-link">AMENITIES</h3></a
-						>
-						<div></div>
-						<!-- <a href="" class="d-nav-link"><h3>VIGAN</h3></a>
-							<div></div> -->
-						<!-- <a href="" class="d-nav-link"
-								><h3 class="d-nav-last-link">OUR STORY</h3></a
-							> -->
-					</div>
-					<a href="./booking.html" class="d-book-button">Book Now</a>
-				</div>
-			</nav>
-			<!-- LANDING -->
-			<section id="d-landing-section">
-				<div class="image-filter">
-					<img
-						src="./resources/images/desktop_images/room402.jpg"
-						alt="Executive Room bed"
-					/>
-				</div>
-				<!-- <a href="#d-contact-section" class="d-book-button">Book Now</a> -->
-			</section>
-			<!-- FEATURE -->
-			<section id="t-feature-section">
-				<h1>ROOMS</h1>
-				<div class="t-line-divider"></div>
-				<div id="t-executive-link" class="section-link extra-space"></div>
-				<div class="t-sub-feature">
-					<h2>EXECUTIVE ROOM</h2>
-					<div class="t-sub-feature-image">
-						<img
-							src="./resources/images/desktop_images/402executive.jpg"
-							alt="Executive Room"
-						/>
-					</div>
-					<div class="t-sub-feature-info">
-						<p>
-							Welcome to our Executive Room, a haven of comfort and luxury
-							designed for the discerning traveler(s). Thoughtfully designed,
-							this room offers a blend of elegance and functionality.
-						</p>
-						<ul>
-							<li>Equipped for two guests.</li>
-							<li>1 King Bed, 1 Pull-out Bed</li>
-							<li>Rate ₱6,780 / night.</li>
-							<!-- <li><strong>Special Promotional Rate </strong>₱6,500 / night.</li>
-							<li class="t-sub-li">
-								Promo rate is <em>valid for the month of October</em>, to
-								celebrate our Grand Opening and to thank you for choosing Le
-								Dream Hotel for your stay.
-							</li> -->
-						</ul>
-						<!-- <p class="t-feature-details"><a href="">More details</a></p> -->
-						<div class="t-book-button-container">
-							<a href="./booking.html" class="t-book-button long">Book Now</a>
-						</div>
-					</div>
-				</div>
-				<div class="t-line-divider"></div>
-				<div id="t-deluxe-link" class="section-link extra-space"></div>
-				<div class="t-sub-feature">
-					<h2>DELUXE ROOM</h2>
-					<div class="t-sub-feature-image">
-						<img
-							src="./resources/images/desktop_images/311deluxe.jpg"
-							alt="Deluxe Room"
-						/>
-					</div>
-					<div class="t-sub-feature-info">
-						<p>
-							Enter the Deluxe Room, a space designed to maximize comfort and
-							value, offering a mix of style and convenience.
-						</p>
-						<ul>
-							<li>Equipped for two guests.</li>
-							<li>1 King Bed</li>
-							<li>Rate ₱5,680 / night.</li>
-							<!-- <li><strong>Special Promotional Rate </strong>₱5,500 / night.</li>
-							<li class="t-sub-li">
-								Promo rate is <em>valid for the month of October</em>, to
-								celebrate our Grand Opening and to thank you for choosing Le
-								Dream Hotel for your stay.
-							</li> -->
-						</ul>
-						<!-- <p class="t-feature-details"><a href="">More details</a></p> -->
-						<div class="t-book-button-container">
-							<a href="./booking.html" class="t-book-button long">Book Now</a>
-						</div>
-					</div>
-				</div>
-				<div class="t-line-divider"></div>
-				<div id="t-superior-link" class="section-link extra-space"></div>
-				<div class="t-sub-feature">
-					<h2>SUPERIOR ROOM</h2>
-					<div class="t-sub-feature-image">
-						<img
-							src="./resources/images/desktop_images/209superior.jpg"
-							alt="Superior Room"
-						/>
-					</div>
-					<div class="t-sub-feature-info">
-						<p>
-							Experience the sanctuary of relaxation and tranquility that is our
-							Superior Room. Modern comfort is made affordable in this quality
-							accommodation.
-						</p>
-						<ul>
-							<li>Equipped for two guests.</li>
-							<li>1 King Bed or 2 Single Beds</li>
-							<li>Rate ₱4,500 / night.</li>
-							<!-- <li><strong>Special Promotional Rate </strong>₱4,500 / night.</li>
-							<li class="t-sub-li">
-								Promo rate is <em>valid for the month of October</em>, to
-								celebrate our Grand Opening and to thank you for choosing Le
-								Dream Hotel for your stay.
-							</li> -->
-						</ul>
-						<!-- <p class="t-feature-details"><a href="">More details</a></p> -->
-						<div class="t-book-button-container">
-							<a href="./booking.html" class="t-book-button long">Book Now</a>
-						</div>
-					</div>
-				</div>
-				<div class="t-line-divider"></div>
-				<div id="t-standard-link" class="section-link extra-space"></div>
-				<div class="t-sub-feature">
-					<h2>STANDARD ROOM</h2>
-					<div class="t-sub-feature-image">
-						<img
-							src="./resources/images/desktop_images/205standard.jpg"
-							alt="Standard Room"
-						/>
-					</div>
-					<div class="t-sub-feature-info">
-						<p>
-							Simplicity and comfort are found in Le Dream Hotel's Standard
-							Room. We look forward to making your stay a pleasant one.
-						</p>
-						<ul>
-							<li>Equipped for two guests.</li>
-							<li>2 Single Beds</li>
-							<li>Rate ₱3,500 / night.</li>
-							<!-- <li><strong>Special Promotional Rate </strong>₱3,500 / night.</li>
-							<li class="t-sub-li">
-								Promo rate is <em>valid for the month of October</em>, to
-								celebrate our Grand Opening and to thank you for choosing Le
-								Dream Hotel for your stay.
-							</li> -->
-						</ul>
-						<!-- <p class="t-feature-details"><a href="">More details</a></p> -->
-						<div class="t-book-button-container">
-							<a href="./booking.html" class="t-book-button long">Book Now</a>
-						</div>
-					</div>
-				</div>
-				<div class="t-line-divider"></div>
-				<div id="t-family-link" class="section-link extra-space"></div>
-				<div class="t-sub-feature">
-					<h2>FAMILY ROOM</h2>
-					<div class="t-sub-feature-image">
-						<img
-							src="./resources/images/desktop_images/202family.jpg"
-							alt="Family Room"
-						/>
-					</div>
-					<div class="t-sub-feature-info">
-						<p>
-							Your family is invited to stay in the spacious comfort of our
-							Family Room. This room offers a larger space to make lasting
-							memories in the beautiful Le Dream Hotel and Vigan City.
-						</p>
-						<ul>
-							<li>Equipped for three guests.</li>
-							<li>1 King Bed, 1 Single Bed</li>
-							<li>Rate ₱8,800 / night.</li>
-							<!-- <li><strong>Special Promotional Rate </strong>₱7,500 / night.</li>
-							<li class="t-sub-li">
-								Promo rate is <em>valid for the month of October</em>, to
-								celebrate our Grand Opening and to thank you for choosing Le
-								Dream Hotel for your stay.
-							</li> -->
-							<li class="t-sub-li">
-								Extra person/bed: ₱1,000.00 with breakfast.
-							</li>
-						</ul>
-						<!-- <p class="t-feature-details"><a href="">More details</a></p> -->
-						<div class="t-book-button-container">
-							<a href="./booking.html" class="t-book-button long">Book Now</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- CONTACT -->
-			<div class="above-section-link" id="d-contact"></div>
-			<section id="d-feature-contact-section">
-				<h2>CONTACT US</h2>
-				<div class="d-feature-contact-container">
-					<div class="d-feature-contact-sendoff">
-						<p>Ready to book?</p>
-						<p>Need more information?</p>
-						<p>Call or email us and we'll take care of everything.</p>
-						<p>See you soon!</p>
-					</div>
-					<div class="d-feature-contact-info">
-						<div class="d-contact-div">
-							<img
-								src="./resources/images/icons/phone_icon.png"
-								alt="phone icon"
-							/>
-							<div>
-								<h3>Landline: <a href="tel:077-644-3273">077-644-3273</a></h3>
-								<h3>
-									Mobile(local): <a href="tel:919-839-7493">919-839-7493</a>
-								</h3>
-								<h3>
-									Mobile(global):
-									<a href="tel:+63-956-974-3211">+63-956-974-3211</a>
-								</h3>
-							</div>
-						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
-							<img
-								src="./resources/images/icons/email_icon.png"
-								alt="email icon"
-							/>
-							<div>
-								<h3>
-									<a href="mailto:hotelledream@gmail.com"
-										>hotelledream@gmail.com</a
-									>
-								</h3>
-							</div>
-						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
-							<img
-								src="./resources/images/icons/clock_icon.png"
-								alt="clock icon"
-							/>
-							<div>
-								<h3>Check-in 2:00pm</h3>
-								<h3>Check-out 12:00pm</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- SOCIALS -->
-			<section id="d-socials-section">
-				<header id="d-socials-header">
-					<h2>SHARE THE LOVE</h2>
-					<img src="./resources/images/icons/heart_icon.png" alt="heart icon" />
-				</header>
-				<div class="d-socials-icons">
-					<a
-						href="https://www.instagram.com/le.dreamhotel/"
-						target="_blank"
-						rel="noopener"
-						><img
-							src="./resources/images/icons/instagram.png"
-							alt="instagram icon"
-						/>
-					</a>
-				</div>
-			</section>
-			<!-- FOOTER -->
-			<footer id="d-footer">
-				<div id="d-footer-links">
+			<!-- FOOTER TABLET AND DESKTOP -->
+			<footer id="td-footer">
+				<div id="td-footer-links">
 					<ul>
-						<li><a href="./legal.html#t-privacy">Privacy Policy</a></li>
+						<li><a href="/legal.html#privacy">Privacy Policy</a></li>
 						<div>|</div>
-						<li><a href="./legal.html#t-safety">Safety & Security</a></li>
+						<li><a href="/legal.html#safety">Safety &amp; Security</a></li>
 						<div>|</div>
-						<li><a href="./legal.html#t-terms">Terms & Conditions</a></li>
+						<li><a href="/legal.html#terms">Terms &amp; Conditions</a></li>
 						<div>|</div>
 						<li>
-							<a href="./legal.html#t-supplier">Supplier Code of Conduct</a>
+							<a href="/legal.html#supplier">Supplier Code of Conduct</a>
 						</li>
 					</ul>
 				</div>

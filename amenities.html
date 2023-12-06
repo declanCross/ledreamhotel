@@ -19,31 +19,29 @@
 		<title>Le Dream Hotel - Amenities</title>
 	</head>
 	<body>
-		<div id="mobile">
-			<!-- NAV-BAR -->
-			<nav id="m-nav">
-				<a href="./index.html" class="m-nav-a-img m-nav-logo1"
+		<div id="main">
+			<!-- MOBILE NAV-BAR -->
+			<nav id="nav">
+				<a href="./index.html" class="nav-a-img nav-logo1"
 					><img
 						src="./resources/images/logo_no_background.png"
 						alt="Le Dream logo"
 					/>
 				</a>
-				<a href="./index.html" class="m-nav-a-img">
+				<a href="./index.html" class="nav-a-img">
 					<img
 						src="./resources/images/logo_words_no_background.png"
 						alt="Le Dream Hotel logo"
 					/>
 				</a>
-				<a href="./booking.html" class="m-book-button">Book Now</a>
-				<a href=""
-					><div class="m-nav-more" id="m-nav-more">
-						<div></div>
-						<div></div>
-						<div></div>
-					</div>
-				</a>
+				<a href="./booking.html" class="book-button">Book Now</a>
+				<div class="nav-more" id="nav-more">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
 			</nav>
-			<!-- DROPDOWN-MENU -->
+			<!-- MOBILE DROPDOWN-MENU -->
 			<div class="dropdown-content" id="dropdown-content">
 				<h1 id="dropdown-exit">x</h1>
 				<div class="dropdown-links">
@@ -54,201 +52,252 @@
 					<!-- <a href=""><strong>OUR STORY</strong></a> -->
 				</div>
 			</div>
-			<script src="./resources/scripts/mNav.js"></script>
+			<script src="./resources/scripts/nav.js"></script>
+			<!-- TABLET AND DESKTOP NAV-BAR -->
+			<nav id="td-nav">
+				<div id="td-nav-left-container">
+					<a href="/"
+						><img
+							class="td-nav-logo1"
+							src="./resources/images/logo_no_background.png"
+							alt="Le Dream logo"
+						/>
+					</a>
+					<a href="/"
+						><img
+							class="td-nav-logo2"
+							src="./resources/images/logo_words_no_background.png"
+							alt="Le Dream Hotel logo"
+						/>
+					</a>
+				</div>
+				<div id="td-nav-right-container">
+					<div id="td-nav-links-container">
+						<a class="td-nav-link" href="/rooms"><h3>ROOMS</h3></a>
+						<div></div>
+						<a class="td-nav-link" href="/resto-bar"
+							><h3>RESTO &amp; BAR</h3></a
+						>
+						<div></div>
+						<a class="td-nav-link" href="/amenities"
+							><h3 class="td-nav-last-link">AMENITIES</h3></a
+						>
+						<div></div>
+						<!-- <a href="" class="td-nav-link"><h3>VIGAN</h3></a>
+						<div></div> -->
+						<!-- <a href="" class="td-nav-link"
+							><h3 class="td-nav-last-link">OUR STORY</h3></a
+						> -->
+					</div>
+					<a class="book-button" href="/booking">Book Now</a>
+				</div>
+			</nav>
+			<!-- LANDING -->
+			<section id="landing-section">
+				<div class="image-filter">
+					<img src="./resources/images/desktop_images/foyer2.jpg" alt="Foyer" />
+				</div>
+			</section>
 			<!-- FEATURE -->
-			<section id="m-feature-section">
-				<div class="m-sub-feature">
-					<div class="m-feature-landing">
-						<img
-							src="./resources/images/mobile_images/kalle-cafe1.jpg"
-							alt="Kalle Cafe' Specialty Coffee"
-						/>
+			<section id="feature-section">
+				<header class="td-only">
+					<h1>AMENITIES</h1>
+					<div class="line-divider title"></div>
+				</header>
+				<div class="sub-feature">
+					<div class="sub-feature-img-info-holder">
+						<div class="feature-landing">
+							<picture>
+								<source
+									media="(min-width: 675px)"
+									srcset="./resources/images/desktop_images/kalle-cafe1.jpg"
+								/>
+								<img
+									src="./resources/images/mobile_images/kalle-cafe1.jpg"
+									alt="Kalle Cafe' Specialty Coffee"
+								/>
+							</picture>
+						</div>
+						<div class="sub-feature-info-holder">
+							<h2>KALLE CAFE' SPECIALTY COFFEE</h2>
+							<div class="line-divider m-only"></div>
+							<div class="sub-feature-info">
+								<p>
+									Good mornings, good afternoons, and good nights start right
+									here at Kalle Cafe' Specialty Coffee, our serving spot for
+									coffee-lovers. Our Cafe' specializes in crafting incredible
+									drinks and
+									<em>amazing</em> coffee.
+								</p>
+							</div>
+							<ul>
+								<li>Our baristas are skilled artists of coffee creation.</li>
+								<li>Located on the ground floor of the hotel.</li>
+								<li>
+									Check back for seasonal offerings and new additions to the
+									menu.
+								</li>
+							</ul>
+							<div class="socials-icons kalle">
+								<a
+									href="https://www.instagram.com/kallecafe_/"
+									target="_blank"
+									rel="noopener"
+									><img
+										src="./resources/images/icons/instagram2.png"
+										alt="instagram icon"
+									/>
+								</a>
+							</div>
+							<!-- <p class="feature-details"><a href="">More details</a></p> -->
+							<a href="./booking.html" class="book-button long">Book Now</a>
+						</div>
 					</div>
-					<h2>KALLE CAFE' SPECIALTY COFFEE</h2>
-					<div class="m-line-divider"></div>
-					<p>
-						Good mornings, good afternoons, and good nights start right here at
-						Kalle Cafe' Specialty Coffee, our serving spot for coffee-lovers.
-						Our Cafe' specializes in crafting incredible drinks and
-						<em>amazing</em> coffee.
-					</p>
-					<ul>
-						<li>Our baristas are skilled artists of coffee creation.</li>
-						<li>Located on the ground floor of the hotel.</li>
-						<li>
-							Check back for seasonal offerings and new additions to the menu.
-						</li>
-					</ul>
-					<div class="m-socials-icons">
-						<a
-							href="https://www.instagram.com/kallecafe_/"
-							target="_blank"
-							rel="noopener"
-							><img
-								src="./resources/images/icons/instagram2.png"
-								alt="instagram icon"
-							/>
-						</a>
-					</div>
-					<!-- <p class="m-feature-details"><a href="">More details</a></p> -->
-					<a href="./booking.html" class="m-book-button long">Book Now</a>
 				</div>
-				<div class="m-sub-feature">
-					<div class="m-feature-landing">
-						<img
-							src="./resources/images/iwash1.jpg"
-							alt="iWash Laundry and Dry-Cleaning"
-						/>
+				<div class="line-divider td-only"></div>
+				<div class="sub-feature">
+					<div class="sub-feature-img-info-holder">
+						<div class="feature-landing">
+							<picture>
+								<source
+									media="(min-width: 675px)"
+									srcset="./resources/images/iwash1.jpg"
+								/>
+								<img
+									src="./resources/images/iwash1.jpg"
+									alt="iWash Laundry and Dry-Cleaning"
+								/>
+							</picture>
+						</div>
+						<div class="sub-feature-info-holder">
+							<h2>iWASH LAUNDRY & DRY-CLEANING</h2>
+							<div class="line-divider m-only"></div>
+							<div class="sub-feature-info">
+								<p>
+									At iWash Laundry & Dry-Cleaning, we believe in providing a
+									service that is as impeccable as the clothing we care for. Our
+									facility is equipped with ample machines, designed to provide
+									an effective clean that respects the integrity of your
+									garments.
+								</p>
+							</div>
+							<ul>
+								<li>Laundry service.</li>
+								<li>Professional dry-cleaning service.</li>
+								<li>Located on the ground floor of the hotel.</li>
+							</ul>
+							<!-- <p class="feature-details"><a href="">More details</a></p> -->
+							<a href="./booking.html" class="book-button long">Book Now</a>
+						</div>
 					</div>
-					<h2>iWASH LAUNDRY & DRY-CLEANING</h2>
-					<div class="m-line-divider"></div>
-					<p>
-						At iWash Laundry & Dry-Cleaning, we believe in providing a service
-						that is as impeccable as the clothing we care for. Our facility is
-						equipped with ample machines, designed to provide an effective clean
-						that respects the integrity of your garments.
-					</p>
-					<ul>
-						<li>Laundry service.</li>
-						<li>Professional dry-cleaning service.</li>
-						<li>Located on the ground floor of the hotel.</li>
-					</ul>
-					<!-- <p class="m-feature-details"><a href="">More details</a></p> -->
-					<a href="./booking.html" class="m-book-button long">Book Now</a>
 				</div>
-				<div class="m-sub-feature">
-					<div class="m-feature-landing">
-						<img
-							src="./resources/images/mobile_images/laks1.jpg"
-							alt="LAK's Resto + Bar"
-						/>
-					</div>
-					<h2>LAK'S RESTO + BAR</h2>
-					<div class="m-line-divider"></div>
-					<p>
-						Voyage into a unique culinary journey at LAK's Resto + Bar, our
-						rooftop restaurant, overlooking beautiful Vigan City.
-					</p>
-					<!-- <ul>
+				<div class="line-divider td-only"></div>
+				<div class="sub-feature">
+					<div class="sub-feature-img-info-holder">
+						<div class="feature-landing">
+							<picture>
+								<source
+									media="(min-width: 675px)"
+									srcset="./resources/images/desktop_images/laks1.jpg"
+								/>
+								<img
+									src="./resources/images/mobile_images/laks1.jpg"
+									alt="LAK's Resto + Bar"
+								/>
+							</picture>
+						</div>
+						<div class="sub-feature-info-holder">
+							<h2>LAK'S RESTO + BAR</h2>
+							<div class="line-divider m-only"></div>
+							<div class="sub-feature-info">
+								<p>
+									Voyage into a unique culinary journey at LAK's Resto + Bar,
+									our rooftop restaurant, overlooking beautiful Vigan City.
+									<br /><br />
+									At LAK's Resto + Bar, every meal is an occasion, every dish a
+									delight. Join us for an unforgettable dining experience.
+								</p>
+							</div>
+							<!-- <ul>
 						<li>Lorem ipsum dolor sit ameî</li>
 						<li>Lorem ipsum dolor sit ameî</li>
 						<li>Lorem ipsum dolor sit ameî</li>
 					</ul> -->
-					<p>
-						At LAK's Resto + Bar, every meal is an occasion, every dish a
-						delight. Join us for an unforgettable dining experience.
-					</p>
-					<div class="m-socials-icons">
-						<a
-							href="https://www.instagram.com/laks.restobar/"
-							target="_blank"
-							rel="noopener"
-							><img
-								src="./resources/images/icons/instagram2.png"
-								alt="instagram icon"
-							/>
-						</a>
+							<p class="feature-details">
+								<a href="./resto-bar.html">More details</a>
+							</p>
+							<div class="socials-icons">
+								<a
+									href="https://www.instagram.com/laks.restobar/"
+									target="_blank"
+									rel="noopener"
+									><img
+										src="./resources/images/icons/instagram2.png"
+										alt="instagram icon"
+									/>
+								</a>
+							</div>
+							<a href="./booking.html" class="book-button long">Book Now</a>
+						</div>
 					</div>
-					<p class="m-feature-details">
-						<a href="./resto-bar.html">More details</a>
-					</p>
-					<a href="./booking.html" class="m-book-button long">Book Now</a>
 				</div>
-				<!-- <div class="m-sub-feature">
-					<div class="m-feature-landing">
-						<img
-							src="./resources/images/mobile_images/reception.jpg"
-							alt="landing image"
-						/>
-					</div>
-					<h2>TOUR PACKAGES</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					</p>
-					<ul>
-						<li>Lorem ipsum dolor sit ameî</li>
-						<li>Lorem ipsum dolor sit ameî</li>
-						<li>Lorem ipsum dolor sit ameî</li>
-					</ul>
-					<p class="m-feature-details"><a href="">More details</a></p>
-					<a href="./booking.html" class="m-book-button long">Book Now</a>
-				</div> -->
-				<!-- <div class="m-sub-feature">
-					<div class="m-feature-landing">
-						<img
-							src="./resources/images/mobile_images/reception.jpg"
-							alt="landing image"
-						/>
-					</div>
-					<h2>AIRPORT PICK-UP & DROP-OFF</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					</p>
-					<ul>
-						<li>Lorem ipsum dolor sit ameî</li>
-						<li>Lorem ipsum dolor sit ameî</li>
-						<li>Lorem ipsum dolor sit ameî</li>
-					</ul>
-					<p class="m-feature-details"><a href="">More details</a></p>
-					<a href="./booking.html" class="m-book-button long">Book Now</a>
-				</div> -->
+				<!-- <h2>TOUR PACKAGES</h2>
+				<h2>AIRPORT PICK-UP & DROP-OFF</h2> -->
 			</section>
 			<!-- AMENITIES -->
-			<div class="m-line-divider"></div>
-			<section id="m-booking-amenities-section">
-				<div class="m-amenities-container">
-					<div class="m-amenities-header">
+			<div class="line-divider"></div>
+			<section id="booking-amenities-section">
+				<div class="amenities-container amenities-page">
+					<div class="amenities-header">
 						<h2>AMENITIES</h2>
 					</div>
-					<div class="m-amenities-content-container">
-						<ul>
-							<li class="m-amenities-item1">Air Conditioning</li>
-							<li class="m-amenities-item2">Smart TV</li>
-							<li class="m-amenities-item3">Complimentary WiFi</li>
-							<li class="m-amenities-item4">
+					<div class="amenities-content-container amenities-page">
+						<ul class="amenities-page">
+							<li class="amenities-item1">Air Conditioning</li>
+							<li class="amenities-item2">Smart TV</li>
+							<li class="amenities-item3">Complimentary WiFi</li>
+							<li class="amenities-item4">
 								Complimentary 2 bottles Mineral Water
 							</li>
-							<li class="m-amenities-item5">Free Parking</li>
-							<li class="m-amenities-item6">Airport Pickup & Drop Off</li>
-							<li class="m-amenities-item7">Car Rentals</li>
-							<li class="m-amenities-item8">ATV Rides Farm View / Sea View</li>
-							<li class="m-amenities-item9">
+							<li class="amenities-item5">Free Parking</li>
+							<li class="amenities-item6">Airport Pickup & Drop Off</li>
+							<li class="amenities-item7">Car Rentals</li>
+							<li class="amenities-item8">ATV Rides Farm View / Sea View</li>
+							<li class="amenities-item9">
 								Tour Packages (Vigan & Laoag-Pagudpud)
 							</li>
-							<li class="m-amenities-item10">Smoking & Non-Smoking Areas</li>
-							<li class="m-amenities-item11">Hot & Cold Rain Shower</li>
+							<li class="amenities-item10">Smoking & Non-Smoking Areas</li>
+							<li class="amenities-item11">Hot & Cold Rain Shower</li>
 						</ul>
-						<ul>
-							<li class="m-amenities-item12">Bath Essentials & Hair Dryer</li>
-							<li class="m-amenities-item13">
+						<ul class="amenities-page">
+							<li class="amenities-item12">Bath Essentials & Hair Dryer</li>
+							<li class="amenities-item13">
 								In-room Coffee and Tea facilities
 							</li>
-							<li class="m-amenities-item14">LAK's Resto + Bar</li>
-							<li class="m-amenities-item15">Kalle Cafe' Specialty Coffee</li>
-							<li class="m-amenities-item16">iWash Laundry House</li>
-							<li class="m-amenities-item17">Canadian Placement Agency</li>
-							<li class="m-amenities-item18">
+							<li class="amenities-item14">LAK's Resto + Bar</li>
+							<li class="amenities-item15">Kalle Cafe' Specialty Coffee</li>
+							<li class="amenities-item16">iWash Laundry House</li>
+							<li class="amenities-item17">Canadian Placement Agency</li>
+							<li class="amenities-item18">
 								Mini-bar Refrigerator (excl. Standard Room)
 							</li>
-							<li class="m-amenities-item19">
+							<li class="amenities-item19">
 								Safety Deposit Box (excl. Standard Room)
 							</li>
-							<li class="m-amenities-item20">
+							<li class="amenities-item20">
 								Service Van to and from Vigan Heritage Site
 							</li>
 						</ul>
 					</div>
 				</div>
 			</section>
-			<!-- CONTACT -->
-			<section id="m-contact-section">
+			<!-- CONTACT MOBILE-->
+			<section id="contact-section">
 				<h2>CONTACT US</h2>
-				<div class="m-line-divider"></div>
-				<div class="m-contact-div">
+				<div class="line-divider"></div>
+				<div class="contact-div">
 					<img src="./resources/images/icons/phone_icon.png" alt="phone icon" />
-					<div>
+					<div class="contact-phone-info">
 						<h3>Landline: <a href="tel:077-644-3273">077-644-3273</a></h3>
 						<h3>Mobile(local): <a href="tel:919-839-7493">919-839-7493</a></h3>
 						<h3>
@@ -257,8 +306,8 @@
 						</h3>
 					</div>
 				</div>
-				<div class="m-line-divider-contact"></div>
-				<div class="m-contact-div">
+				<div class="line-divider-contact"></div>
+				<div class="contact-div">
 					<img src="./resources/images/icons/email_icon.png" alt="email icon" />
 					<div>
 						<h3>
@@ -266,280 +315,35 @@
 						</h3>
 					</div>
 				</div>
-				<div class="m-line-divider-contact"></div>
-				<div class="m-contact-div">
+				<div class="line-divider-contact"></div>
+				<div class="contact-div">
 					<img src="./resources/images/icons/clock_icon.png" alt="clock icon" />
 					<div>
 						<h3>Check-in 2:00pm</h3>
 						<h3>Check-out 12:00pm</h3>
 					</div>
 				</div>
-				<div class="m-line-divider-contact"></div>
-				<div id="m-contact-sendoff">
+				<div class="line-divider-contact"></div>
+				<div class="contact-sendoff">
 					<p>Ready to book?</p>
 					<p>Need more information?</p>
 					<p>Call or email us and we'll take care of everything.</p>
 					<p>See you soon!</p>
 				</div>
 			</section>
-			<!-- SOCIALS -->
-			<section id="m-socials-section">
-				<header id="m-socials-header">
-					<h2>SHARE THE LOVE</h2>
-					<img src="./resources/images/icons/heart_icon.png" alt="heart icon" />
-				</header>
-				<div class="m-socials-icons">
-					<a
-						href="https://www.instagram.com/le.dreamhotel/"
-						target="_blank"
-						rel="noopener"
-						><img
-							src="./resources/images/icons/instagram.png"
-							alt="instagram icon"
-						/>
-					</a>
-				</div>
-			</section>
-			<!-- FOOTER -->
-			<footer id="m-footer">
-				<div id="m-footer-links">
-					<div>
-						<p><a href="./legal.html#m-privacy">Privacy Policy</a></p>
-						<p><a href="./legal.html#m-safety">Safety & Security</a></p>
-					</div>
-					<div>
-						<p><a href="./legal.html#m-terms">Terms & Conditions</a></p>
-						<p>
-							<a href="./legal.html#m-supplier">Supplier Code of Conduct</a>
-						</p>
-					</div>
-				</div>
-				<p>©2023 Le Dream Hotel, All Rights Reserved</p>
-			</footer>
-		</div>
-		<div id="desktop">
-			<!-- NAV-BAR -->
-			<nav id="d-nav">
-				<div id="d-nav-left-container">
-					<a href="./index.html"
-						><img
-							class="d-nav-logo1"
-							src="./resources/images/logo_no_background.png"
-							alt="Le Dream logo"
-						/>
-					</a>
-					<a href="./index.html"
-						><img
-							class="d-nav-logo2"
-							src="./resources/images/logo_words_no_background.png"
-							alt="Le Dream Hotel logo"
-						/>
-					</a>
-				</div>
-				<div id="d-nav-right-container">
-					<div id="d-nav-links-container">
-						<a href="./rooms.html" class="d-nav-link"><h3>ROOMS</h3></a>
-						<div></div>
-						<a href="./resto-bar.html" class="d-nav-link"
-							><h3>RESTO & BAR</h3></a
-						>
-						<div></div>
-						<a href="./amenities.html" class="d-nav-link"
-							><h3 class="d-nav-last-link">AMENITIES</h3></a
-						>
-						<div></div>
-						<!-- <a href="" class="d-nav-link"><h3>VIGAN</h3></a>
-						<div></div> -->
-						<!-- <a href="" class="d-nav-link"
-							><h3 class="d-nav-last-link">OUR STORY</h3></a
-						> -->
-					</div>
-					<a href="./booking.html" class="d-book-button">Book Now</a>
-				</div>
-			</nav>
-			<!-- LANDING -->
-			<section id="d-landing-section">
-				<div class="image-filter">
-					<img src="./resources/images/desktop_images/foyer2.jpg" alt="Foyer" />
-				</div>
-				<!-- <a href="#d-contact-section" class="d-book-button">Book Now</a> -->
-			</section>
-			<!-- FEATURE -->
-			<section id="d-feature-section">
-				<h1>AMENITIES</h1>
-				<div class="d-line-divider"></div>
-				<div id="above-d-executive" class="above-link"></div>
-				<div class="d-sub-feature">
-					<div class="d-sub-feature-info">
-						<h2>KALLE CAFE' SPECIALTY COFFEE</h2>
-						<p>
-							Good mornings, good afternoons, and good nights start right here
-							at Kalle Cafe' Specialty Coffee, our serving spot for
-							coffee-lovers. Our Cafe' specializes in crafting incredible drinks
-							and
-							<em>amazing</em> coffee.
-						</p>
-						<ul>
-							<li>Our baristas are skilled artists of coffee creation.</li>
-							<li>Located on the ground floor of the hotel.</li>
-							<li>
-								Check back for seasonal offerings and new additions to the menu.
-							</li>
-						</ul>
-						<div class="d-socials-icons">
-							<a
-								href="https://www.instagram.com/kallecafe_/"
-								target="_blank"
-								rel="noopener"
-								><img
-									src="./resources/images/icons/instagram2.png"
-									alt="instagram icon"
-								/>
-							</a>
-						</div>
-						<!-- <p class="d-feature-details"><a href="">More details</a></p> -->
-						<div class="d-book-button-container">
-							<a href="./booking.html" class="d-book-button long">Book Now</a>
-						</div>
-					</div>
-					<div class="d-sub-feature-image">
-						<img
-							src="./resources/images/desktop_images/kalle-cafe1.jpg"
-							alt="Kalle Cafe' Specialty Coffee"
-						/>
-					</div>
-				</div>
-				<div class="d-line-divider"></div>
-				<div id="above-d-deluxe" class="above-link"></div>
-				<div class="d-sub-feature">
-					<div class="d-sub-feature-info">
-						<h2>iWASH LAUNDRY & DRY-CLEANING</h2>
-						<p>
-							At iWash Laundry & Dry-Cleaning, we believe in providing a service
-							that is as impeccable as the clothing we care for. Our facility is
-							equipped with ample machines, designed to provide an effective
-							clean that respects the integrity of your garments.
-						</p>
-						<ul>
-							<li>Laundry service.</li>
-							<li>Professional dry-cleaning service.</li>
-							<li>Located on the ground floor of the hotel.</li>
-						</ul>
-						<!-- <p class="d-feature-details"><a href="">More details</a></p> -->
-						<div class="d-book-button-container">
-							<a href="./booking.html" class="d-book-button long">Book Now</a>
-						</div>
-					</div>
-					<div class="d-sub-feature-image">
-						<img
-							src="./resources/images/iwash1.jpg"
-							alt="iWash Laundry and Dry-Cleaning"
-						/>
-					</div>
-				</div>
-				<div class="d-line-divider"></div>
-				<div id="above-d-superior" class="above-link"></div>
-				<div class="d-sub-feature">
-					<div class="d-sub-feature-info">
-						<h2>LAK'S RESTO + BAR</h2>
-						<p>
-							Voyage into a unique culinary journey at LAK's Resto + Bar, our
-							rooftop restaurant, overlooking beautiful Vigan City.
-						</p>
-						<!-- <ul>
-							<li>Lorem ipsum dolor sit ameî</li>
-							<li>Lorem ipsum dolor sit ameî</li>
-							<li>Lorem ipsum dolor sit ameî</li>
-						</ul> -->
-						<p>
-							At LAK's Resto + Bar, every meal is an occasion, every dish a
-							delight. Join us for an unforgettable dining experience.
-						</p>
-						<div class="d-socials-icons">
-							<a
-								href="https://www.instagram.com/laks.restobar/"
-								target="_blank"
-								rel="noopener"
-								><img
-									src="./resources/images/icons/instagram2.png"
-									alt="instagram icon"
-								/>
-							</a>
-						</div>
-						<!-- <p class="d-feature-details"><a href="">More details</a></p> -->
-						<div class="d-book-button-container">
-							<a href="./booking.html" class="d-book-button long">Book Now</a>
-						</div>
-					</div>
-					<div class="d-sub-feature-image">
-						<img
-							src="./resources/images/desktop_images/laks1.jpg"
-							alt="LAK's Resto + Bar"
-						/>
-					</div>
-				</div>
-				<div class="d-line-divider"></div>
-				<div id="d-amenities-card-section">
-					<div class="d-amenities-container">
-						<div class="d-amenities-header">
-							<h2>AMENITIES</h2>
-						</div>
-						<div class="d-amenities-content-container">
-							<ul>
-								<li class="d-amenities-item1">Air Conditioning</li>
-								<li class="d-amenities-item2">Smart TV</li>
-								<li class="d-amenities-item3">Complimentary WiFi</li>
-								<li class="d-amenities-item4">
-									Complimentary 2 bottles Mineral Water
-								</li>
-								<li class="d-amenities-item5">Free Parking</li>
-								<li class="d-amenities-item6">Airport Pickup & Drop Off</li>
-								<li class="d-amenities-item7">Car Rentals</li>
-								<li class="d-amenities-item8">
-									ATV Rides Farm View / Sea View
-								</li>
-								<li class="d-amenities-item9">
-									Tour Packages (Vigan & Laoag-Pagudpud)
-								</li>
-								<li class="d-amenities-item10">Smoking & Non-Smoking Areas</li>
-							</ul>
-							<ul>
-								<li class="d-amenities-item11">Hot & Cold Rain Shower</li>
-								<li class="d-amenities-item12">Bath Essentials & Hair Dryer</li>
-								<li class="d-amenities-item13">
-									In-room Coffee and Tea facilities
-								</li>
-								<li class="d-amenities-item14">LAK's Resto + Bar</li>
-								<li class="d-amenities-item15">Kalle Cafe' Specialty Coffee</li>
-								<li class="d-amenities-item16">iWash Laundry House</li>
-								<li class="d-amenities-item17">Canadian Placement Agency</li>
-								<li class="d-amenities-item18">
-									Mini-bar Refrigerator (excl. Standard Room)
-								</li>
-								<li class="d-amenities-item19">
-									Safety Deposit Box (excl. Standard Room)
-								</li>
-								<li class="d-amenities-item20">
-									Service Van to and from Vigan Heritage Site
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- CONTACT -->
-			<div class="above-section-link" id="d-contact"></div>
-			<section id="d-feature-contact-section">
+			<!-- CONTACT TABLET AND DESKTOP -->
+			<section id="feature-contact-section">
 				<h2>CONTACT US</h2>
-				<div class="d-feature-contact-container">
-					<div class="d-feature-contact-sendoff">
+				<div class="feature-contact-container">
+					<div class="feature-contact-sendoff">
 						<p>Ready to book?</p>
 						<p>Need more information?</p>
 						<p>Call or email us and we'll take care of everything.</p>
 						<p>See you soon!</p>
 					</div>
-					<div class="d-feature-contact-info">
-						<div class="d-contact-div">
+					<div class="td-contact-midline"></div>
+					<div class="feature-contact-info">
+						<div class="contact-div">
 							<img
 								src="./resources/images/icons/phone_icon.png"
 								alt="phone icon"
@@ -555,8 +359,8 @@
 								</h3>
 							</div>
 						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
+						<div class="line-divider-contact"></div>
+						<div class="contact-div">
 							<img
 								src="./resources/images/icons/email_icon.png"
 								alt="email icon"
@@ -569,8 +373,8 @@
 								</h3>
 							</div>
 						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
+						<div class="line-divider-contact"></div>
+						<div class="contact-div">
 							<img
 								src="./resources/images/icons/clock_icon.png"
 								alt="clock icon"
@@ -584,12 +388,11 @@
 				</div>
 			</section>
 			<!-- SOCIALS -->
-			<section id="d-socials-section">
-				<header id="d-socials-header">
+			<section id="socials-section">
+				<header id="socials-header">
 					<h2>SHARE THE LOVE</h2>
-					<img src="./resources/images/icons/heart_icon.png" alt="heart icon" />
 				</header>
-				<div class="d-socials-icons">
+				<div class="socials-icons">
 					<a
 						href="https://www.instagram.com/le.dreamhotel/"
 						target="_blank"
@@ -601,320 +404,34 @@
 					</a>
 				</div>
 			</section>
-			<!-- FOOTER -->
-			<footer id="d-footer">
-				<div id="d-footer-links">
-					<ul>
-						<li><a href="./legal.html#d-privacy">Privacy Policy</a></li>
-						<div>|</div>
-						<li><a href="./legal.html#d-safety">Safety & Security</a></li>
-						<div>|</div>
-						<li><a href="./legal.html#d-terms">Terms & Conditions</a></li>
-						<div>|</div>
-						<li>
-							<a href="./legal.html#d-supplier">Supplier Code of Conduct</a>
-						</li>
-					</ul>
+			<!-- FOOTER MOBILE -->
+			<footer id="footer">
+				<div id="footer-links">
+					<div>
+						<p><a href="./legal.html#privacy">Privacy Policy</a></p>
+						<p><a href="./legal.html#safety">Safety & Security</a></p>
+					</div>
+					<div>
+						<p><a href="./legal.html#terms">Terms & Conditions</a></p>
+						<p>
+							<a href="./legal.html#supplier">Supplier Code of Conduct</a>
+						</p>
+					</div>
 				</div>
 				<p>©2023 Le Dream Hotel, All Rights Reserved</p>
 			</footer>
-		</div>
-		<div id="tablet">
-			<!-- NAV-BAR -->
-			<nav id="d-nav">
-				<div id="d-nav-left-container">
-					<a href="./index.html"
-						><img
-							class="d-nav-logo1"
-							src="./resources/images/logo_no_background.png"
-							alt="Le Dream logo"
-						/>
-					</a>
-					<a href="./index.html"
-						><img
-							class="d-nav-logo2"
-							src="./resources/images/logo_words_no_background.png"
-							alt="Le Dream Hotel logo"
-						/>
-					</a>
-				</div>
-				<div id="d-nav-right-container">
-					<div id="d-nav-links-container">
-						<a href="./rooms.html" class="d-nav-link"><h3>ROOMS</h3></a>
-						<div></div>
-						<a href="./resto-bar.html" class="d-nav-link"
-							><h3>RESTO & BAR</h3></a
-						>
-						<div></div>
-						<a href="./amenities.html" class="d-nav-link"
-							><h3 class="d-nav-last-link">AMENITIES</h3></a
-						>
-						<div></div>
-						<!-- <a href="" class="d-nav-link"><h3>VIGAN</h3></a>
-						<div></div> -->
-						<!-- <a href="" class="d-nav-link"
-							><h3 class="d-nav-last-link">OUR STORY</h3></a
-						> -->
-					</div>
-					<a href="./booking.html" class="d-book-button">Book Now</a>
-				</div>
-			</nav>
-			<!-- LANDING -->
-			<section id="d-landing-section">
-				<div class="image-filter">
-					<img src="./resources/images/desktop_images/foyer2.jpg" alt="Foyer" />
-				</div>
-				<!-- <a href="#d-contact-section" class="d-book-button">Book Now</a> -->
-			</section>
-			<!-- FEATURE -->
-			<section id="t-feature-section">
-				<h1>AMENITIES</h1>
-				<div class="t-line-divider"></div>
-				<div id="above-t-executive" class="above-link"></div>
-				<div class="t-sub-feature">
-					<h2>KALLE CAFE' SPECIALTY COFFEE</h2>
-					<div class="t-sub-feature-image">
-						<img
-							src="./resources/images/desktop_images/kalle-cafe1.jpg"
-							alt="Kalle Cafe' Specialty Coffee"
-						/>
-					</div>
-					<div class="t-sub-feature-info">
-						<p>
-							Good mornings, good afternoons, and good nights start right here
-							at Kalle Cafe' Specialty Coffee, our serving spot for
-							coffee-lovers. Our Cafe' specializes in crafting incredible drinks
-							and
-							<em>amazing</em> coffee.
-						</p>
-						<ul>
-							<li>Our baristas are skilled artists of coffee creation.</li>
-							<li>Located on the ground floor of the hotel.</li>
-							<li>
-								Check back for seasonal offerings and new additions to the menu.
-							</li>
-						</ul>
-						<div class="t-socials-icons kalle">
-							<a
-								href="https://www.instagram.com/kallecafe_/"
-								target="_blank"
-								rel="noopener"
-								><img
-									src="./resources/images/icons/instagram2.png"
-									alt="instagram icon"
-								/>
-							</a>
-						</div>
-						<!-- <p class="t-feature-details"><a href="">More details</a></p> -->
-						<div class="t-book-button-container">
-							<a href="./booking.html" class="t-book-button long">Book Now</a>
-						</div>
-					</div>
-				</div>
-				<div class="t-line-divider"></div>
-				<div id="above-t-deluxe" class="above-link"></div>
-				<div class="t-sub-feature">
-					<h2>iWASH LAUNDRY & DRY-CLEANING</h2>
-					<div class="t-sub-feature-image">
-						<img
-							src="./resources/images/iwash1.jpg"
-							alt="iWash Laundry and Dry-Cleaning"
-						/>
-					</div>
-					<div class="t-sub-feature-info">
-						<p>
-							At iWash Laundry & Dry-Cleaning, we believe in providing a service
-							that is as impeccable as the clothing we care for. Our facility is
-							equipped with ample machines, designed to provide an effective
-							clean that respects the integrity of your garments.
-						</p>
-						<ul>
-							<li>Laundry service.</li>
-							<li>Professional dry-cleaning service.</li>
-							<li>Located on the ground floor of the hotel.</li>
-						</ul>
-						<!-- <p class="t-feature-details"><a href="">More details</a></p> -->
-						<div class="t-book-button-container">
-							<a href="./booking.html" class="t-book-button long">Book Now</a>
-						</div>
-					</div>
-				</div>
-				<div class="t-line-divider"></div>
-				<div id="above-t-superior" class="above-link"></div>
-				<div class="t-sub-feature">
-					<h2>LAK'S RESTO + BAR</h2>
-					<div class="t-sub-feature-image">
-						<img
-							src="./resources/images/desktop_images/laks1.jpg"
-							alt="LAK's Resto + Bar"
-						/>
-					</div>
-					<div class="t-sub-feature-info">
-						<p>
-							Voyage into a unique culinary journey at LAK's Resto + Bar, our
-							rooftop restaurant, overlooking beautiful Vigan City.
-						</p>
-						<!-- <ul>
-							<li>Lorem ipsum dolor sit ameî</li>
-							<li>Lorem ipsum dolor sit ameî</li>
-							<li>Lorem ipsum dolor sit ameî</li>
-						</ul> -->
-						<p>
-							At LAK's Resto + Bar, every meal is an occasion, every dish a
-							delight. Join us for an unforgettable dining experience.
-						</p>
-						<div class="t-socials-icons laks">
-							<a
-								href="https://www.instagram.com/laks.restobar/"
-								target="_blank"
-								rel="noopener"
-								><img
-									src="./resources/images/icons/instagram2.png"
-									alt="instagram icon"
-								/>
-							</a>
-						</div>
-						<!-- <p class="t-feature-details"><a href="">More details</a></p> -->
-						<div class="t-book-button-container">
-							<a href="./booking.html" class="t-book-button long">Book Now</a>
-						</div>
-					</div>
-				</div>
-				<div class="t-line-divider"></div>
-				<div id="t-amenities-card-section">
-					<div class="t-amenities-container">
-						<div class="t-amenities-header">
-							<h2>AMENITIES</h2>
-						</div>
-						<div class="t-amenities-content-container">
-							<ul>
-								<li class="t-amenities-item1">Air Conditioning</li>
-								<li class="t-amenities-item2">Smart TV</li>
-								<li class="t-amenities-item3">Complimentary WiFi</li>
-								<li class="t-amenities-item4">
-									Complimentary 2 bottles Mineral Water
-								</li>
-								<li class="t-amenities-item5">Free Parking</li>
-								<li class="t-amenities-item6">Airport Pickup & Drop Off</li>
-								<li class="t-amenities-item7">Car Rentals</li>
-								<li class="t-amenities-item8">
-									ATV Rides Farm View / Sea View
-								</li>
-								<li class="t-amenities-item9">
-									Tour Packages (Vigan & Laoag-Pagudpud)
-								</li>
-								<li class="t-amenities-item10">Smoking & Non-Smoking Areas</li>
-							</ul>
-							<ul>
-								<li class="t-amenities-item11">Hot & Cold Rain Shower</li>
-								<li class="t-amenities-item12">Bath Essentials & Hair Dryer</li>
-								<li class="t-amenities-item13">
-									In-room Coffee and Tea facilities
-								</li>
-								<li class="t-amenities-item14">LAK's Resto + Bar</li>
-								<li class="t-amenities-item15">Kalle Cafe' Specialty Coffee</li>
-								<li class="t-amenities-item16">iWash Laundry House</li>
-								<li class="t-amenities-item17">Canadian Placement Agency</li>
-								<li class="t-amenities-item18">
-									Mini-bar Refrigerator (excl. Standard Room)
-								</li>
-								<li class="t-amenities-item19">
-									Safety Deposit Box (excl. Standard Room)
-								</li>
-								<li class="t-amenities-item20">
-									Service Van to and from Vigan Heritage Site
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- CONTACT -->
-			<div class="above-section-link" id="d-contact"></div>
-			<section id="d-feature-contact-section">
-				<h2>CONTACT US</h2>
-				<div class="d-feature-contact-container">
-					<div class="d-feature-contact-sendoff">
-						<p>Ready to book?</p>
-						<p>Need more information?</p>
-						<p>Call or email us and we'll take care of everything.</p>
-						<p>See you soon!</p>
-					</div>
-					<div class="d-feature-contact-info">
-						<div class="d-contact-div">
-							<img
-								src="./resources/images/icons/phone_icon.png"
-								alt="phone icon"
-							/>
-							<div>
-								<h3>Landline: <a href="tel:077-644-3273">077-644-3273</a></h3>
-								<h3>
-									Mobile(local): <a href="tel:919-839-7493">919-839-7493</a>
-								</h3>
-								<h3>
-									Mobile(global):
-									<a href="tel:+63-956-974-3211">+63-956-974-3211</a>
-								</h3>
-							</div>
-						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
-							<img
-								src="./resources/images/icons/email_icon.png"
-								alt="email icon"
-							/>
-							<div>
-								<h3>
-									<a href="mailto:hotelledream@gmail.com"
-										>hotelledream@gmail.com</a
-									>
-								</h3>
-							</div>
-						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
-							<img
-								src="./resources/images/icons/clock_icon.png"
-								alt="clock icon"
-							/>
-							<div>
-								<h3>Check-in 2:00pm</h3>
-								<h3>Check-out 12:00pm</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- SOCIALS -->
-			<section id="d-socials-section">
-				<header id="d-socials-header">
-					<h2>SHARE THE LOVE</h2>
-					<img src="./resources/images/icons/heart_icon.png" alt="heart icon" />
-				</header>
-				<div class="d-socials-icons">
-					<a
-						href="https://www.instagram.com/le.dreamhotel/"
-						target="_blank"
-						rel="noopener"
-						><img
-							src="./resources/images/icons/instagram.png"
-							alt="instagram icon"
-						/>
-					</a>
-				</div>
-			</section>
-			<!-- FOOTER -->
-			<footer id="d-footer">
-				<div id="d-footer-links">
+			<!-- FOOTER TABLET AND DESKTOP -->
+			<footer id="td-footer">
+				<div id="td-footer-links">
 					<ul>
-						<li><a href="./legal.html#t-privacy">Privacy Policy</a></li>
+						<li><a href="/legal.html#privacy">Privacy Policy</a></li>
 						<div>|</div>
-						<li><a href="./legal.html#t-safety">Safety & Security</a></li>
+						<li><a href="/legal.html#safety">Safety &amp; Security</a></li>
 						<div>|</div>
-						<li><a href="./legal.html#t-terms">Terms & Conditions</a></li>
+						<li><a href="/legal.html#terms">Terms &amp; Conditions</a></li>
 						<div>|</div>
 						<li>
-							<a href="./legal.html#t-supplier">Supplier Code of Conduct</a>
+							<a href="/legal.html#supplier">Supplier Code of Conduct</a>
 						</li>
 					</ul>
 				</div>

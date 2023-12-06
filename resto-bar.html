@@ -19,31 +19,29 @@
 		<title>Le Dream Hotel - Resto + Bar</title>
 	</head>
 	<body>
-		<div id="mobile">
-			<!-- NAV-BAR -->
-			<nav id="m-nav">
-				<a href="./index.html" class="m-nav-a-img m-nav-logo1"
+		<div id="main">
+			<!-- MOBILE NAV-BAR -->
+			<nav id="nav">
+				<a href="./index.html" class="nav-a-img nav-logo1"
 					><img
 						src="./resources/images/logo_no_background.png"
 						alt="Le Dream logo"
 					/>
 				</a>
-				<a href="./index.html" class="m-nav-a-img">
+				<a href="./index.html" class="nav-a-img">
 					<img
 						src="./resources/images/logo_words_no_background.png"
 						alt="Le Dream Hotel logo"
 					/>
 				</a>
-				<a href="./booking.html" class="m-book-button">Book Now</a>
-				<a href=""
-					><div class="m-nav-more" id="m-nav-more">
-						<div></div>
-						<div></div>
-						<div></div>
-					</div>
-				</a>
+				<a href="./booking.html" class="book-button">Book Now</a>
+				<div class="nav-more" id="nav-more">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
 			</nav>
-			<!-- DROPDOWN-MENU -->
+			<!-- MOBILE DROPDOWN-MENU -->
 			<div class="dropdown-content" id="dropdown-content">
 				<h1 id="dropdown-exit">x</h1>
 				<div class="dropdown-links">
@@ -54,263 +52,348 @@
 					<!-- <a href=""><strong>OUR STORY</strong></a> -->
 				</div>
 			</div>
-			<script src="./resources/scripts/mNav.js"></script>
-			<!-- FEATURE -->
-			<section id="m-feature-section">
-				<div class="m-sub-feature">
-					<div class="m-feature-landing">
-						<img
-							src="./resources/images/mobile_images/laks1.jpg"
-							alt="LAK's Resto + Bar"
+			<script src="./resources/scripts/nav.js"></script>
+			<!-- TABLET AND DESKTOP NAV-BAR -->
+			<nav id="td-nav">
+				<div id="td-nav-left-container">
+					<a href="/"
+						><img
+							class="td-nav-logo1"
+							src="./resources/images/logo_no_background.png"
+							alt="Le Dream logo"
 						/>
-					</div>
-					<h2>LAK'S RESTO + BAR</h2>
-					<div class="m-line-divider"></div>
-					<p>
-						Voyage into a unique culinary journey at LAK's Resto + Bar, our
-						rooftop restaurant, overlooking beautiful Vigan City.
-					</p>
-					<p>
-						At LAK's Resto + Bar, every meal is an occasion, every dish a
-						delight. Join us for an unforgettable dining experience.
-					</p>
-					<p>
-						<strong>Scroll down to see some of our favorite creations.</strong>
-					</p>
-					<div class="m-socials-icons">
-						<a
-							href="https://www.instagram.com/laks.restobar/"
-							target="_blank"
-							rel="noopener"
-							><img
-								src="./resources/images/icons/instagram2.png"
-								alt="instagram icon"
-							/>
-						</a>
-					</div>
-					<!-- <p class="m-feature-details"><a href="">More details</a></p> -->
-					<a href="./booking.html" class="m-book-button long">Book Now</a>
+					</a>
+					<a href="/"
+						><img
+							class="td-nav-logo2"
+							src="./resources/images/logo_words_no_background.png"
+							alt="Le Dream Hotel logo"
+						/>
+					</a>
 				</div>
-				<div class="m-resto-images">
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/Food-6.jpg"
-							alt="Ahi tuna salad"
-						/>
-						<p>Ahi Tuna Salad</p>
+				<div id="td-nav-right-container">
+					<div id="td-nav-links-container">
+						<a class="td-nav-link" href="/rooms"><h3>ROOMS</h3></a>
+						<div></div>
+						<a class="td-nav-link" href="/resto-bar"
+							><h3>RESTO &amp; BAR</h3></a
+						>
+						<div></div>
+						<a class="td-nav-link" href="/amenities"
+							><h3 class="td-nav-last-link">AMENITIES</h3></a
+						>
+						<div></div>
+						<!-- <a href="" class="td-nav-link"><h3>VIGAN</h3></a>
+						<div></div> -->
+						<!-- <a href="" class="td-nav-link"
+							><h3 class="td-nav-last-link">OUR STORY</h3></a
+						> -->
 					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/Food-11.jpg"
-							alt="Sinuglao"
-						/>
-						<p>Sinuglao</p>
+					<a class="book-button" href="/booking">Book Now</a>
+				</div>
+			</nav>
+			<!-- LANDING -->
+			<section id="landing-section">
+				<div class="image-filter">
+					<img
+						src="./resources/images/desktop_images/laks1.jpg"
+						alt="LAK's Resto + Bar"
+					/>
+				</div>
+			</section>
+			<!-- FEATURE -->
+			<section id="feature-section">
+				<header class="td-only">
+					<h1>LAK'S RESTO + BAR</h1>
+					<div class="line-divider title"></div>
+				</header>
+				<div class="sub-feature">
+					<div class="sub-feature-img-info-holder">
+						<div class="feature-landing">
+							<picture>
+								<source
+									media="(min-width: 675px)"
+									srcset="./resources/images/laks_bar_and_resto1.jpg"
+								/>
+								<img
+									src="./resources/images/mobile_images/laks1.jpg"
+									alt="LAK's Resto + Bar"
+								/>
+							</picture>
+						</div>
+						<div class="sub-feature-info-holder">
+							<h2 class="m-only">LAK'S RESTO + BAR</h2>
+							<div class="line-divider m-only"></div>
+							<div class="sub-feature-info">
+								<p>
+									Voyage into a unique culinary journey at LAK's Resto + Bar,
+									our rooftop restaurant, overlooking beautiful Vigan City.
+									<br /><br />
+									At LAK's Resto + Bar, every meal is an occasion, every dish a
+									delight. Join us for an unforgettable dining experience.
+									<br /><br />
+									<strong
+										>Scroll down to see some of our favorite creations.</strong
+									>
+								</p>
+							</div>
+							<div class="socials-icons laks">
+								<a
+									href="https://www.instagram.com/laks.restobar/"
+									target="_blank"
+									rel="noopener"
+									><img
+										src="./resources/images/icons/instagram2.png"
+										alt="instagram icon"
+									/>
+								</a>
+							</div>
+							<!-- <p class="feature-details"><a href="">More details</a></p> -->
+							<a href="./booking.html" class="book-button long">Book Now</a>
+						</div>
 					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/Food-33.jpg"
-							alt="Pumpkin soup"
-						/>
-						<p>Pumpkin Soup</p>
+				</div>
+				<div class="line-divider td-only"></div>
+				<div class="resto-images">
+					<div class="laks-images-row-container">
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/Food-6.jpg"
+								alt="Ahi tuna salad"
+							/>
+							<p>Ahi Tuna Salad</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/Food-11.jpg"
+								alt="Sinuglao"
+							/>
+							<p>Sinuglao</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/Food-33.jpg"
+								alt="Pumpkin soup"
+							/>
+							<p>Pumpkin Soup</p>
+						</div>
 					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/Food-37.jpg"
-							alt="Seafood Chowder"
-						/>
-						<p>Seafood Chowder</p>
+					<div class="laks-images-row-container">
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/Food-37.jpg"
+								alt="Seafood Chowder"
+							/>
+							<p>Seafood Chowder</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/Food-54.jpg"
+								alt="Shrimp Gambas"
+							/>
+							<p>Shrimp Gambas</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/Food-61.jpg"
+								alt="Roasted Chicken Salad"
+							/>
+							<p>Roasted Chicken Salad</p>
+						</div>
 					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/Food-54.jpg"
-							alt="Shrimp Gambas"
-						/>
-						<p>Shrimp Gambas</p>
+					<div class="laks-images-row-container">
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/Food-96.jpg"
+								alt="Ribeye Steak"
+							/>
+							<p>Ribeye Steak</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/Food-150.jpg"
+								alt="Mahi Mahi"
+							/>
+							<p>Mahi Mahi</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/Food-160.jpg"
+								alt="Roasted Chicken Thigh"
+							/>
+							<p>Roasted Chicken Thigh</p>
+						</div>
 					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/Food-61.jpg"
-							alt="Roasted Chicken Salad"
-						/>
-						<p>Roasted Chicken Salad</p>
+					<div class="laks-images-row-container">
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/Food-168.jpg"
+								alt="Seafood Pasta"
+							/>
+							<p>Seafood Pasta</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/Food-175.jpg"
+								alt="All-meat pizza"
+							/>
+							<p>All-Meat Pizza</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/CHICKEN INASAL.jpg"
+								alt="Chicken Inasal"
+							/>
+							<p>Chicken Inasal</p>
+						</div>
 					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/Food-96.jpg"
-							alt="Ribeye Steak"
-						/>
-						<p>Ribeye Steak</p>
+					<div class="laks-images-row-container">
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/GRILLED LIEMPO WITH JAVA RICE.jpg"
+								alt="Grilled Liempo with Java Rice"
+							/>
+							<p>Grilled Liempo with Java Rice</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/GRILLED TANIGUE.jpg"
+								alt="Grilled Tanigue"
+							/>
+							<p>Grilled Tanigue</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/ROASTED THIGH CHICKEN CURRY.jpg"
+								alt="Roasted Chicken Thigh Curry"
+							/>
+							<p>Roasted Chicken Thigh Curry</p>
+						</div>
 					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/Food-150.jpg"
-							alt="Mahi Mahi"
-						/>
-						<p>Mahi Mahi</p>
+					<div class="laks-images-row-container">
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/BAGNET PINEAPPLE CHUTNEY.jpg"
+								alt="Bagnet Pineapple Chutney"
+							/>
+							<p>Bagnet Pineapple Chutney</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/PANSEREAD PORK CHOP.jpg"
+								alt="Panseread Pork Chop"
+							/>
+							<p>Panseread Pork Chop</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/PORK BABY BACK RIBS.jpg"
+								alt="Pork Baby Back Ribs"
+							/>
+							<p>Pork Baby Back Ribs</p>
+						</div>
 					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/Food-160.jpg"
-							alt="Roasted Chicken Thigh"
-						/>
-						<p>Roasted Chicken Thigh</p>
+					<div class="laks-images-row-container">
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/ROASTED ROSEMARY CHICKEN.jpg"
+								alt="Roasted Rosemary Chicken"
+							/>
+							<p>Roasted Rosemary Chicken</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/CEASAR SALAD.jpg"
+								alt="Caesar Salad"
+							/>
+							<p>Caesar Salad</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/CHICKEN EMINCE.jpg"
+								alt="Chicken Emince"
+							/>
+							<p>Chicken Emince</p>
+						</div>
 					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/Food-168.jpg"
-							alt="Seafood Pasta"
-						/>
-						<p>Seafood Pasta</p>
+					<div class="laks-images-row-container">
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/SEAFOOD CURRY.jpg"
+								alt="Seafood Curry"
+							/>
+							<p>Seafood Curry</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/OMELLETE VEGGIES.jpg"
+								alt="Omelette Veggies"
+							/>
+							<p>Omelette Veggies</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/CHICKEN LONGGANISA.jpg"
+								alt="Chicken Longganisa"
+							/>
+							<p>Chicken Longganisa</p>
+						</div>
 					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/Food-175.jpg"
-							alt="All-meat pizza"
-						/>
-						<p>All-Meat Pizza</p>
+					<div class="laks-images-row-container">
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/OMELETTE MEAT.jpg"
+								alt="Omelette Meat"
+							/>
+							<p>Omelette Meat</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/CORNBEEF.jpg"
+								alt="Cornbeef"
+							/>
+							<p>Cornbeef</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/CHICKEN CUTLETS.jpg"
+								alt="Chicken Cutlets"
+							/>
+							<p>Chicken Cutlets</p>
+						</div>
 					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/CHICKEN INASAL.jpg"
-							alt="Chicken Inasal"
-						/>
-						<p>Chicken Inasal</p>
-					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/GRILLED LIEMPO WITH JAVA RICE.jpg"
-							alt="Grilled Liempo with Java Rice"
-						/>
-						<p>Grilled Liempo with Java Rice</p>
-					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/GRILLED TANIGUE.jpg"
-							alt="Grilled Tanigue"
-						/>
-						<p>Grilled Tanigue</p>
-					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/ROASTED THIGH CHICKEN CURRY.jpg"
-							alt="Roasted Chicken Thigh Curry"
-						/>
-						<p>Roasted Chicken Thigh Curry</p>
-					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/BAGNET PINEAPPLE CHUTNEY.jpg"
-							alt="Bagnet Pineapple Chutney"
-						/>
-						<p>Bagnet Pineapple Chutney</p>
-					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/PANSEREAD PORK CHOP.jpg"
-							alt="Panseread Pork Chop"
-						/>
-						<p>Panseread Pork Chop</p>
-					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/PORK BABY BACK RIBS.jpg"
-							alt="Pork Baby Back Ribs"
-						/>
-						<p>Pork Baby Back Ribs</p>
-					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/ROASTED ROSEMARY CHICKEN.jpg"
-							alt="Roasted Rosemary Chicken"
-						/>
-						<p>Roasted Rosemary Chicken</p>
-					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/CEASAR SALAD.jpg"
-							alt="Caesar Salad"
-						/>
-						<p>Caesar Salad</p>
-					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/CHICKEN EMINCE.jpg"
-							alt="Chicken Emince"
-						/>
-						<p>Chicken Emince</p>
-					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/SEAFOOD CURRY.jpg"
-							alt="Seafood Curry"
-						/>
-						<p>Seafood Curry</p>
-					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/OMELLETE VEGGIES.jpg"
-							alt="Omelette Veggies"
-						/>
-						<p>Omelette Veggies</p>
-					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/CHICKEN LONGGANISA.jpg"
-							alt="Chicken Longganisa"
-						/>
-						<p>Chicken Longganisa</p>
-					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/OMELETTE MEAT.jpg"
-							alt="Omelette Meat"
-						/>
-						<p>Omelette Meat</p>
-					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/CORNBEEF.jpg"
-							alt="Cornbeef"
-						/>
-						<p>Cornbeef</p>
-					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/CHICKEN CUTLETS.jpg"
-							alt="Chicken Cutlets"
-						/>
-						<p>Chicken Cutlets</p>
-					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/LE DREAM BREAKFAST.jpg"
-							alt="Le Dream Breakfast"
-						/>
-						<p>Le Dream Breakfast</p>
-					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/TRUFFLE CHICKEN.jpg"
-							alt="Truffle Chicken"
-						/>
-						<p>Truffle Chicken</p>
-					</div>
-					<div class="m-resto-image-container">
-						<img
-							src="./resources/images/mobile_images/MEATBALLS SPAGHETTI.jpg"
-							alt="Meatballs Spaghetti"
-						/>
-						<p>Meatballs Spaghetti</p>
+					<div class="laks-images-row-container">
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/LE DREAM BREAKFAST.jpg"
+								alt="Le Dream Breakfast"
+							/>
+							<p>Le Dream Breakfast</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/TRUFFLE CHICKEN.jpg"
+								alt="Truffle Chicken"
+							/>
+							<p>Truffle Chicken</p>
+						</div>
+						<div class="resto-image-container">
+							<img
+								src="./resources/images/mobile_images/MEATBALLS SPAGHETTI.jpg"
+								alt="Meatballs Spaghetti"
+							/>
+							<p>Meatballs Spaghetti</p>
+						</div>
 					</div>
 				</div>
 			</section>
-			<!-- CONTACT -->
-			<section id="m-contact-section">
+			<!-- CONTACT MOBILE-->
+			<section id="contact-section">
 				<h2>CONTACT US</h2>
-				<div class="m-line-divider"></div>
-				<div class="m-contact-div">
+				<div class="line-divider"></div>
+				<div class="contact-div">
 					<img src="./resources/images/icons/phone_icon.png" alt="phone icon" />
-					<div>
+					<div class="contact-phone-info">
 						<h3>Landline: <a href="tel:077-644-3273">077-644-3273</a></h3>
 						<h3>Mobile(local): <a href="tel:919-839-7493">919-839-7493</a></h3>
 						<h3>
@@ -319,8 +402,8 @@
 						</h3>
 					</div>
 				</div>
-				<div class="m-line-divider-contact"></div>
-				<div class="m-contact-div">
+				<div class="line-divider-contact"></div>
+				<div class="contact-div">
 					<img src="./resources/images/icons/email_icon.png" alt="email icon" />
 					<div>
 						<h3>
@@ -328,433 +411,35 @@
 						</h3>
 					</div>
 				</div>
-				<div class="m-line-divider-contact"></div>
-				<div class="m-contact-div">
+				<div class="line-divider-contact"></div>
+				<div class="contact-div">
 					<img src="./resources/images/icons/clock_icon.png" alt="clock icon" />
 					<div>
 						<h3>Check-in 2:00pm</h3>
 						<h3>Check-out 12:00pm</h3>
 					</div>
 				</div>
-				<div class="m-line-divider-contact"></div>
-				<div id="m-contact-sendoff">
+				<div class="line-divider-contact"></div>
+				<div class="contact-sendoff">
 					<p>Ready to book?</p>
 					<p>Need more information?</p>
 					<p>Call or email us and we'll take care of everything.</p>
 					<p>See you soon!</p>
 				</div>
 			</section>
-			<!-- SOCIALS -->
-			<section id="m-socials-section">
-				<header id="m-socials-header">
-					<h2>SHARE THE LOVE</h2>
-					<img src="./resources/images/icons/heart_icon.png" alt="heart icon" />
-				</header>
-				<div class="m-socials-icons">
-					<a
-						href="https://www.instagram.com/le.dreamhotel/"
-						target="_blank"
-						rel="noopener"
-						><img
-							src="./resources/images/icons/instagram.png"
-							alt="instagram icon"
-						/>
-					</a>
-				</div>
-			</section>
-			<!-- FOOTER -->
-			<footer id="m-footer">
-				<div id="m-footer-links">
-					<div>
-						<p><a href="./legal.html#m-privacy">Privacy Policy</a></p>
-						<p><a href="./legal.html#m-safety">Safety & Security</a></p>
-					</div>
-					<div>
-						<p><a href="./legal.html#m-terms">Terms & Conditions</a></p>
-						<p>
-							<a href="./legal.html#m-supplier">Supplier Code of Conduct</a>
-						</p>
-					</div>
-				</div>
-				<p>©2023 Le Dream Hotel, All Rights Reserved</p>
-			</footer>
-		</div>
-		<div id="desktop">
-			<!-- NAV-BAR -->
-			<nav id="d-nav">
-				<div id="d-nav-left-container">
-					<a href="./index.html"
-						><img
-							class="d-nav-logo1"
-							src="./resources/images/logo_no_background.png"
-							alt="Le Dream logo"
-						/>
-					</a>
-					<a href="./index.html"
-						><img
-							class="d-nav-logo2"
-							src="./resources/images/logo_words_no_background.png"
-							alt="Le Dream Hotel logo"
-						/>
-					</a>
-				</div>
-				<div id="d-nav-right-container">
-					<div id="d-nav-links-container">
-						<a href="./rooms.html" class="d-nav-link"><h3>ROOMS</h3></a>
-						<div></div>
-						<a href="./resto-bar.html" class="d-nav-link"
-							><h3>RESTO & BAR</h3></a
-						>
-						<div></div>
-						<a href="./amenities.html" class="d-nav-link"
-							><h3 class="d-nav-last-link">AMENITIES</h3></a
-						>
-						<div></div>
-						<!-- <a href="" class="d-nav-link"><h3>VIGAN</h3></a>
-						<div></div> -->
-						<!-- <a href="" class="d-nav-link"
-							><h3 class="d-nav-last-link">OUR STORY</h3></a
-						> -->
-					</div>
-					<a href="./booking.html" class="d-book-button">Book Now</a>
-				</div>
-			</nav>
-			<!-- LANDING -->
-			<section id="d-landing-section">
-				<div class="image-filter">
-					<img
-						src="./resources/images/desktop_images/laks1.jpg"
-						alt="LAK's Resto + Bar"
-					/>
-				</div>
-				<!-- <a href="#d-contact-section" class="d-book-button">Book Now</a> -->
-			</section>
-			<!-- FEATURE -->
-			<section id="d-feature-section">
-				<h1>LAK'S RESTO + BAR</h1>
-				<div class="d-line-divider"></div>
-				<div class="d-laks-info-container">
-					<div class="d-laks-text-container">
-						<p>
-							Voyage into a unique culinary journey at LAK's Resto + Bar, our
-							rooftop restaurant, overlooking beautiful Vigan City.
-						</p>
-						<p>
-							At LAK's Resto + Bar, every meal is an occasion, every dish a
-							delight. Join us for an unforgettable dining experience.
-						</p>
-						<p>
-							<strong
-								>Scroll down to see some of our favorite creations.</strong
-							>
-						</p>
-					</div>
-					<img
-						src="./resources/images/laks_bar_and_resto1.jpg"
-						alt="LAK's Resto + Bar sign"
-					/>
-				</div>
-				<div class="d-line-divider"></div>
-				<div class="d-laks-images-row-container">
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-6.jpg"
-							alt="Ahi tuna salad"
-							id="food1"
-						/>
-						<p>Ahi Tuna Salad</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-11.jpg"
-							alt="Sinuglao"
-							id="food2"
-						/>
-						<p>Sinuglao</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-33.jpg"
-							alt="Pumpkin soup"
-							id="food3"
-						/>
-						<p>Pumpkin Soup</p>
-					</div>
-				</div>
-				<div class="d-laks-images-row-container">
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-37.jpg"
-							alt="Seafood Chowder"
-							id="food4"
-						/>
-						<p>Seafood Chowder</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-54.jpg"
-							alt="Shrimp Gambas"
-							id="food5"
-						/>
-						<p>Shrimp Gambas</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-61.jpg"
-							alt="Roasted Chicken Salad"
-							id="food6"
-						/>
-						<p>Roasted Chicken Salad</p>
-					</div>
-				</div>
-				<div class="d-laks-images-row-container">
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-96.jpg"
-							alt="Ribeye Steak"
-							id="food7"
-						/>
-						<p>Ribeye Steak</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-134.jpg"
-							alt="Panserod Salmon with Ponzo Sauce"
-							id="food8"
-						/>
-						<p>Panserod Salmon with Ponzo Sauce</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-150.jpg"
-							alt="Mahi Mahi"
-							id="food9"
-						/>
-						<p>Mahi Mahi</p>
-					</div>
-				</div>
-				<div class="d-laks-images-row-container">
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-160.jpg"
-							alt="Roasted Chicken Thigh"
-							id="food10"
-						/>
-						<p>Roasted Chicken Thigh</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-168.jpg"
-							alt="Seafood Pasta"
-							id="food11"
-						/>
-						<p>Seafood Pasta</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-175.jpg"
-							alt="All-meat pizza"
-							id="food12"
-						/>
-						<p>All-Meat Pizza</p>
-					</div>
-				</div>
-				<div class="d-laks-images-row-container">
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/CHICKEN INASAL.jpg"
-							alt="Chicken Inasal"
-							id="food13"
-						/>
-						<p>Chicken Inasal</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/GRILLED LIEMPO WITH JAVA RICE.jpg"
-							alt="Grilled Liempo with Java Rice"
-							id="food14"
-						/>
-						<p>Grilled Liempo with Java Rice</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/GRILLED TANIGUE.jpg"
-							alt="Grilled Tanigue"
-							id="food15"
-						/>
-						<p>Grilled Tanigue</p>
-					</div>
-				</div>
-				<div class="d-laks-images-row-container">
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/ROASTED THIGH CHICKEN CURRY.jpg"
-							alt="Roasted Chicken Thigh Curry"
-							id="food16"
-						/>
-						<p>Roasted Chicken Thigh Curry</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/BAGNET PINEAPPLE CHUTNEY.jpg"
-							alt="Bagnet Pineapple Chutney"
-							id="food17"
-						/>
-						<p>Bagnet Pineapple Chutney</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/PANSEREAD PORK CHOP.jpg"
-							alt="Panseread Pork Chop"
-							id="food18"
-						/>
-						<p>Panseread Pork Chop</p>
-					</div>
-				</div>
-				<div class="d-laks-images-row-container">
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/PORK BABY BACK RIBS.jpg"
-							alt="Pork Baby Back Ribs"
-							id="food19"
-						/>
-						<p>Pork Baby Back Ribs</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/ROASTED ROSEMARY CHICKEN.jpg"
-							alt="Roasted Rosemary Chicken"
-							id="food20"
-						/>
-						<p>Roasted Rosemary Chicken</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/CEASAR SALAD.jpg"
-							alt="Caesar Salad"
-							id="food21"
-						/>
-						<p>Caesar Salad</p>
-					</div>
-				</div>
-				<div class="d-laks-images-row-container">
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/CHICKEN EMINCE.jpg"
-							alt="Chicken Emince"
-							id="food22"
-						/>
-						<p>Chicken Emince</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/SEAFOOD CURRY.jpg"
-							alt="Seafood Curry"
-							id="food23"
-						/>
-						<p>Seafood Curry</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/OMELLETE VEGGIES.jpg"
-							alt="Omelette Veggies"
-							id="food24"
-						/>
-						<p>Omelette Veggies</p>
-					</div>
-				</div>
-				<div class="d-laks-images-row-container">
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/CHICKEN LONGGANISA.jpg"
-							alt="Chicken Longganisa"
-							id="food25"
-						/>
-						<p>Chicken Longganisa</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/OMELETTE MEAT.jpg"
-							alt="Omelette Meat"
-							id="food26"
-						/>
-						<p>Omelette Meat</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/CORNBEEF.jpg"
-							alt="Cornbeef"
-							id="food27"
-						/>
-						<p>Cornbeef</p>
-					</div>
-				</div>
-				<div class="d-laks-images-row-container">
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/CHICKEN CUTLETS.jpg"
-							alt="Chicken Cutlets"
-							id="food28"
-						/>
-						<p>Chicken Cutlets</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/LE DREAM BREAKFAST.jpg"
-							alt="Le Dream Breakfast"
-							id="food29"
-						/>
-						<p>Le Dream Breakfast</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/TRUFFLE CHICKEN.jpg"
-							alt="Truffle Chicken"
-							id="food30"
-						/>
-						<p>Truffle Chicken</p>
-					</div>
-				</div>
-				<div class="d-laks-images-row-container">
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/MEATBALLS SPAGHETTI.jpg"
-							alt="Meatballs Spaghetti"
-							id="food32"
-						/>
-						<p>Meatballs Spaghetti</p>
-					</div>
-					<!-- <div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/ROASTED ROSEMARY CHICKEN.jpg"
-							alt="Roasted Rosemary Chicken"
-							id="food20"
-						/>
-						<p>Roasted Rosemary Chicken</p>
-					</div>
-					<div class="d-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/CEASAR SALAD.jpg"
-							alt="Caesar Salad"
-							id="food21"
-						/>
-						<p>Caesar Salad</p>
-					</div> -->
-				</div>
-			</section>
-			<!-- CONTACT -->
-			<div class="above-section-link" id="d-contact"></div>
-			<section id="d-feature-contact-section">
+			<!-- CONTACT TABLET AND DESKTOP -->
+			<section id="feature-contact-section">
 				<h2>CONTACT US</h2>
-				<div class="d-feature-contact-container">
-					<div class="d-feature-contact-sendoff">
+				<div class="feature-contact-container">
+					<div class="feature-contact-sendoff">
 						<p>Ready to book?</p>
 						<p>Need more information?</p>
 						<p>Call or email us and we'll take care of everything.</p>
 						<p>See you soon!</p>
 					</div>
-					<div class="d-feature-contact-info">
-						<div class="d-contact-div">
+					<div class="td-contact-midline"></div>
+					<div class="feature-contact-info">
+						<div class="contact-div">
 							<img
 								src="./resources/images/icons/phone_icon.png"
 								alt="phone icon"
@@ -770,8 +455,8 @@
 								</h3>
 							</div>
 						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
+						<div class="line-divider-contact"></div>
+						<div class="contact-div">
 							<img
 								src="./resources/images/icons/email_icon.png"
 								alt="email icon"
@@ -784,8 +469,8 @@
 								</h3>
 							</div>
 						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
+						<div class="line-divider-contact"></div>
+						<div class="contact-div">
 							<img
 								src="./resources/images/icons/clock_icon.png"
 								alt="clock icon"
@@ -799,12 +484,11 @@
 				</div>
 			</section>
 			<!-- SOCIALS -->
-			<section id="d-socials-section">
-				<header id="d-socials-header">
+			<section id="socials-section">
+				<header id="socials-header">
 					<h2>SHARE THE LOVE</h2>
-					<img src="./resources/images/icons/heart_icon.png" alt="heart icon" />
 				</header>
-				<div class="d-socials-icons">
+				<div class="socials-icons">
 					<a
 						href="https://www.instagram.com/le.dreamhotel/"
 						target="_blank"
@@ -816,473 +500,34 @@
 					</a>
 				</div>
 			</section>
-			<!-- FOOTER -->
-			<footer id="d-footer">
-				<div id="d-footer-links">
-					<ul>
-						<li><a href="./legal.html#d-privacy">Privacy Policy</a></li>
-						<div>|</div>
-						<li><a href="./legal.html#d-safety">Safety & Security</a></li>
-						<div>|</div>
-						<li><a href="./legal.html#d-terms">Terms & Conditions</a></li>
-						<div>|</div>
-						<li>
-							<a href="./legal.html#d-supplier">Supplier Code of Conduct</a>
-						</li>
-					</ul>
+			<!-- FOOTER MOBILE -->
+			<footer id="footer">
+				<div id="footer-links">
+					<div>
+						<p><a href="./legal.html#privacy">Privacy Policy</a></p>
+						<p><a href="./legal.html#safety">Safety & Security</a></p>
+					</div>
+					<div>
+						<p><a href="./legal.html#terms">Terms & Conditions</a></p>
+						<p>
+							<a href="./legal.html#supplier">Supplier Code of Conduct</a>
+						</p>
+					</div>
 				</div>
 				<p>©2023 Le Dream Hotel, All Rights Reserved</p>
 			</footer>
-		</div>
-		<div id="tablet">
-			<!-- NAV-BAR -->
-			<nav id="d-nav">
-				<div id="d-nav-left-container">
-					<a href="./index.html"
-						><img
-							class="d-nav-logo1"
-							src="./resources/images/logo_no_background.png"
-							alt="Le Dream logo"
-						/>
-					</a>
-					<a href="./index.html"
-						><img
-							class="d-nav-logo2"
-							src="./resources/images/logo_words_no_background.png"
-							alt="Le Dream Hotel logo"
-						/>
-					</a>
-				</div>
-				<div id="d-nav-right-container">
-					<div id="d-nav-links-container">
-						<a href="./rooms.html" class="d-nav-link"><h3>ROOMS</h3></a>
-						<div></div>
-						<a href="./resto-bar.html" class="d-nav-link"
-							><h3>RESTO & BAR</h3></a
-						>
-						<div></div>
-						<a href="./amenities.html" class="d-nav-link"
-							><h3 class="d-nav-last-link">AMENITIES</h3></a
-						>
-						<div></div>
-						<!-- <a href="" class="d-nav-link"><h3>VIGAN</h3></a>
-						<div></div> -->
-						<!-- <a href="" class="d-nav-link"
-							><h3 class="d-nav-last-link">OUR STORY</h3></a
-						> -->
-					</div>
-					<a href="./booking.html" class="d-book-button">Book Now</a>
-				</div>
-			</nav>
-			<!-- LANDING -->
-			<section id="d-landing-section">
-				<div class="image-filter">
-					<img
-						src="./resources/images/desktop_images/laks1.jpg"
-						alt="LAK's Resto + Bar"
-					/>
-				</div>
-				<!-- <a href="#d-contact-section" class="d-book-button">Book Now</a> -->
-			</section>
-			<!-- FEATURE -->
-			<section id="t-feature-section">
-				<h1>LAK'S RESTO + BAR</h1>
-				<div class="t-line-divider"></div>
-				<div class="t-laks-info-container">
-					<img
-						src="./resources/images/laks_bar_and_resto1.jpg"
-						alt="LAK's Resto + Bar sign"
-					/>
-					<div class="t-laks-text-container">
-						<p>
-							Voyage into a unique culinary journey at LAK's Resto + Bar, our
-							rooftop restaurant, overlooking beautiful Vigan City.
-						</p>
-						<p>
-							At LAK's Resto + Bar, every meal is an occasion, every dish a
-							delight. Join us for an unforgettable dining experience.
-						</p>
-						<p>
-							<strong
-								>Scroll down to see some of our favorite creations.</strong
-							>
-						</p>
-					</div>
-				</div>
-				<div class="t-line-divider"></div>
-				<div class="t-laks-images-row-container">
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-6.jpg"
-							alt="Ahi tuna salad"
-							id="food1"
-						/>
-						<p>Ahi Tuna Salad</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-11.jpg"
-							alt="Sinuglao"
-							id="food2"
-						/>
-						<p>Sinuglao</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-33.jpg"
-							alt="Pumpkin soup"
-							id="food3"
-						/>
-						<p>Pumpkin Soup</p>
-					</div>
-				</div>
-				<div class="t-laks-images-row-container">
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-37.jpg"
-							alt="Seafood Chowder"
-							id="food4"
-						/>
-						<p>Seafood Chowder</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-54.jpg"
-							alt="Shrimp Gambas"
-							id="food5"
-						/>
-						<p>Shrimp Gambas</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-61.jpg"
-							alt="Roasted Chicken Salad"
-							id="food6"
-						/>
-						<p>Roasted Chicken Salad</p>
-					</div>
-				</div>
-				<div class="t-laks-images-row-container">
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-96.jpg"
-							alt="Ribeye Steak"
-							id="food7"
-						/>
-						<p>Ribeye Steak</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-134.jpg"
-							alt="Panserod Salmon with Ponzo Sauce"
-							id="food8"
-						/>
-						<p>Panserod Salmon with Ponzo Sauce</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-150.jpg"
-							alt="Mahi Mahi"
-							id="food9"
-						/>
-						<p>Mahi Mahi</p>
-					</div>
-				</div>
-				<div class="t-laks-images-row-container">
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-160.jpg"
-							alt="Roasted Chicken Thigh"
-							id="food10"
-						/>
-						<p>Roasted Chicken Thigh</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-168.jpg"
-							alt="Seafood Pasta"
-							id="food11"
-						/>
-						<p>Seafood Pasta</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/Food-175.jpg"
-							alt="All-meat pizza"
-							id="food12"
-						/>
-						<p>All-Meat Pizza</p>
-					</div>
-				</div>
-				<div class="t-laks-images-row-container">
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/CHICKEN INASAL.jpg"
-							alt="Chicken Inasal"
-							id="food13"
-						/>
-						<p>Chicken Inasal</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/GRILLED LIEMPO WITH JAVA RICE.jpg"
-							alt="Grilled Liempo with Java Rice"
-							id="food14"
-						/>
-						<p>Grilled Liempo with Java Rice</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/GRILLED TANIGUE.jpg"
-							alt="Grilled Tanigue"
-							id="food15"
-						/>
-						<p>Grilled Tanigue</p>
-					</div>
-				</div>
-				<div class="t-laks-images-row-container">
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/ROASTED THIGH CHICKEN CURRY.jpg"
-							alt="Roasted Chicken Thigh Curry"
-							id="food16"
-						/>
-						<p>Roasted Chicken Thigh Curry</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/BAGNET PINEAPPLE CHUTNEY.jpg"
-							alt="Bagnet Pineapple Chutney"
-							id="food17"
-						/>
-						<p>Bagnet Pineapple Chutney</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/PANSEREAD PORK CHOP.jpg"
-							alt="Panseread Pork Chop"
-							id="food18"
-						/>
-						<p>Panseread Pork Chop</p>
-					</div>
-				</div>
-				<div class="t-laks-images-row-container">
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/PORK BABY BACK RIBS.jpg"
-							alt="Pork Baby Back Ribs"
-							id="food19"
-						/>
-						<p>Pork Baby Back Ribs</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/ROASTED ROSEMARY CHICKEN.jpg"
-							alt="Roasted Rosemary Chicken"
-							id="food20"
-						/>
-						<p>Roasted Rosemary Chicken</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/CEASAR SALAD.jpg"
-							alt="Caesar Salad"
-							id="food21"
-						/>
-						<p>Caesar Salad</p>
-					</div>
-				</div>
-				<div class="t-laks-images-row-container">
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/CHICKEN EMINCE.jpg"
-							alt="Chicken Emince"
-							id="food22"
-						/>
-						<p>Chicken Emince</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/SEAFOOD CURRY.jpg"
-							alt="Seafood Curry"
-							id="food23"
-						/>
-						<p>Seafood Curry</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/OMELLETE VEGGIES.jpg"
-							alt="Omelette Veggies"
-							id="food24"
-						/>
-						<p>Omelette Veggies</p>
-					</div>
-				</div>
-				<div class="t-laks-images-row-container">
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/CHICKEN LONGGANISA.jpg"
-							alt="Chicken Longganisa"
-							id="food25"
-						/>
-						<p>Chicken Longganisa</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/OMELETTE MEAT.jpg"
-							alt="Omelette Meat"
-							id="food26"
-						/>
-						<p>Omelette Meat</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/CORNBEEF.jpg"
-							alt="Cornbeef"
-							id="food27"
-						/>
-						<p>Cornbeef</p>
-					</div>
-				</div>
-				<div class="t-laks-images-row-container">
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/CHICKEN CUTLETS.jpg"
-							alt="Chicken Cutlets"
-							id="food28"
-						/>
-						<p>Chicken Cutlets</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/LE DREAM BREAKFAST.jpg"
-							alt="Le Dream Breakfast"
-							id="food29"
-						/>
-						<p>Le Dream Breakfast</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/TRUFFLE CHICKEN.jpg"
-							alt="Truffle Chicken"
-							id="food30"
-						/>
-						<p>Truffle Chicken</p>
-					</div>
-				</div>
-				<div class="t-laks-images-row-container">
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/MEATBALLS SPAGHETTI.jpg"
-							alt="Meatballs Spaghetti"
-							id="food32"
-						/>
-						<p>Meatballs Spaghetti</p>
-					</div>
-					<!-- <div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/ROASTED ROSEMARY CHICKEN.jpg"
-							alt="Roasted Rosemary Chicken"
-							id="food20"
-						/>
-						<p>Roasted Rosemary Chicken</p>
-					</div>
-					<div class="t-resto-image-container">
-						<img
-							src="./resources/images/desktop_images/CEASAR SALAD.jpg"
-							alt="Caesar Salad"
-							id="food21"
-						/>
-						<p>Caesar Salad</p>
-					</div> -->
-				</div>
-			</section>
-			<!-- CONTACT -->
-			<div class="above-section-link" id="d-contact"></div>
-			<section id="d-feature-contact-section">
-				<h2>CONTACT US</h2>
-				<div class="d-feature-contact-container">
-					<div class="d-feature-contact-sendoff">
-						<p>Ready to book?</p>
-						<p>Need more information?</p>
-						<p>Call or email us and we'll take care of everything.</p>
-						<p>See you soon!</p>
-					</div>
-					<div class="d-feature-contact-info">
-						<div class="d-contact-div">
-							<img
-								src="./resources/images/icons/phone_icon.png"
-								alt="phone icon"
-							/>
-							<div>
-								<h3>Landline: <a href="tel:077-644-3273">077-644-3273</a></h3>
-								<h3>
-									Mobile(local): <a href="tel:919-839-7493">919-839-7493</a>
-								</h3>
-								<h3>
-									Mobile(global):
-									<a href="tel:+63-956-974-3211">+63-956-974-3211</a>
-								</h3>
-							</div>
-						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
-							<img
-								src="./resources/images/icons/email_icon.png"
-								alt="email icon"
-							/>
-							<div>
-								<h3>
-									<a href="mailto:hotelledream@gmail.com"
-										>hotelledream@gmail.com</a
-									>
-								</h3>
-							</div>
-						</div>
-						<div class="d-line-divider-contact"></div>
-						<div class="d-contact-div">
-							<img
-								src="./resources/images/icons/clock_icon.png"
-								alt="clock icon"
-							/>
-							<div>
-								<h3>Check-in 2:00pm</h3>
-								<h3>Check-out 12:00pm</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- SOCIALS -->
-			<section id="d-socials-section">
-				<header id="d-socials-header">
-					<h2>SHARE THE LOVE</h2>
-					<img src="./resources/images/icons/heart_icon.png" alt="heart icon" />
-				</header>
-				<div class="d-socials-icons">
-					<a
-						href="https://www.instagram.com/le.dreamhotel/"
-						target="_blank"
-						rel="noopener"
-						><img
-							src="./resources/images/icons/instagram.png"
-							alt="instagram icon"
-						/>
-					</a>
-				</div>
-			</section>
-			<!-- FOOTER -->
-			<footer id="d-footer">
-				<div id="d-footer-links">
+			<!-- FOOTER TABLET AND DESKTOP -->
+			<footer id="td-footer">
+				<div id="td-footer-links">
 					<ul>
-						<li><a href="./legal.html#t-privacy">Privacy Policy</a></li>
+						<li><a href="/legal.html#privacy">Privacy Policy</a></li>
 						<div>|</div>
-						<li><a href="./legal.html#t-safety">Safety & Security</a></li>
+						<li><a href="/legal.html#safety">Safety &amp; Security</a></li>
 						<div>|</div>
-						<li><a href="./legal.html#t-terms">Terms & Conditions</a></li>
+						<li><a href="/legal.html#terms">Terms &amp; Conditions</a></li>
 						<div>|</div>
 						<li>
-							<a href="./legal.html#t-supplier">Supplier Code of Conduct</a>
+							<a href="/legal.html#supplier">Supplier Code of Conduct</a>
 						</li>
 					</ul>
 				</div>

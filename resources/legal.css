@@ -1,114 +1,117 @@
 /* MOBILE */
 @media screen and (max-width: 675px) {
 	/* LEGAL */
-	#m-legal-section {
+	#legal-section {
 		font-size: 1.1rem;
 	}
-	#m-legal-section h2 {
+	#legal-section h2 {
 		color: #0f203e;
 		margin-top: 60px;
 		padding-top: 5vh;
 		padding-bottom: 4vh;
 		text-align: center;
 	}
-	.m-legal-type-container {
+	.legal-type-container {
 		padding-top: 3vh;
 		text-align: center;
 		width: 75vw;
 		margin: auto;
 		padding-bottom: 3vh;
 	}
-	.m-legal-type-container h3 {
+	.legal-type-container h3 {
 		color: #0f203e;
 		padding-bottom: 2vh;
 	}
-	.m-legal-type-container h4 {
+	.legal-type-container h4 {
 		color: #0f203e;
 		padding-top: 1vh;
 		margin-bottom: auto;
 	}
-	.m-legal-type-container h5 {
+	.legal-type-container h5 {
 		color: #0f203e;
 		text-align: left;
 		margin-left: 4vw;
 	}
-	.m-legal-type-container p {
+	.legal-type-container p {
 		color: #0f203e;
 		text-align: left;
 		margin-left: 4vw;
 	}
-	.m-legal-type-container ul {
+	.legal-type-container ul {
 		color: #0f203e;
 		text-align: left;
 		margin-left: -1vw;
 		width: 90%;
 	}
-	.m-legal-type-container li {
+	.legal-type-container li {
 		color: #0f203e;
 	}
-	.above-m-legal-type {
+	.above-legal-type {
 		position: relative;
 		top: -60px;
 	}
 }
-/* DESKTOP */
+/* TABLET AND DESKTOP */
 @media screen and (min-width: 675px) {
+	.line-divider.title {
+	}
+	.line-divider {
+		margin: 60px auto;
+	}
 	/* LEGAL */
-	#d-legal-section {
+	#legal-section {
 		font-size: 1.25rem;
 		margin-top: 60px;
-		padding-bottom: 7vh;
+		padding-bottom: 60px;
 	}
-	#d-legal-section h2 {
+	#legal-section h2 {
 		color: #0f203e;
 		text-align: center;
-		padding-top: 6vh;
-		padding-bottom: 4vh;
+		padding-top: 60px;
 	}
-	#d-legal-section h3 {
+	#legal-section h3 {
 		color: #0f203e;
 		text-align: center;
 		padding-top: 3vh;
 		padding-bottom: 1vh;
 	}
-	.d-legal-type-container {
+	.legal-type-container {
 		text-align: center;
 		display: flex;
 		justify-content: space-evenly;
 		flex-wrap: wrap;
 		width: 80vw;
 		margin: auto;
-		padding-bottom: 7vh;
 	}
-	.d-legal-sub-type-container {
+	.legal-sub-type-container {
 		width: 30vw;
 		padding-bottom: 1vh;
 	}
 
-	.d-legal-type-container h4 {
+	.legal-type-container h4 {
 		color: #0f203e;
 		text-align: left;
 		margin: auto;
 		padding-top: 1vh;
 	}
-	.d-legal-type-container h5 {
+	.legal-type-container h5 {
 		color: #0f203e;
 		text-align: left;
 	}
-	.d-legal-type-container p {
+	.legal-type-container p {
 		color: #0f203e;
 		text-align: left;
 	}
-	.d-legal-type-container ul {
+	.legal-type-container ul {
 		color: #0f203e;
 		width: 75%;
 		text-align: left;
 		margin-left: 5%;
 	}
-	.d-legal-type-container li {
+	.legal-type-container li {
 		color: #0f203e;
 	}
-	.above-d-legal-type {
+	.above-legal-type {
 		position: relative;
 		top: -60px;
 	}
