@@ -1,12 +1,22 @@
 @font-face {
 	font-family: "Headings";
 	src: url("./fonts/M_PLUS_1p/MPLUS1p-Thin.ttf") format("truetype");
+	font-display: swap;
 }
 
 @font-face {
 	font-family: "Body";
 	src: url("./fonts/Forum/Forum-Regular.ttf") format("truetype");
+	font-display: swap;
 }
+
+/* FOR USE WITH WOFF AND WOFF2 CONVERTED FONTS */
+/* @font-face {
+	font-family: 'MyFont';
+	src: url('myfont.woff2') format('woff2'),
+			 url('myfont.woff') format('woff');
+	font-display: swap;
+} */
 
 h1,
 h2,
