@@ -100,6 +100,9 @@
 }
 .package-img-container > img {
 	max-width: 12vw;
+	max-height: 12vw;
+	width: auto;
+	height: auto;
 	display: block;
 	border-radius: 5px;
 	border: 1px solid #4672b9;
@@ -111,9 +114,12 @@
 	position: absolute;
 	opacity: 0;
 	transition: all 0.3s ease-in-out;
+	z-index: 1;
 }
 .package-zoom > img {
 	width: 90vw;
+	height: auto;
+	max-height: 90vw;
 	border-radius: 10px;
 	box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
 }
@@ -165,6 +171,8 @@
 }
 .features-card-slideshow img.slides {
 	width: 100%;
+	height: auto;
+	max-height: 100%;
 	object-fit: contain;
 	box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
 	display: none;
@@ -194,6 +202,8 @@ img.dark {
 	display: block;
 	opacity: 1;
 	height: 50px;
+	width: auto;
+	max-width: 100%;
 }
 .arrows-container .left-arrow {
 	align-self: flex-start;
@@ -423,6 +433,8 @@ p.features-card-details {
 	}
 	.sub-features-container div.sub-feature-arrow.tablet img {
 		height: 100%;
+		width: auto;
+		max-width: 100%;
 	}
 	.sub-features-container div.sub-feature-arrow.tablet img:hover {
 		cursor: pointer;
@@ -663,6 +675,8 @@ p.features-card-details {
 	}
 	.sub-features-container div.sub-feature-arrow.tablet img {
 		height: 100%;
+		width: auto;
+		max-width: 100%;
 	}
 	.sub-features-container div.sub-feature-arrow.tablet img:hover {
 		cursor: pointer;
@@ -814,6 +828,8 @@ p.features-card-details {
 	}
 	#d-index-contact-location-holder .contact-div img {
 		width: 45px;
+		height: auto;
+		max-height: 100%;
 	}
 	.contact-sendoff {
 		padding: 10px 0 0 0;

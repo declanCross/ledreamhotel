@@ -9,7 +9,7 @@
 	height: 60px;
 	background-color: rgba(251, 252, 254, 0.8);
 	border-bottom: 2px solid #b9cce4;
-	z-index: 1;
+	z-index: 99;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 #nav a.nav-a-img {
@@ -22,6 +22,8 @@
 }
 #nav img {
 	height: 80%;
+	width: auto;
+	max-width: 100%;
 	object-fit: contain;
 }
 /* MOBILE */
@@ -117,7 +119,7 @@
 		align-items: center;
 		background-color: rgba(251, 252, 254, 0.8);
 		border-bottom: 2px solid #b9cce4;
-		z-index: 1;
+		z-index: 99;
 		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 	}
 	#td-nav a.book-button {
@@ -135,6 +137,8 @@
 	}
 	#td-nav img {
 		height: 80%;
+		width: auto;
+		max-width: 100%;
 		object-fit: contain;
 		padding-right: 1.5vw;
 	}
