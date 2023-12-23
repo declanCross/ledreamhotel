@@ -32,6 +32,9 @@
 	margin: 0;
 	max-width: 90%;
 }
+.linethrough {
+	text-decoration: line-through;
+}
 /* TABLET */
 @media screen and (min-width: 675px) and (max-width: 1200px) {
 	.above-link {
