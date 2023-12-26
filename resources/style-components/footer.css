@@ -14,8 +14,8 @@
 	flex-direction: column;
 }
 #footer-links p {
-	margin-top: 0.5vh;
-	margin-bottom: 0.5vh;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 #footer p:last-child {
 	text-align: center;
