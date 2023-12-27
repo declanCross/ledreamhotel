@@ -34,11 +34,11 @@
 .promo-rate-landing-container {
 	box-sizing: border-box;
 	position: absolute;
-	top: 20%;
-	bottom: 20%;
+	top: 15%;
+	bottom: 15%;
 	left: 50%;
 	transform: translateX(-50%);
-	max-width: 25vw;
+	max-width: 50vw;
 	width: auto;
 	height: auto;
 }
@@ -83,8 +83,8 @@ img.promo-rate-landing-img {
 	.promo-rate-landing-container {
 		box-sizing: border-box;
 		position: absolute;
-		top: 25%;
-		bottom: 25%;
+		top: 20%;
+		bottom: 20%;
 		left: 50%;
 		transform: translateX(-50%);
 		width: auto;
