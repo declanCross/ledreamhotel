@@ -57,7 +57,61 @@
 	transform: scale(0.95);
 	box-shadow: 0 0px 2px rgba(0, 0, 0, 0.5);
 }
-
+/* VIDEO AND GREETING */
+#video-greeting-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.15rem;
+}
+.video-container {
+	box-sizing: border-box;
+	width: 100vw;
+	height: auto;
+}
+.video-container video {
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	border-top: 2px solid #b9cce4;
+	border-bottom: 2px solid #b9cce4;
+	box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
+}
+#video-greeting-section h2 {
+	margin-bottom: 0;
+}
+.greeting-container {
+	width: 100vw;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+.greeting-words-container {
+	width: 90%;
+	max-width: 60ch;
+	height: auto;
+}
+.greeting-words-container p {
+	color: #0f203e;
+	text-align: center;
+}
+.greeting-img-container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.greeting-img-container img {
+	width: 100%;
+	height: auto;
+	max-width: 75vw;
+}
 /* PACKAGES */
 #packages-section {
 	background-color: #b9cce4;
@@ -379,6 +433,12 @@ p.features-card-details {
 		margin-top: 1vw;
 		text-align: left;
 	}
+	/* VIDEO AND GREETING */
+	.greeting-img-container img {
+		width: 100%;
+		height: auto;
+		max-width: 30vw;
+	}
 	/* PACKAGES */
 	#packages-section p {
 		font-size: 1.15rem;
@@ -623,6 +683,61 @@ p.features-card-details {
 		margin-bottom: auto;
 		text-align: center;
 		color: #0f203e;
+	}
+	/* VIDEO AND GREETING */
+	#video-greeting-section {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: center;
+		margin-top: 60px;
+	}
+	.video-container {
+		box-sizing: border-box;
+		width: 50vw;
+		height: auto;
+	}
+	.video-container video {
+		box-sizing: border-box;
+		width: 100%;
+		height: auto;
+		border-top: 2px solid #b9cce4;
+		border-bottom: 2px solid #b9cce4;
+		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
+		border-radius: 10px;
+	}
+	#video-greeting-section h2 {
+		text-align: center;
+	}
+	.greeting-container {
+		width: 34vw;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+	.greeting-words-container {
+		width: 100%;
+		max-width: 60ch;
+		height: auto;
+	}
+	.greeting-words-container p {
+		color: #0f203e;
+	}
+	.greeting-img-container {
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.greeting-img-container img {
+		width: 100%;
+		height: auto;
+		max-width: 20vw;
 	}
 	/* PACKAGES */
 	#packages-section p,
