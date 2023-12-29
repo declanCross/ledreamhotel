@@ -688,7 +688,7 @@ p.features-card-details {
 	#video-greeting-section {
 		display: flex;
 		flex-direction: row-reverse;
-		justify-content: center;
+		justify-content: space-evenly;
 		align-items: center;
 		margin-top: 60px;
 	}
@@ -701,8 +701,7 @@ p.features-card-details {
 		box-sizing: border-box;
 		width: 100%;
 		height: auto;
-		border-top: 2px solid #b9cce4;
-		border-bottom: 2px solid #b9cce4;
+		border: 2px solid #b9cce4;
 		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
 		border-radius: 10px;
 	}
