@@ -65,6 +65,12 @@
 	align-items: center;
 	font-size: 1.15rem;
 }
+.video-quote-pic-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 .video-container {
 	box-sizing: border-box;
 	width: 100vw;
@@ -78,8 +84,44 @@
 	border-bottom: 2px solid #b9cce4;
 	box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
 }
+.greeting-pic-quote-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+}
+/* Circle containing an img */
+.greeting-img-container {
+	width: 50vw;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.greeting-img-container img {
+	width: 100%;
+	height: auto;
+	max-width: 75vw;
+}
+.quote-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0 40px 0;
+}
+.quote-container p {
+	color: #0f203e;
+	text-align: center;
+	margin: 5px 0 0 0;
+	padding: 0;
+}
 #video-greeting-section h2 {
-	margin-bottom: 0;
+	margin: 40px 0 0 0;
 }
 .greeting-container {
 	width: 100vw;
@@ -88,7 +130,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 0;
+	margin: 0 0 30px 0;
 	padding: 0;
 }
 .greeting-words-container {
@@ -99,18 +141,6 @@
 .greeting-words-container p {
 	color: #0f203e;
 	text-align: center;
-}
-.greeting-img-container {
-	width: 100%;
-	height: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.greeting-img-container img {
-	width: 100%;
-	height: auto;
-	max-width: 75vw;
 }
 /* PACKAGES */
 #packages-section {
@@ -434,6 +464,9 @@ p.features-card-details {
 		text-align: left;
 	}
 	/* VIDEO AND GREETING */
+	.greeting-img-container {
+		width: 30vw;
+	}
 	.greeting-img-container img {
 		width: 100%;
 		height: auto;
@@ -690,11 +723,18 @@ p.features-card-details {
 		flex-direction: row-reverse;
 		justify-content: space-evenly;
 		align-items: center;
-		margin-top: 60px;
+		margin: 60px 0 60px 0;
+	}
+	.video-quote-pic-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 35vw;
 	}
 	.video-container {
 		box-sizing: border-box;
-		width: 50vw;
+		width: 100%;
 		height: auto;
 	}
 	.video-container video {
@@ -705,29 +745,16 @@ p.features-card-details {
 		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
 		border-radius: 10px;
 	}
-	#video-greeting-section h2 {
-		text-align: center;
-	}
-	.greeting-container {
-		width: 34vw;
-		height: auto;
+	.greeting-pic-quote-container {
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		flex-direction: row;
+		justify-content: space-evenly;
 		align-items: center;
-		margin: 0;
-		padding: 0;
-	}
-	.greeting-words-container {
 		width: 100%;
-		max-width: 60ch;
-		height: auto;
-	}
-	.greeting-words-container p {
-		color: #0f203e;
 	}
 	.greeting-img-container {
-		width: 100%;
+		width: auto;
+		max-width: 30%;
 		height: auto;
 		display: flex;
 		justify-content: center;
@@ -738,6 +765,29 @@ p.features-card-details {
 		height: auto;
 		max-width: 20vw;
 	}
+	#video-greeting-section h2 {
+		text-align: center;
+		margin: 0;
+	}
+	.greeting-container {
+		width: 30vw;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+	.greeting-words-container {
+		width: 100%;
+		max-width: 50ch;
+		height: auto;
+	}
+	.greeting-words-container p {
+		color: #0f203e;
+	}
+
 	/* PACKAGES */
 	#packages-section p,
 	#packages-section h5 {
