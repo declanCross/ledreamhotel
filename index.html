@@ -296,15 +296,16 @@
 				<div class="video-quote-pic-container">
 					<div class="video-container">
 						<video
+							id="greeting-video"
 							src="./resources/videos/ledream_video1.mp4"
 							autoplay
 							muted
-							controls
 							loop
 							playsinline
 						>
 							<p>Your browser does not support the video tag.</p>
 						</video>
+						<script src="./resources/scripts/videoPausePlay.js"></script>
 					</div>
 					<div class="greeting-pic-quote-container">
 						<div class="greeting-img-container">
@@ -430,7 +431,7 @@
 					<img onclick="zoomOut()" src="" alt="Package" />
 				</div>
 			</section>
-			<script src="./resources/scripts/packagesZoom.js"></script>
+			<script src="./resources/scripts/packagesZoom.js" defer></script>
 			<!-- FEATURE CARDS MOBILE-->
 			<section id="features-cards-section">
 				<div class="features-card-container light">
@@ -636,7 +637,7 @@
 						<a href="">More Details</a>
 					</p>
 				</div> -->
-				<script src="./resources/scripts/slides.js"></script>
+				<script src="./resources/scripts/slides.js" defer></script>
 			</section>
 			<!-- FEATURE CARDS TABLET AND DESKTOP -->
 			<section id="feature-section">
@@ -936,7 +937,7 @@
 						</div>
 					</div>
 				</div>
-				<script src="./resources/scripts/bigSlides.js"></script>
+				<script src="./resources/scripts/bigSlides.js" defer></script>
 			</section>
 			<!-- LOCATION -->
 			<div class="line-divider"></div>
@@ -1005,7 +1006,7 @@
 						</div>
 					</div>
 					<div id="map"></div>
-					<script src="./resources/scripts/mapFetch.js"></script>
+					<script src="./resources/scripts/mapFetch.js" defer></script>
 				</div>
 			</section>
 			<!-- CONTACT MOBILE-->
