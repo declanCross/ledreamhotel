@@ -280,13 +280,12 @@ img.dark {
 	justify-content: space-between;
 	position: relative;
 	width: 100%;
-	/* transform: translateY(-150px); */
 	transform: translateY(-36vw);
 }
 .arrows-container img {
 	display: block;
 	opacity: 1;
-	height: 50px;
+	height: 40px;
 	width: auto;
 	max-width: 100%;
 }
@@ -521,7 +520,7 @@ p.features-card-details {
 		cursor: pointer;
 	}
 	.sub-features-container div.sub-feature-arrow.tablet {
-		height: 4vw;
+		height: 3vw;
 		display: flex;
 		align-items: center;
 	}
@@ -834,7 +833,7 @@ p.features-card-details {
 		cursor: pointer;
 	}
 	.sub-features-container div.sub-feature-arrow.tablet {
-		height: 38px;
+		height: 30px;
 		display: flex;
 		align-items: center;
 	}
