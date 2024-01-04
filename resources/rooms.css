@@ -66,6 +66,16 @@
 		position: relative;
 		top: -170px;
 	}
+	#feature-section .sub-feature-img-info-holder {
+		width: 100vw;
+		justify-content: space-evenly;
+	}
+	.sub-feature-info-holder {
+		width: 40vw;
+	}
+	.feature-landing img {
+		margin: 0;
+	}
 	.rooms-package-holder {
 		display: flex;
 		flex-direction: row;
