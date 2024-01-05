@@ -985,13 +985,16 @@ p.features-card-details {
 		margin-top: 0;
 	}
 	#d-index-contact-location-holder .contact-div {
-		margin: auto auto auto 38px;
+		margin: auto auto auto 50px;
+		display: flex;
+		justify-content: left;
+		align-items: center;
 	}
 	#d-index-contact-location-holder .line-divider-contact {
 		margin: auto;
 	}
 	#d-index-contact-location-holder .contact-div img {
-		width: 45px;
+		width: 38px;
 		height: auto;
 		max-height: 100%;
 	}

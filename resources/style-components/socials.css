@@ -19,14 +19,12 @@
 }
 .socials-icons {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	padding-bottom: 25px;
 }
 .socials-icons img {
-	height: 3rem;
+	height: 38px;
 	width: auto;
-	margin-left: 5vw;
-	margin-right: 5vw;
 }
 
 /* TABLET AND DESKTOP */
@@ -41,6 +39,6 @@
 		justify-content: center;
 	}
 	.socials-icons img {
-		height: 3.4rem;
+		height: 38px;
 	}
 }
