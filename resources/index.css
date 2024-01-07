@@ -985,7 +985,8 @@ p.features-card-details {
 		margin-top: 0;
 	}
 	#d-index-contact-location-holder .contact-div {
-		margin: auto auto auto 50px;
+		margin: 25px auto auto 15%;
+		padding: 0;
 		display: flex;
 		justify-content: left;
 		align-items: center;
