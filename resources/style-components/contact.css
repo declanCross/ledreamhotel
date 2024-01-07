@@ -26,9 +26,7 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: left;
-	/* padding: 20px; */
 	margin: 20px 20px 20px 10vw;
-	/* margin-left: 2vw; */
 }
 .contact-div img {
 	width: 38px;
@@ -54,6 +52,9 @@ p {
 .contact-sendoff {
 	text-align: center;
 	font-size: 1.25rem;
+}
+.contact-sendoff p {
+	margin: 10px 0;
 }
 /* MOBILE */
 @media screen and (max-width: 675px) {
@@ -133,6 +134,7 @@ p {
 	.feature-contact-sendoff p {
 		color: #fbfcfe;
 		font-size: 1.25rem;
+		margin: 10px 0;
 	}
 	.td-contact-midline {
 		border-right: 2px solid #fbfcfe;
