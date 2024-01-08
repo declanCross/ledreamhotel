@@ -14,8 +14,8 @@
 /* FOR USE WITH WOFF AND WOFF2 CONVERTED FONTS */
 @font-face {
 	font-family: "Headings";
-	src: url("./fonts/M_PLUS_1p/MPLUS1p-Thin.woff2") format("woff2"),
-		url("./fonts/M_PLUS_1p/MPLUS1p-Thin.woff") format("woff");
+	src: url("./fonts/M_PLUS_1p/MPLUS1p-Light.woff2") format("woff2"),
+		url("./fonts/M_PLUS_1p/MPLUS1p-Light.woff") format("woff");
 	font-display: swap;
 }
 
