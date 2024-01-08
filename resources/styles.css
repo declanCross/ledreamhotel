@@ -93,6 +93,19 @@ body {
 	width: 100vw;
 }
 
+.light {
+	color: #fbfcfe !important;
+}
+.lightblue {
+	color: #b9cce4 !important;
+}
+.midblue {
+	color: #4672b9 !important;
+}
+.darkblue {
+	color: #0f203e !important;
+}
+
 /* MOBILE */
 @media screen and (max-width: 675px) {
 	.t-only,
