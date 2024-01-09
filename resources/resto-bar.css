@@ -41,6 +41,72 @@
 		z-index: 1;
 	}
 }
+/* MOBILE */
+@media screen and (max-width: 675px) {
+	/* MENU */
+	#menu-section {
+		width: 100vw;
+		height: auto;
+		background-color: #b9cce4;
+		box-shadow: 0 3px 15px 5px rgba(0, 0, 0, 0.5);
+		margin-top: 20px;
+		padding: 20px 0;
+		position: relative;
+	}
+	#menu-section h2 {
+		text-align: center;
+		margin: 0 0 20px 0;
+		padding: 0;
+	}
+	.menus-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.menus-container-3 {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100%;
+	}
+	.menu-container {
+		width: 25vw;
+		height: auto;
+		margin-bottom: 10px;
+	}
+	.menu-container img {
+		width: 100%;
+		height: auto;
+		border-radius: 5px;
+		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
+	}
+	.menu-container h5 {
+		margin: 0;
+	}
+	.menu-zoom {
+		visibility: hidden;
+		transition: all 0.3s ease-in-out;
+		width: min(675px, 90vw);
+		max-width: 675px;
+		height: auto;
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		opacity: 0;
+	}
+	.menu-zoom img {
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
+	}
+}
+
 /* TABLET */
 @media screen and (min-width: 675px) and (max-width: 1200px) {
 	.laks-info-container {
@@ -112,6 +178,69 @@
 		z-index: 2;
 		color: #fbfcfe;
 	}
+	/* MENU */
+	#menu-section {
+		width: 100vw;
+		height: auto;
+		background-color: #b9cce4;
+		box-shadow: 0 3px 15px 5px rgba(0, 0, 0, 0.5);
+		margin: 0 0 60px 0;
+		padding: 0 0 30px 0;
+		position: relative;
+	}
+	#menu-section h2 {
+		text-align: center;
+		margin: 0;
+		padding: 30px 0;
+	}
+	.menus-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	.menus-container-3 {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: center;
+		width: 45%;
+	}
+	.menu-container {
+		width: 12.5vw;
+	}
+	.menu-container img {
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
+	}
+	.menu-container h5 {
+		margin: 10px 0 0 0;
+		font-size: 1.25rem;
+	}
+	.menu-zoom {
+		visibility: hidden;
+		transition: all 0.3s ease-in-out;
+		width: min(675px, 90vw);
+		max-width: 675px;
+		height: auto;
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		opacity: 0;
+	}
+	.menu-zoom img {
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
+	}
 }
 /* DESKTOP */
 @media screen and (min-width: 1200px) {
@@ -163,5 +292,68 @@
 		font-size: 1.5rem;
 		z-index: 2;
 		color: #fbfcfe;
+	}
+	/* MENU */
+	#menu-section {
+		width: 100vw;
+		height: auto;
+		background-color: #b9cce4;
+		box-shadow: 0 3px 15px 5px rgba(0, 0, 0, 0.5);
+		margin: 100px 0 60px 0;
+		padding: 0 0 30px 0;
+		position: relative;
+	}
+	#menu-section h2 {
+		text-align: center;
+		margin: 0;
+		padding: 30px 0;
+	}
+	.menus-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	.menus-container-3 {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: center;
+		width: 45%;
+	}
+	.menu-container {
+		width: 12.5vw;
+	}
+	.menu-container img {
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
+	}
+	.menu-container h5 {
+		margin: 10px 0 0 0;
+		font-size: 1.25rem;
+	}
+	.menu-zoom {
+		visibility: hidden;
+		transition: all 0.3s ease-in-out;
+		width: min(675px, 90vw);
+		max-width: 675px;
+		height: auto;
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		opacity: 0;
+	}
+	.menu-zoom img {
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
 	}
 }
