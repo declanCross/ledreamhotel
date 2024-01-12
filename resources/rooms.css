@@ -37,6 +37,9 @@
 }
 /* TABLET */
 @media screen and (min-width: 675px) and (max-width: 1200px) {
+	.book-button.long {
+		width: 250px;
+	}
 	.above-link {
 		position: relative;
 		top: -60px;
@@ -62,6 +65,9 @@
 }
 /* DESKTOP */
 @media screen and (min-width: 1200px) {
+	.book-button.long {
+		width: 250px;
+	}
 	.above-link {
 		position: relative;
 		top: -170px;
