@@ -25,7 +25,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin: 30px auto 0 auto;
+		margin: 0 auto 0 auto;
 		padding-bottom: 30px;
 	}
 	#booking-section p {
@@ -46,6 +46,54 @@
 		margin: auto;
 		text-align: left;
 	}
+	.booking-info ul li {
+		padding: 3px 0;
+	}
+	.booking-card-container {
+		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
+		border-radius: 10px;
+		width: 90vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 0 25px 0;
+	}
+	.booking-card-container h3 {
+		color: #0f203e;
+		text-align: center;
+	}
+	#booking-section .booking-card-container p {
+		color: #0f203e;
+		text-align: center;
+		width: min(90%, 60ch);
+		padding: 0 0 10px 0;
+	}
+	.booking-card-img-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100%;
+	}
+	.booking-card-img-container a {
+		width: 25%;
+	}
+	.booking-card-img-container img {
+		width: 100%;
+	}
+	#booking-section .booking-card-container ul {
+		padding: 0;
+		width: auto;
+	}
+	#booking-section .booking-card-container ul li {
+		padding: 3px 0;
+	}
+	ul.booking-info-links {
+		width: auto;
+		padding: 0;
+		margin-top: 30px;
+	}
 	/* AMENITIES */
 	#booking-amenities-section {
 		margin: auto;
@@ -53,6 +101,10 @@
 	}
 	.amenities-container {
 		text-align: left;
+		border: none;
+	}
+	.amenities-container li {
+		font-size: 1rem;
 	}
 	/* ADMIN */
 	#above-booking-admin-section {
@@ -78,7 +130,7 @@
 	}
 	.table-div {
 		box-sizing: border-box;
-		border: 2px solid #4672b9;
+		/* border: 2px solid #4672b9; */
 		border-radius: 10px;
 		overflow: hidden;
 		width: 90vw;
@@ -87,7 +139,7 @@
 	}
 	table {
 		border-collapse: collapse;
-		width: 90vw;
+		width: 100%;
 	}
 	th,
 	td {
@@ -171,14 +223,19 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
+		align-items: center;
 		width: 100vw;
 		padding-top: 3.8vw;
 	}
 	.booking-info {
-		width: 66vw;
+		width: 70vw;
 		font-size: 1.25rem;
 		margin: auto;
 		margin-bottom: 1vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 	#booking-section p {
 		color: #0f203e;
@@ -200,15 +257,65 @@
 	#booking-section ul li {
 		padding-bottom: 10px;
 	}
+	.booking-info ul li {
+		padding: 3px 0;
+	}
+	.booking-card-container {
+		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
+		border-radius: 10px;
+		width: 70vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 0 25px 0;
+	}
+	.booking-card-container h3 {
+		color: #0f203e;
+		text-align: center;
+	}
+	#booking-section .booking-card-container p {
+		color: #0f203e;
+		text-align: center;
+		width: min(90%, 60ch);
+		padding: 0 0 10px 0;
+	}
+	.booking-card-img-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100%;
+	}
+	.booking-card-img-container a {
+		width: 20%;
+	}
+	.booking-card-img-container img {
+		width: 100%;
+	}
+	#booking-section .booking-card-container ul {
+		padding: 0;
+		width: auto;
+	}
+	#booking-section .booking-card-container ul li {
+		padding: 3px 0;
+	}
+	ul.booking-info-links {
+		width: auto;
+		padding: 0;
+		margin-top: 30px;
+	}
 	/* AMENITIES */
 	.amenities-container {
-		max-width: 825px;
+		max-width: 70vw;
+		border: none;
 	}
 	.amenities-content-container {
 		margin-left: 30px;
 	}
 	.amenities-content-container ul {
 		margin-right: 5px;
+		text-align: left;
 	}
 	/* ADMIN */
 	#booking-admin-section {
@@ -234,18 +341,17 @@
 	}
 	.table-div {
 		box-sizing: border-box;
-		border: 2px solid #4672b9;
 		border-radius: 10px;
 		overflow: hidden;
-		width: 80vw;
-		max-width: 700px;
+		width: 70vw;
+		/* max-width: 700px; */
 		margin: auto;
 		box-shadow: 0 3px 15px 5px rgba(0, 0, 0, 0.5);
 	}
 	table {
 		border-collapse: collapse;
-		width: 80vw;
-		max-width: 700px;
+		width: 100%;
+		/* max-width: 700px; */
 	}
 	th,
 	td {
@@ -340,13 +446,18 @@
 	}
 	.booking-content-container {
 		display: flex;
-		justify-content: center;
-		width: 100vw;
+		justify-content: space-evenly;
+		align-items: flex-start;
+		width: 70vw;
 	}
 	.booking-info {
 		width: 20vw;
-		margin: 5px 50px 0 0;
+		margin: 0;
 		font-size: 1.25rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 	#booking-section p {
 		color: #0f203e;
@@ -366,7 +477,51 @@
 	#booking-section ul li {
 		padding-bottom: 10px;
 	}
-
+	.booking-card-container {
+		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
+		border-radius: 10px;
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0 0 25px 0;
+	}
+	.booking-card-container h3 {
+		color: #0f203e;
+		text-align: center;
+	}
+	#booking-section .booking-card-container p {
+		color: #0f203e;
+		text-align: center;
+		width: min(90%, 60ch);
+		padding: 0 0 10px 0;
+	}
+	.booking-card-img-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100%;
+	}
+	.booking-card-img-container a {
+		width: 25%;
+	}
+	.booking-card-img-container img {
+		width: 100%;
+	}
+	#booking-section .booking-card-container ul {
+		padding: 0;
+		width: auto;
+	}
+	#booking-section .booking-card-container ul li {
+		padding: 3px 0;
+	}
+	ul.booking-info-links {
+		width: auto;
+		padding: 0;
+		margin-top: 30px;
+	}
 	/* AMENITIES */
 	#booking-amenities-section {
 		display: flex;
@@ -376,7 +531,8 @@
 		padding: 0;
 	}
 	.amenities-container {
-		width: 40vw;
+		width: 35vw;
+		border: none;
 	}
 	.amenities-content-container {
 		margin: 0;
@@ -423,7 +579,7 @@
 		box-sizing: border-box;
 		width: 40vw;
 		max-width: 700px;
-		border: 2px solid #4672b9;
+		/* border: 2px solid #4672b9; */
 		border-radius: 10px;
 		overflow: hidden;
 		margin-left: 2vw;
@@ -431,7 +587,7 @@
 	}
 	table {
 		border-collapse: collapse;
-		width: 40vw;
+		width: 100%;
 		max-width: 700px;
 	}
 	th,
