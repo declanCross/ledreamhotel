@@ -105,6 +105,9 @@ li.amenities-item20 {
 
 /* MOBILE */
 @media screen and (max-width: 675px) {
+	#feature-section {
+		padding-bottom: 50px;
+	}
 }
 /* TABLET */
 @media screen and (min-width: 675px) and (max-width: 1200px) {
