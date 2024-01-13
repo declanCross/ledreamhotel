@@ -572,6 +572,7 @@
 	}
 	.pricing-info-container {
 		margin-right: 10px;
+		width: min(30vw, 60ch);
 	}
 	.pricing-info-container h3 {
 		color: #0f203e;
