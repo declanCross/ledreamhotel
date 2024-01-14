@@ -190,7 +190,7 @@
 	height: auto;
 	display: block;
 	border-radius: 5px;
-	border: 1px solid #4672b9;
+	border: 2px solid #4672b9;
 	box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
 	cursor: pointer;
 }
@@ -205,6 +205,7 @@
 	width: 90vw;
 	height: auto;
 	border-radius: 10px;
+	border: 2px solid #4672b9;
 	box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
 }
 
@@ -228,7 +229,6 @@
 }
 .features-card-container.light {
 	background-color: #b9cce4;
-	border: 2px solid #4672b9;
 }
 .light h2,
 .light p,
@@ -240,7 +240,6 @@
 }
 .features-card-container.dark {
 	background-color: #0f203e;
-	border: 2px solid #4672b9;
 }
 .dark h2,
 .dark p,
@@ -266,14 +265,14 @@
 	opacity: 1;
 	display: block;
 }
-img.light {
+/* img.light {
 	border-top: 2px solid #4672b9;
 	border-bottom: 2px solid #4672b9;
 }
 img.dark {
 	border-top: 2px solid #4672b9;
 	border-bottom: 2px solid #4672b9;
-}
+} */
 .arrows-container {
 	display: flex;
 	justify-content: space-between;
@@ -351,8 +350,8 @@ p.features-card-details {
 #location-address-bar input {
 	width: 80%;
 	border-radius: 25px;
-	padding: 5px;
-	border: 2px solid #b9cce4;
+	padding: 7px 5px 5px 5px;
+	border: none;
 	text-align: center;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -565,7 +564,6 @@ p.features-card-details {
 	.feature-card-img {
 		box-sizing: border-box;
 		width: 100%;
-		border: 2px solid #b9cce4;
 		border-radius: 10px;
 		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
 		display: none;
@@ -615,7 +613,7 @@ p.features-card-details {
 		border-radius: 25px;
 		padding: 5px;
 		padding-top: 10px;
-		border: 2px solid #b9cce4;
+		border: none;
 		text-align: center;
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 	}
@@ -876,7 +874,6 @@ p.features-card-details {
 		width: 60ch;
 		padding: 20px 5px 10px 20px;
 		background-color: #fbfcfe;
-		border: 2px solid #b9cce4;
 		border-radius: 10px;
 		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
 		position: relative;
@@ -894,7 +891,6 @@ p.features-card-details {
 	.feature-card-img {
 		box-sizing: border-box;
 		width: 100%;
-		border: 2px solid #b9cce4;
 		border-radius: 10px;
 		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
 		display: none;
@@ -940,9 +936,8 @@ p.features-card-details {
 		width: 40vw;
 		max-width: 400px;
 		border-radius: 25px;
-		padding: 5px;
-		padding-top: 10px;
-		border: 2px solid #b9cce4;
+		padding: 9px 5px 5px 5px;
+		border: none;
 		text-align: center;
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 	}
@@ -968,7 +963,6 @@ p.features-card-details {
 		padding-bottom: 60px;
 	}
 	.contact-card {
-		border: 2px solid #4672b9;
 		border-radius: 10px;
 		height: 550px;
 		width: 500px;
