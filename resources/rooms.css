@@ -72,7 +72,7 @@
 		top: -170px;
 	}
 	#feature-section .sub-feature-img-info-holder {
-		width: 100vw;
+		width: 75vw;
 		justify-content: space-evenly;
 	}
 	.sub-feature-info-holder {
@@ -85,7 +85,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
 		width: 100vw;
 	}
 	.rooms-package-container {
@@ -100,6 +100,6 @@
 		padding: 15px 15px 5px 5px;
 	}
 	.rooms-package-details-container li {
-		margin: 5px auto;
+		margin: 0 auto;
 	}
 }
