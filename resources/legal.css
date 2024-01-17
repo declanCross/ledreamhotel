@@ -53,14 +53,12 @@
 }
 /* TABLET AND DESKTOP */
 @media screen and (min-width: 675px) {
-	.line-divider.title {
-	}
 	.line-divider {
 		margin: 60px auto;
 	}
 	/* LEGAL */
 	#legal-section {
-		font-size: 1.25rem;
+		font-size: 1.15rem;
 		margin-top: 60px;
 		padding-bottom: 60px;
 	}
