@@ -420,7 +420,7 @@
 /* DESKTOP */
 @media screen and (min-width: 1200px) {
 	#main {
-		font-size: 1.25rem;
+		font-size: 1.15rem;
 	}
 	.line-divider.title {
 		margin: 60px auto 90px auto;
@@ -456,7 +456,7 @@
 	.booking-info {
 		width: 20vw;
 		margin: 0;
-		font-size: 1.25rem;
+		font-size: 1.15rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -537,7 +537,7 @@
 		padding: 0;
 	}
 	.amenities-container {
-		width: 35vw;
+		width: 40vw;
 		border: none;
 	}
 	.amenities-content-container {
@@ -591,6 +591,8 @@
 		overflow: hidden;
 		margin-left: 2vw;
 		box-shadow: 0 3px 15px 5px rgba(0, 0, 0, 0.5);
+		height: auto;
+		height: fit-content;
 	}
 	table {
 		border-collapse: collapse;
