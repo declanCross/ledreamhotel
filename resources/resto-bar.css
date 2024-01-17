@@ -262,6 +262,9 @@
 		flex-wrap: nowrap;
 		padding-bottom: 5vh;
 	}
+	.feature-landing {
+		width: 30vw;
+	}
 	.resto-image-container {
 		position: relative;
 		max-width: 30vw;
@@ -329,13 +332,13 @@
 		width: 45%;
 	}
 	.menu-container {
-		width: 12.5vw;
+		width: 10vw;
 	}
 	.menu-container img {
 		width: 100%;
 		height: auto;
 		border-radius: 10px;
-		border: 2px solid #b9cce4;
+		border: 2px solid #4672b9;
 		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
 		cursor: pointer;
 	}
@@ -347,8 +350,7 @@
 		visibility: hidden;
 		transition: all 0.3s ease-in-out;
 		width: min(675px, 90vw);
-		max-width: 675px;
-		height: auto;
+		height: min(auto, 90vh);
 		position: absolute;
 		z-index: 1;
 		top: 50%;
@@ -360,7 +362,7 @@
 		width: 100%;
 		height: auto;
 		border-radius: 10px;
-		border: 2px solid #b9cce4;
+		border: 2px solid #4672b9;
 		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
 		cursor: pointer;
 	}
