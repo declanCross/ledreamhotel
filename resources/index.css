@@ -647,7 +647,7 @@ p.features-card-details {
 	/* WELCOME */
 	#welcome-section {
 		margin-top: 60px;
-		font-size: 1.25rem;
+		font-size: 1.15rem;
 		padding-bottom: 60px;
 	}
 	#welcome-section h1 {
@@ -671,8 +671,8 @@ p.features-card-details {
 	}
 	.img-wrapper {
 		position: relative;
-		width: 15vw;
-		height: 15vw;
+		width: 12.5vw;
+		height: 12.5vw;
 		border-radius: 50%;
 	}
 	.img-wrapper::after {
@@ -788,7 +788,11 @@ p.features-card-details {
 	/* PACKAGES */
 	#packages-section p,
 	#packages-section h5 {
-		font-size: 1.25rem;
+		font-size: 1.15rem;
+	}
+	.package-img-container > img {
+		max-width: 10vw;
+		max-height: 10vw;
 	}
 	.package-zoom > img {
 		width: auto;
@@ -872,7 +876,7 @@ p.features-card-details {
 	.feature-card-text-container {
 		text-align: left;
 		width: 60ch;
-		padding: 20px 5px 10px 20px;
+		padding: 20px 20px 10px 20px;
 		background-color: #fbfcfe;
 		border-radius: 10px;
 		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
@@ -883,7 +887,7 @@ p.features-card-details {
 		display: none;
 	}
 	.feature-card-text-container p {
-		font-size: 1.25rem;
+		font-size: 1.15rem;
 		margin: auto;
 		margin-bottom: 15px;
 		color: #0f203e;
