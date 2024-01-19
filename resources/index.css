@@ -76,10 +76,10 @@
 	width: 100vw;
 	height: auto;
 }
-.video-container video {
+.video-container iframe {
 	box-sizing: border-box;
 	width: 100%;
-	height: auto;
+	height: calc(100vw * 0.5625 + 3px);
 	border-top: 2px solid #b9cce4;
 	border-bottom: 2px solid #b9cce4;
 	box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
@@ -734,10 +734,10 @@ p.features-card-details {
 		width: 100%;
 		height: auto;
 	}
-	.video-container video {
+	.video-container iframe {
 		box-sizing: border-box;
 		width: 100%;
-		height: auto;
+		height: calc(35vw * 0.5625 + 1.5px);
 		border: 2px solid #b9cce4;
 		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
 		border-radius: 10px;
