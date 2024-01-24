@@ -16,6 +16,8 @@ scrollContainers.forEach((scrollContainer) => {
 	scrollContainer.addEventListener("wheel", scrollHorizontally);
 	scrollContainer.addEventListener("touchstart", touchStart);
 	scrollContainer.addEventListener("touchmove", touchMove);
+	// declare the initial touch position variable
+	let touchStartX;
 	// define the scroll function
 	function scrollHorizontally(event) {
 		// prevent the default behavior
@@ -24,8 +26,21 @@ scrollContainers.forEach((scrollContainer) => {
 		const delta = event.deltaY || event.deltaX;
 		// get the direction of the movement
 		const direction = delta > 0 ? 1 : -1;
+		// calculate the scroll speed based on the container width and the delta value
+		const scrollSpeed = (scrollContainerWidth * Math.abs(delta)) / 1000;
 		// scroll the container
-		scrollContainer.scrollLeft += direction * 500; // adjust the scroll speed as needed
+		scrollContainer.scrollLeft += direction * scrollSpeed;
+		// check the scrollLeft value and limit it to the maximum or minimum value
+		if (
+			scrollContainer.scrollLeft >
+			scrollContainer.scrollWidth - scrollContainerWidth
+		) {
+			scrollContainer.scrollLeft =
+				scrollContainer.scrollWidth - scrollContainerWidth;
+		}
+		if (scrollContainer.scrollLeft < 0) {
+			scrollContainer.scrollLeft = 0;
+		}
 	}
 	// define the touch start function
 	function touchStart(event) {
@@ -44,7 +59,18 @@ scrollContainers.forEach((scrollContainer) => {
 		const direction = delta > 0 ? -1 : 1;
 		// scroll the container by the width of the image
 		const imageWidth = scrollContainer.querySelector("img").offsetWidth;
-		scrollContainer.scrollLeft += direction * imageWidth; // adjust the scroll speed as needed
+		scrollContainer.scrollLeft += direction * imageWidth;
+		// check the scrollLeft value and limit it to the maximum or minimum value
+		if (
+			scrollContainer.scrollLeft >
+			scrollContainer.scrollWidth - scrollContainerWidth
+		) {
+			scrollContainer.scrollLeft =
+				scrollContainer.scrollWidth - scrollContainerWidth;
+		}
+		if (scrollContainer.scrollLeft < 0) {
+			scrollContainer.scrollLeft = 0;
+		}
 		// update the initial touch position
 		touchStartX = touchX;
 	}
