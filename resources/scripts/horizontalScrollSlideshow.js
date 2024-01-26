@@ -10,14 +10,11 @@ scrollContainers.forEach((scrollContainer) => {
 	// Scroll the container to the center
 	const scrollContainerCenterOffset =
 		scrollContainerCenter - scrollContainerHalfWidth;
-	// scroll the container to the center
 	scrollContainer.scrollLeft = scrollContainerCenterOffset;
 	// add an event listener for mouse wheel or touch movement
 	scrollContainer.addEventListener("wheel", scrollHorizontally);
 	scrollContainer.addEventListener("touchstart", touchStart);
 	scrollContainer.addEventListener("touchmove", touchMove);
-	// declare the initial touch position variable
-	let touchStartX;
 	// define the scroll function
 	function scrollHorizontally(event) {
 		// prevent the default behavior
@@ -27,7 +24,7 @@ scrollContainers.forEach((scrollContainer) => {
 		// get the direction of the movement
 		const direction = delta > 0 ? 1 : -1;
 		// calculate the scroll speed based on the container width and the delta value
-		const scrollSpeed = (scrollContainerWidth * Math.abs(delta)) / 1000;
+		const scrollSpeed = (scrollContainerWidth * Math.abs(delta)) / 500; // Increase the divisor to make it faster
 		// scroll the container
 		scrollContainer.scrollLeft += direction * scrollSpeed;
 		// check the scrollLeft value and limit it to the maximum or minimum value
@@ -42,6 +39,8 @@ scrollContainers.forEach((scrollContainer) => {
 			scrollContainer.scrollLeft = 0;
 		}
 	}
+	// declare the initial touch position variable
+	let touchStartX;
 	// define the touch start function
 	function touchStart(event) {
 		// get the initial touch position

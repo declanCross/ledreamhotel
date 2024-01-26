@@ -1,7 +1,7 @@
 /* MOBILE */
 @media screen and (max-width: 675px) {
 	#feature-section {
-		padding-bottom: 40px;
+		padding-bottom: 0;
 	}
 	.sub-feature p {
 		padding-bottom: 2vh;
@@ -105,9 +105,13 @@
 		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
 	}
 	/* Food slideshows */
+	#food-slideshows {
+		padding-bottom: 60px;
+	}
 	.food-slideshow {
 		/* margin: 40px 0 0 0; */
 		padding: 30px 0 0 0;
+		text-align: center;
 	}
 	.food-slideshow h2 {
 		margin: 0 0 5px 0;
@@ -185,6 +189,9 @@
 
 /* TABLET */
 @media screen and (min-width: 675px) and (max-width: 1200px) {
+	#feature-section {
+		padding-bottom: 0;
+	}
 	.laks-info-container {
 		display: flex;
 		justify-content: center;
@@ -320,9 +327,13 @@
 		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
 	}
 	/* Food slideshows */
+	#food-slideshows {
+		padding-bottom: 60px;
+	}
 	.food-slideshow {
 		/* margin: 40px 0 0 0; */
 		padding: 30px 0 0 0;
+		text-align: center;
 	}
 	.food-slideshow h2 {
 		margin: 0 0 5px 0;
@@ -375,7 +386,7 @@
 		left: 25px;
 		font-size: 1.15rem;
 		z-index: 1;
-		text-wrap: wrap;
+		white-space: normal;
 		text-align: left;
 	}
 	/*  */
@@ -394,6 +405,9 @@
 }
 /* DESKTOP */
 @media screen and (min-width: 1200px) {
+	#feature-section {
+		padding-bottom: 0;
+	}
 	.sub-feature-info .center {
 		text-align: center;
 	}
@@ -513,9 +527,13 @@
 		cursor: pointer;
 	}
 	/* Food slideshows */
+	#food-slideshows {
+		padding-bottom: 60px;
+	}
 	.food-slideshow {
 		/* margin: 40px 0 0 0; */
 		padding: 30px 0 0 0;
+		text-align: center;
 	}
 	.food-slideshow h2 {
 		margin: 0 0 5px 0;
