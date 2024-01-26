@@ -27,17 +27,6 @@ scrollContainers.forEach((scrollContainer) => {
 		const scrollSpeed = (scrollContainerWidth * Math.abs(delta)) / 500; // Increase the divisor to make it faster
 		// scroll the container
 		scrollContainer.scrollLeft += direction * scrollSpeed;
-		// check the scrollLeft value and limit it to the maximum or minimum value
-		if (
-			scrollContainer.scrollLeft >
-			scrollContainer.scrollWidth - scrollContainerWidth
-		) {
-			scrollContainer.scrollLeft =
-				scrollContainer.scrollWidth - scrollContainerWidth;
-		}
-		if (scrollContainer.scrollLeft < 0) {
-			scrollContainer.scrollLeft = 0;
-		}
 	}
 	// declare the initial touch position variable
 	let touchStartX;
@@ -63,17 +52,6 @@ scrollContainers.forEach((scrollContainer) => {
 		const imageWidthIncludingMargins = imgElement.offsetWidth + margin;
 		const scrollAmount = imageWidthIncludingMargins;
 		scrollContainer.scrollLeft += direction * scrollAmount;
-		// check the scrollLeft value and limit it to the maximum or minimum value
-		if (
-			scrollContainer.scrollLeft >
-			scrollContainer.scrollWidth - scrollContainerWidth
-		) {
-			scrollContainer.scrollLeft =
-				scrollContainer.scrollWidth - scrollContainerWidth;
-		}
-		if (scrollContainer.scrollLeft < 0) {
-			scrollContainer.scrollLeft = 0;
-		}
 		// update the initial touch position
 		touchStartX = touchX;
 	}
