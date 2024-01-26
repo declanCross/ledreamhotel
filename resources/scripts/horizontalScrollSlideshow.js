@@ -57,9 +57,13 @@ scrollContainers.forEach((scrollContainer) => {
 		const delta = touchX - touchStartX;
 		// get the direction of the movement
 		const direction = delta > 0 ? -1 : 1;
-		// scroll the container by the width of the image
-		const imageWidth = scrollContainer.querySelector("img").offsetWidth;
-		scrollContainer.scrollLeft += direction * imageWidth;
+		// scroll the container by the width of the image container
+		const imgElement = scrollContainer.querySelector(".food-image-container");
+		const style = window.getComputedStyle(imgElement);
+		const margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
+		const imageWidthIncludingMargins = imgElement.offsetWidth + margin;
+		const scrollAmount = imageWidthIncludingMargins;
+		scrollContainer.scrollLeft += direction * scrollAmount;
 		// check the scrollLeft value and limit it to the maximum or minimum value
 		if (
 			scrollContainer.scrollLeft >
