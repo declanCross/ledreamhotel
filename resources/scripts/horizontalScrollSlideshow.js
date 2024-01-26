@@ -80,7 +80,7 @@ scrollContainers.forEach((scrollContainer) => {
 		// get the direction of the movement
 		const direction = delta > 0 ? -1 : 1;
 		// calculate the scroll amount based on the swipe speed and direction
-		const scrollAmount = speed * direction * 100; // Adjust the multiplier to control the scroll speed
+		const scrollAmount = speed * direction * 300; // Adjust the multiplier to control the scroll speed
 		// scroll the container
 		scrollContainer.scrollLeft += scrollAmount;
 		// update the initial touch position and time
