@@ -28,65 +28,65 @@ scrollContainers.forEach((scrollContainer) => {
 		// scroll the container
 		scrollContainer.scrollLeft += direction * scrollSpeed;
 	}
-	// // declare the initial touch position variable
-	// let touchStartX;
-	// // define the touch start function
-	// function touchStart(event) {
-	// 	// get the initial touch position
-	// 	touchStartX = event.touches[0].pageX;
-	// }
-	// // define the touch move function
-	// function touchMove(event) {
-	// 	// prevent the default behavior
-	// 	event.preventDefault();
-	// 	// get the current touch position
-	// 	const touchX = event.touches[0].pageX;
-	// 	// get the delta value of the touch movement
-	// 	const delta = touchX - touchStartX;
-	// 	// get the direction of the movement
-	// 	const direction = delta > 0 ? -1 : 1;
-	// 	// scroll the container by the width of the image container
-	// 	const imgElement = scrollContainer.querySelector(".food-image-container");
-	// 	const style = window.getComputedStyle(imgElement);
-	// 	const margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
-	// 	const imageWidthIncludingMargins = imgElement.offsetWidth + margin;
-	// 	const scrollAmount = imageWidthIncludingMargins;
-	// 	scrollContainer.scrollLeft += direction * scrollAmount;
-	// 	// update the initial touch position
-	// 	touchStartX = touchX;
-	// }
-
-	// declare the initial touch position variables
+	// declare the initial touch position variable
 	let touchStartX;
-	let touchStartTime;
 	// define the touch start function
 	function touchStart(event) {
-		// get the initial touch position and time
+		// get the initial touch position
 		touchStartX = event.touches[0].pageX;
-		touchStartTime = Date.now();
 	}
 	// define the touch move function
 	function touchMove(event) {
 		// prevent the default behavior
 		event.preventDefault();
-		// get the current touch position and time
+		// get the current touch position
 		const touchX = event.touches[0].pageX;
-		const touchTime = Date.now();
-		// calculate the distance and duration of the swipe
+		// get the delta value of the touch movement
 		const delta = touchX - touchStartX;
-		const duration = touchTime - touchStartTime;
-		// calculate the swipe speed
-		const speed = Math.abs(delta / duration);
 		// get the direction of the movement
 		const direction = delta > 0 ? -1 : 1;
-		// calculate the scroll amount based on the swipe speed and direction
-		const scrollAmount = speed * direction * 300; // Adjust the multiplier to control the scroll speed
-		// scroll the container
-		scrollContainer.scrollLeft += scrollAmount;
-		// update the initial touch position and time
+		// scroll the container by the width of the image container
+		const imgElement = scrollContainer.querySelector(".food-image-container");
+		const style = window.getComputedStyle(imgElement);
+		const margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
+		const imageWidthIncludingMargins = imgElement.offsetWidth + margin;
+		const scrollAmount = imageWidthIncludingMargins;
+		scrollContainer.scrollLeft += direction * scrollAmount;
+		// update the initial touch position
 		touchStartX = touchX;
-		touchStartTime = touchTime;
 	}
+
+	// // declare the initial touch position variables
+	// let touchStartX;
+	// let touchStartTime;
+	// // define the touch start function
+	// function touchStart(event) {
+	// 	// get the initial touch position and time
+	// 	touchStartX = event.touches[0].pageX;
+	// 	touchStartTime = Date.now();
+	// }
+	// // define the touch move function
+	// function touchMove(event) {
+	// 	// prevent the default behavior
+	// 	event.preventDefault();
+	// 	// get the current touch position and time
+	// 	const touchX = event.touches[0].pageX;
+	// 	const touchTime = Date.now();
+	// 	// calculate the distance and duration of the swipe
+	// 	const delta = touchX - touchStartX;
+	// 	const duration = touchTime - touchStartTime;
+	// 	// calculate the swipe speed
+	// 	const speed = Math.abs(delta / duration);
+	// 	// get the direction of the movement
+	// 	const direction = delta > 0 ? -1 : 1;
+	// 	// calculate the scroll amount based on the swipe speed and direction
+	// 	const scrollAmount = speed * direction * 300; // Adjust the multiplier to control the scroll speed
+	// 	// scroll the container
+	// 	scrollContainer.scrollLeft += scrollAmount;
+	// 	// update the initial touch position and time
+	// 	touchStartX = touchX;
+	// 	touchStartTime = touchTime;
+	// }
 
 	// make the scroll smooth
 	scrollContainer.style.scrollBehavior = "smooth";
