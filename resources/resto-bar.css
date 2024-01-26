@@ -160,7 +160,7 @@
 		left: 25px;
 		font-size: 1.15rem;
 		z-index: 1;
-		text-wrap: wrap;
+		white-space: normal;
 		text-align: left;
 	}
 	/*  */
