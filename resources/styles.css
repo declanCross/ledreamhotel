@@ -106,6 +106,20 @@ body {
 	color: #0f203e !important;
 }
 
+.fade-in-section {
+	opacity: 0; /* make the element invisible */
+	transform: translateY(5px);
+	/* move the element down 20% of the viewport height */
+	visibility: hidden; /* hide the element from the document flow */
+	transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; /* specify the transition duration and easing function */
+	will-change: opacity, visibility; /* optimize the performance of the transition */
+}
+.is-visible {
+	opacity: 1; /* make the element visible */
+	transform: none; /* reset the element position */
+	visibility: visible; /* show the element in the document flow */
+}
+
 /* MOBILE */
 @media screen and (max-width: 675px) {
 	.t-only,
