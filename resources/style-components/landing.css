@@ -12,7 +12,7 @@
 	border-bottom: 2px solid #b9cce4;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
-#landing-section .image-filter::after {
+.image-filter .overlay {
 	content: "";
 	position: absolute;
 	top: -4px;
@@ -67,7 +67,7 @@ img.promo-rate-landing-img {
 		object-fit: cover;
 		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 	}
-	#landing-section .image-filter::after {
+	.image-filter .overlay {
 		content: "";
 		position: absolute;
 		top: 0;
@@ -77,7 +77,7 @@ img.promo-rate-landing-img {
 		background-color: rgba(70, 114, 185, 0.5);
 		transition: all 0.75s ease-in-out;
 	}
-	#landing-section .image-filter:hover::after {
+	.image-filter:hover .overlay {
 		background-color: transparent;
 	}
 	.promo-rate-landing-container {
