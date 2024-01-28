@@ -498,7 +498,66 @@
 						<a href="./rooms.html">More Details</a>
 					</p>
 				</div>
-				<div class="features-card-container dark fade-in-section">
+				<div class="features-card-container light fade-in-section">
+					<h2><a href="./amenities.html">AMENITIES</a></h2>
+					<div class="features-card-slideshow">
+						<img
+							src="./resources/images/mobile_images/optimized_webp/kalle_cafe_logo.webp"
+							alt="Kalle Cafe' Specialty Coffee"
+							class="slides light amenitiesSlides show"
+						/>
+						<img
+							src="./resources/images/mobile_images/optimized_webp/laks_bar_and_resto_logo.webp"
+							alt="LAK's Bar + Resto"
+							class="slides light amenitiesSlides"
+						/>
+						<img
+							src="./resources/images/mobile_images/optimized_webp/iwash_logo.webp"
+							alt="iWash Laundry and Dry-Cleaning"
+							class="slides light amenitiesSlides"
+						/>
+						<div class="arrows-container">
+							<img
+								src="./resources/images/icons/chevron-left.png"
+								alt="left arrow"
+								class="left-arrow"
+								id="roomsLeftArrow"
+								onclick="changeAmenitiesSlide(returnValidAmenitiesSlide(currentAmenitiesSlide - 1))"
+							/>
+							<img
+								src="./resources/images/icons/chevron-right.png"
+								alt="right arrow"
+								class="right-arrow"
+								id="roomsRightArrow"
+								onclick="changeAmenitiesSlide(returnValidAmenitiesSlide(currentAmenitiesSlide + 1))"
+							/>
+						</div>
+						<div class="dots-container">
+							<span
+								class="dot amenitiesDots active"
+								onclick="changeAmenitiesSlide(1)"
+							></span>
+							<span
+								class="dot amenitiesDots"
+								onclick="changeAmenitiesSlide(2)"
+							></span
+							><span
+								class="dot amenitiesDots"
+								onclick="changeAmenitiesSlide(3)"
+							></span>
+						</div>
+					</div>
+					<p>
+						We're committed to providing you with top-notch services to enhance
+						your stay. Our amenities include Kalle Cafe' Specialty Coffee, iWash
+						Laundry & Dry-Cleaning, Airport Pick-up & Drop-off, and our Service
+						Van, to name a few.
+					</p>
+					<p class="features-card-details">
+						<a href="./amenities.html">More Details</a>
+					</p>
+				</div>
+				<div class="features-card-container light fade-in-section">
 					<h2><a href="./resto-bar.html">BAR + RESTO</a></h2>
 					<div class="features-card-slideshow">
 						<img
@@ -560,65 +619,6 @@
 					</p>
 					<p class="features-card-details">
 						<a href="./resto-bar.html">More Details</a>
-					</p>
-				</div>
-				<div class="features-card-container light fade-in-section">
-					<h2><a href="./amenities.html">AMENITIES</a></h2>
-					<div class="features-card-slideshow">
-						<img
-							src="./resources/images/mobile_images/optimized_webp/kalle_cafe_logo.webp"
-							alt="Kalle Cafe' Specialty Coffee"
-							class="slides light amenitiesSlides show"
-						/>
-						<img
-							src="./resources/images/mobile_images/optimized_webp/laks_bar_and_resto_logo.webp"
-							alt="LAK's Bar + Resto"
-							class="slides light amenitiesSlides"
-						/>
-						<img
-							src="./resources/images/mobile_images/optimized_webp/iwash_logo.webp"
-							alt="iWash Laundry and Dry-Cleaning"
-							class="slides light amenitiesSlides"
-						/>
-						<div class="arrows-container">
-							<img
-								src="./resources/images/icons/chevron-left.png"
-								alt="left arrow"
-								class="left-arrow"
-								id="roomsLeftArrow"
-								onclick="changeAmenitiesSlide(returnValidAmenitiesSlide(currentAmenitiesSlide - 1))"
-							/>
-							<img
-								src="./resources/images/icons/chevron-right.png"
-								alt="right arrow"
-								class="right-arrow"
-								id="roomsRightArrow"
-								onclick="changeAmenitiesSlide(returnValidAmenitiesSlide(currentAmenitiesSlide + 1))"
-							/>
-						</div>
-						<div class="dots-container">
-							<span
-								class="dot amenitiesDots active"
-								onclick="changeAmenitiesSlide(1)"
-							></span>
-							<span
-								class="dot amenitiesDots"
-								onclick="changeAmenitiesSlide(2)"
-							></span
-							><span
-								class="dot amenitiesDots"
-								onclick="changeAmenitiesSlide(3)"
-							></span>
-						</div>
-					</div>
-					<p>
-						We're committed to providing you with top-notch services to enhance
-						your stay. Our amenities include Kalle Cafe' Specialty Coffee, iWash
-						Laundry & Dry-Cleaning, Airport Pick-up & Drop-off, and our Service
-						Van, to name a few.
-					</p>
-					<p class="features-card-details">
-						<a href="./amenities.html">More Details</a>
 					</p>
 				</div>
 				<!-- <div class="features-card-container dark">
@@ -703,118 +703,6 @@
 								Start your day right with Le Dream Hotel's complimentary
 								breakfast, included with every booking, and enjoy your welcome
 								drinks upon arrival.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="line-divider"></div>
-				<div class="feature-container">
-					<h2 class="fade-in-section">
-						<strong><a href="/resto-bar.html">BAR + RESTO</a></strong>
-					</h2>
-					<div class="sub-features-container fade-in-section">
-						<div
-							class="sub-feature-arrow tablet"
-							onclick="tChangeRestoSlide(tReturnValidRestoSlide(tCurrentRestoSlide - 1))"
-						>
-							<img
-								src="./resources/images/icons/chevron-left.png"
-								alt="left arrow"
-							/>
-						</div>
-						<div class="sub-feature-arrow">
-							<h3 class="resto">FEATURED MENU ITEMS</h3>
-						</div>
-						<div
-							class="sub-feature-arrow tablet"
-							onclick="tChangeRestoSlide(tReturnValidRestoSlide(tCurrentRestoSlide + 1))"
-						>
-							<img
-								src="./resources/images/icons/chevron-right.png"
-								alt="right arrow"
-							/>
-						</div>
-					</div>
-					<div class="d-feature-card-container-holder img-left fade-in-section">
-						<div class="feature-card-container">
-							<img
-								src="./resources/images/desktop_images/optimized_webp/laks1.webp"
-								alt="LAK's Bar + Resto"
-								class="feature-card-img tRestoSlides show"
-							/>
-							<img
-								src="./resources/images/desktop_images/optimized_webp/Food-6.webp"
-								alt="Ahi tuna salad"
-								class="feature-card-img tRestoSlides"
-							/>
-							<img
-								src="./resources/images/desktop_images/optimized_webp/Food-11.webp"
-								alt="Sinuglao"
-								class="feature-card-img tRestoSlides"
-							/>
-							<img
-								src="./resources/images/desktop_images/optimized_webp/Food-33.webp"
-								alt="Pumpkin soup"
-								class="feature-card-img tRestoSlides"
-							/>
-							<img
-								src="./resources/images/desktop_images/optimized_webp/Food-37.webp"
-								alt="Seafood Chowder"
-								class="feature-card-img tRestoSlides"
-							/>
-							<img
-								src="./resources/images/desktop_images/optimized_webp/Food-54.webp"
-								alt="Shrimp Gambas"
-								class="feature-card-img tRestoSlides"
-							/>
-							<img
-								src="./resources/images/desktop_images/optimized_webp/Food-61.webp"
-								alt="Roasted Chicken Salad"
-								class="feature-card-img tRestoSlides"
-							/>
-							<img
-								src="./resources/images/desktop_images/optimized_webp/Food-96.webp"
-								alt="Ribeye Steak"
-								class="feature-card-img tRestoSlides"
-							/>
-							<img
-								src="./resources/images/desktop_images/optimized_webp/Food-134.webp"
-								alt="Panserod Salmon with Ponzo Sauce"
-								class="feature-card-img tRestoSlides"
-							/>
-							<img
-								src="./resources/images/desktop_images/optimized_webp/Food-150.webp"
-								alt="Mahi Mahi"
-								class="feature-card-img tRestoSlides"
-							/>
-							<img
-								src="./resources/images/desktop_images/optimized_webp/Food-160.webp"
-								alt="Roasted Chicken Thigh"
-								class="feature-card-img tRestoSlides"
-							/>
-							<img
-								src="./resources/images/desktop_images/optimized_webp/Food-168.webp"
-								alt="Seafood Pasta"
-								class="feature-card-img tRestoSlides"
-							/>
-							<img
-								src="./resources/images/desktop_images/optimized_webp/Food-175.webp"
-								alt="All-meat pizza"
-								class="feature-card-img tRestoSlides"
-							/>
-						</div>
-						<div
-							class="feature-card-text-container"
-							id="feature-card-resto-text-container"
-						>
-							<p>
-								Dine in style, with a stunning view that complements the
-								exquisite flavors of our menu.
-							</p>
-							<p>
-								Whether you're looking for a romantic dinner under the stars or
-								a lively evening with friends, LAK's Bar + Resto promises an
-								unforgettable experience.
 							</p>
 						</div>
 					</div>
@@ -935,6 +823,118 @@
 								Airport pick-up and drop-off services for a hassle-free travel
 								experience, as well as our service van to and from the Vigan
 								Heritage Site at Calle Crisologo.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="line-divider"></div>
+				<div class="feature-container">
+					<h2 class="fade-in-section">
+						<strong><a href="/resto-bar.html">BAR + RESTO</a></strong>
+					</h2>
+					<div class="sub-features-container fade-in-section">
+						<div
+							class="sub-feature-arrow tablet"
+							onclick="tChangeRestoSlide(tReturnValidRestoSlide(tCurrentRestoSlide - 1))"
+						>
+							<img
+								src="./resources/images/icons/chevron-left.png"
+								alt="left arrow"
+							/>
+						</div>
+						<div class="sub-feature-arrow">
+							<h3 class="resto">FEATURED MENU ITEMS</h3>
+						</div>
+						<div
+							class="sub-feature-arrow tablet"
+							onclick="tChangeRestoSlide(tReturnValidRestoSlide(tCurrentRestoSlide + 1))"
+						>
+							<img
+								src="./resources/images/icons/chevron-right.png"
+								alt="right arrow"
+							/>
+						</div>
+					</div>
+					<div class="d-feature-card-container-holder img-left fade-in-section">
+						<div class="feature-card-container">
+							<img
+								src="./resources/images/desktop_images/optimized_webp/laks1.webp"
+								alt="LAK's Bar + Resto"
+								class="feature-card-img tRestoSlides show"
+							/>
+							<img
+								src="./resources/images/desktop_images/optimized_webp/Food-6.webp"
+								alt="Ahi tuna salad"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/optimized_webp/Food-11.webp"
+								alt="Sinuglao"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/optimized_webp/Food-33.webp"
+								alt="Pumpkin soup"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/optimized_webp/Food-37.webp"
+								alt="Seafood Chowder"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/optimized_webp/Food-54.webp"
+								alt="Shrimp Gambas"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/optimized_webp/Food-61.webp"
+								alt="Roasted Chicken Salad"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/optimized_webp/Food-96.webp"
+								alt="Ribeye Steak"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/optimized_webp/Food-134.webp"
+								alt="Panserod Salmon with Ponzo Sauce"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/optimized_webp/Food-150.webp"
+								alt="Mahi Mahi"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/optimized_webp/Food-160.webp"
+								alt="Roasted Chicken Thigh"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/optimized_webp/Food-168.webp"
+								alt="Seafood Pasta"
+								class="feature-card-img tRestoSlides"
+							/>
+							<img
+								src="./resources/images/desktop_images/optimized_webp/Food-175.webp"
+								alt="All-meat pizza"
+								class="feature-card-img tRestoSlides"
+							/>
+						</div>
+						<div
+							class="feature-card-text-container"
+							id="feature-card-resto-text-container"
+						>
+							<p>
+								Dine in style, with a stunning view that complements the
+								exquisite flavors of our menu.
+							</p>
+							<p>
+								Whether you're looking for a romantic dinner under the stars or
+								a lively evening with friends, LAK's Bar + Resto promises an
+								unforgettable experience.
 							</p>
 						</div>
 					</div>
