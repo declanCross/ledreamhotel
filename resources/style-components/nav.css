@@ -155,6 +155,7 @@
 		margin-right: auto;
 		height: 100%;
 		margin-left: -1px;
+		transition: background-color 0.2s ease-in-out;
 	}
 	#td-nav-right-container .td-nav-link:hover {
 		background-color: #b9cce4;
