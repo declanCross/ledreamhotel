@@ -324,6 +324,13 @@ p.features-card-details {
 .features-card-container a {
 	font-weight: bold;
 }
+/* REVIEWS */
+#reviews-section h3 {
+	text-align: center;
+}
+#reviews-section a {
+	text-decoration-color: #0f203e;
+}
 /* LOCATION */
 #location-header {
 	display: flex;
@@ -381,6 +388,42 @@ p.features-card-details {
 	}
 	.contact-card {
 		display: none;
+	}
+	#reviews-section {
+		padding: 5vw 0 10vw 0;
+	}
+	#reviews-section h2 {
+		text-align: center;
+	}
+	.reviews-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.review-container {
+		width: 90vw;
+		border-radius: 10px;
+		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 5vw;
+	}
+	p.review-text {
+		font-size: 1.15rem;
+		color: #0f203e;
+		width: 90%;
+		text-align: left;
+	}
+	p.review-name-place {
+		font-size: 1.15rem;
+		color: #0f203e;
+		width: 90%;
+		text-align: right;
+		padding-right: 10px;
+		margin-top: 0;
 	}
 }
 /* TABLET */
@@ -579,6 +622,48 @@ p.features-card-details {
 	}
 	.amenities-content-container ul {
 		margin: auto;
+	}
+	/* REVIEWS */
+	#reviews-section {
+		padding: 1vw 0 5vw 0;
+	}
+	#reviews-section h2 {
+		text-align: center;
+	}
+	.reviews-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 90vw;
+		margin: auto;
+	}
+	.review-container {
+		width: 30%;
+		height: 325px;
+		border-radius: 10px;
+		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		position: relative;
+	}
+	p.review-text {
+		font-size: 1.15rem;
+		color: #0f203e;
+		width: 90%;
+		text-align: left;
+	}
+	p.review-name-place {
+		font-size: 1.15rem;
+		color: #0f203e;
+		width: 90%;
+		text-align: right;
+		padding-right: 10px;
+		margin-top: 0;
+		position: absolute;
+		bottom: 0;
 	}
 	/* LOCATION */
 	.contact-card {
@@ -911,6 +996,48 @@ p.features-card-details {
 	.amenities-content-container ul {
 		margin: auto;
 		padding-left: 100px;
+	}
+	/* REVIEWS */
+	#reviews-section {
+		padding: 2vw 0 5vw 0;
+	}
+	#reviews-section h2 {
+		text-align: center;
+	}
+	.reviews-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 70vw;
+		margin: auto;
+	}
+	.review-container {
+		width: min(30%, 400px);
+		height: 250px;
+		border-radius: 10px;
+		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		position: relative;
+	}
+	p.review-text {
+		font-size: 1.15rem;
+		color: #0f203e;
+		width: 90%;
+		text-align: left;
+	}
+	p.review-name-place {
+		font-size: 1.15rem;
+		color: #0f203e;
+		width: 90%;
+		text-align: right;
+		padding-right: 10px;
+		margin-top: 0;
+		position: absolute;
+		bottom: 0;
 	}
 	/* CONTACT AND LOCATION*/
 	#location-section {
