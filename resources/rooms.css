@@ -71,6 +71,9 @@
 		position: relative;
 		top: -170px;
 	}
+	#feature-section {
+		padding-bottom: 100px;
+	}
 	#feature-section .sub-feature-img-info-holder {
 		width: 75vw;
 		justify-content: space-evenly;
