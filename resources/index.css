@@ -453,6 +453,9 @@ p.features-card-details {
 		max-width: 25vw;
 		margin-bottom: auto;
 	}
+	.image-filter img {
+		object-position: top;
+	}
 	.img-wrapper {
 		position: relative;
 		width: 15vw;
