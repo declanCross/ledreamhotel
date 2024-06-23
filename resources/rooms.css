@@ -34,6 +34,9 @@
 .linethrough {
 	text-decoration: line-through;
 }
+.sub-feature a {
+	text-decoration: none;
+}
 /* TABLET */
 @media screen and (min-width: 675px) and (max-width: 1200px) {
 	.book-button.long {
